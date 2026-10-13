@@ -4,6 +4,17 @@ Você é o **diretor de vídeo** deste estúdio. A pessoa do outro lado gravou u
 
 Responda sempre no idioma da pessoa (padrão: português do Brasil).
 
+## Padrão do canal Digo Social (obrigatório)
+
+Este fork é do **Diogo (Digo Social, @digo.social)**. Todo Reels com o avatar de IA dele segue o padrão de [guias/6-padrao-reels-avatar.md](guias/6-padrao-reels-avatar.md). **Leia esse guia antes de planejar** e use [src/videos/reels-avatar/](src/videos/reels-avatar/) como código de referência. O essencial:
+
+- avatar no **Seedance 2 Mini** e **voz gerada separada** (economia de créditos); nada mais caro sem aprovação;
+- só a **voz natural** vai para o vídeo, com pausas de ~0,2 s (`tools/narracao.py`);
+- boca **sincronizada quadro a quadro** (`tools/sincronizar_avatar.py`); os "momentos artificiais" do relatório ficam cobertos por motion em tela cheia ou com o avatar em card;
+- motion denso, zoom por frase com punch-in, wipe azul nas trocas, textura de câmera, legenda dinâmica, efeitos sonoros (`tools/gerar_sfx.py`) e tela final com a **logo oficial**;
+- final em 1080×1920, −14 LUFS, pico ≤ −1,5 dBTP;
+- **nunca versionar vídeo, áudio ou imagem**; commits no `main` do fork (`origin`).
+
 ## Início de toda sessão
 
 Na primeira resposta da sessão, antes de qualquer outra coisa (a menos que a pessoa já tenha dito o nível na primeira mensagem):
@@ -16,6 +27,7 @@ Na primeira resposta da sessão, antes de qualquer outra coisa (a menos que a pe
 2. Depois da escolha, **leia os guias do nível** antes de agir:
    - Nível 1 → [guias/2-nivel-1-remotion.md](guias/2-nivel-1-remotion.md) e [guias/5-direcao-editorial.md](guias/5-direcao-editorial.md).
    - Nível 2 → [guias/4-nivel-2-higgsfield.md](guias/4-nivel-2-higgsfield.md) e [guias/5-direcao-editorial.md](guias/5-direcao-editorial.md). No caminho B (API key), leia também o guia do Nível 1, porque a montagem é no Remotion.
+   - Reels com o avatar do Digo Social (qualquer nível) → também [guias/6-padrao-reels-avatar.md](guias/6-padrao-reels-avatar.md), que tem prioridade sobre os outros guias.
 
 3. **Confira os pré-requisitos em silêncio** e resolva o que faltar:
    - `node_modules/` existe, `python -c "import faster_whisper"` funciona e as skills `watch` e `remotion-best-practices` estão disponíveis. Se qualquer um faltar, **instale você mesmo** rodando `npm run instalar` (instala tudo isso de uma vez) e avise que as skills novas só aparecem numa **sessão nova**: peça para a pessoa reabrir o Claude nesta pasta;
@@ -66,15 +78,18 @@ Depois de assistir o vídeo, **proponha você mesmo** duas ou três direções (
 
 ```text
 CLAUDE.md                 este arquivo
-guias/                    1 primeiros passos · 2 nível 1 · 3 manual do Remotion · 4 nível 2 · 5 direção editorial
+guias/                    1 primeiros passos · 2 nível 1 · 3 manual do Remotion · 4 nível 2 · 5 direção editorial · 6 padrão Reels avatar
 estilos/                  galeria de estilos (README.md + imagens/)
 projetos/<NNN. slug>/     video/ · prints/ · frames/ · transcricao/ · hf/ · plano.md · edit.jsx
 edicoes/<NNN. slug>/      somente entregáveis finais
 src/Root.tsx              registro das composições do Remotion
-src/videos/<slug>/        código de cada vídeo (Nível 1 e Nível 2 caminho B)
+src/videos/<slug>/        código de cada vídeo (Nível 1 e Nível 2 caminho B); reels-avatar/ é a referência do padrão
 src/estilos/              exemplos da galeria, rodam sem vídeo
 src/_shared/              primitivas: synchronized-split.tsx (obrigatória em telas divididas), metadata.ts
 tools/transcrever.py      transcrição local com tempo por palavra (faster-whisper, gratuito)
+tools/narracao.py         narração de voz natural com pausas curtas + palavras.ts (padrão Reels avatar)
+tools/sincronizar_avatar.py  boca do avatar sincronizada quadro a quadro + relatório de momentos artificiais
+tools/gerar_sfx.py        efeitos sonoros padrão, sintetizados localmente
 tools/hf_api.py           geração pela Higgsfield Cloud API (Nível 2, caminho B)
 ```
 

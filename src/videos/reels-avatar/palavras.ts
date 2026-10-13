@@ -1,4 +1,4 @@
-// Gerado da narração v2 (video/narracao_v2.wav): só a voz natural dos áudios separados, pausas encurtadas.
+// Gerado por tools/narracao.py a partir de transcricao/narracao/mapa.json. Não editar à mão.
 export type Palavra = {w: string; s: number; e: number};
 
 export const PALAVRAS: Palavra[] = [
@@ -127,7 +127,7 @@ export const PALAVRAS: Palavra[] = [
   {w: "perfil.", s: 41.47, e: 41.93},
 ];
 
-// Limites dos trechos na narração (s). Os clipes sincronizados começam exatamente aqui.
+// Início de cada trecho na narração (s). Os clipes sincronizados começam exatamente aqui.
 export const TRECHOS = {gancho: 0.0, exemplo: 5.48, diferenca: 18.4, segredo: 27.6, fim: 42.06};
 
 const norm = (w: string) => w.toLowerCase().replace(/[^a-zà-ú0-9]/g, '');

@@ -1,0 +1,13 @@
+{
+  "saida": "video/narracao_v2.wav",
+  "trechos": [
+    {"nome": "gancho", "audio": "hf/audio_hf_20261013_012833_5d2902e1-8f93-4090-87fa-916644382cf2.mp3", "transcricao": "transcricao/44382cf2"},
+    {"nome": "exemplo", "audio": "hf/audio_hf_20261013_012833_e5a98719-49ff-4153-bdf0-9b0d4ab4683d.mp3", "transcricao": "transcricao/4ab4683d", "cortes": [[9.10, 13.95]]},
+    {"nome": "diferenca", "audio": "hf/audio_hf_20261013_012833_f68ed851-50f5-47ea-9c57-33ceb346816a.mp3", "transcricao": "transcricao/b346816a"},
+    {"nome": "segredo", "audio": "hf/audio_hf_20261013_012833_71440ccc-fa56-48f4-894f-b336557a0f84.mp3", "transcricao": "transcricao/557a0f84"}
+  ],
+  "clipes": {
+    "gancho": {"video": "hf/mini_hf_20261013_013807_e306cc39-2df2-412f-8694-f35e5a507ab4.mp4", "transcricao": "transcricao/5a507ab4", "saida": "hf/sync_gancho.mp4"},
+    "diferenca": {"video": "hf/mini_hf_20261013_013807_92a246a1-0513-4cb3-a154-f62d0c671036.mp4", "transcricao": "transcricao/0c671036", "saida": "hf/sync_diferenca.mp4"}
+  }
+}

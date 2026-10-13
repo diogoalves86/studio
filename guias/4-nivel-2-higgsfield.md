@@ -145,6 +145,7 @@ Fases 1 a 3 iguais. Na fase 4, os assets são gerados com `tools/hf_api.py` e sa
 | Imagem → vídeo padrão | `kling3_0`, mode `pro`, sound `off` | ~1,75 cr/s | `start_image`; aceita `end_image` para transformação |
 | Imagem → vídeo "herói" | `seedance_2_0`, 1080p, `generate_audio: false` | ~9 cr/s | cenas principais |
 | Cena realista | `veo3_1`, `veo-3-1-fast`, quality `high`, 8 s | 22 cr | texto → vídeo, sem pessoas identificáveis |
+| Avatar falando (padrão Digo Social) | `seedance_2_0_mini`, 720p, 9:16 + voz separada em `seed_audio` | econômico | ver [guia 6](6-padrao-reels-avatar.md) |
 
 - Os custos mudam. O Claude confirma com `models_explore` quando o modelo ou o parâmetro mudar, e usa `models_explore(action: "recommend")` quando estiver em dúvida sobre qual modelo usar.
 - Se um lote voltar com `submission_failed` sugerindo um preset, reenviar com `declined_preset_id` igual ao id sugerido.
