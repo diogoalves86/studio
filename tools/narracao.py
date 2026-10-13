@@ -75,7 +75,8 @@ def blocos_inteiros(palavras, cortes, de, ate):
 def palavras_ts(mapa):
     tr = {x["nome"]: x for x in mapa["trechos"]}
     linhas = ",\n".join(f"  {{w: {json.dumps(p['w'], ensure_ascii=False)}, s: {p['s']}, e: {p['e']}}}" for p in mapa["palavras"])
-    trechos = ", ".join(f"{n}: {x['inicio']}" for n, x in tr.items()) + f", fim: {mapa['trechos'][-1]['fim']}"
+    chave = lambda n: n if n.isidentifier() else json.dumps(n)  # "1a" precisa de aspas em TypeScript
+    trechos = ", ".join(f"{chave(n)}: {x['inicio']}" for n, x in tr.items()) + f", fim: {mapa['trechos'][-1]['fim']}"
     return f"""// Gerado por tools/narracao.py a partir de transcricao/narracao/mapa.json. Não editar à mão.
 export type Palavra = {{w: string; s: number; e: number}};
 

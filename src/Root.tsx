@@ -6,6 +6,7 @@ import {VerticalDados} from './estilos/VerticalDados';
 import {VerticalLegendas} from './estilos/VerticalLegendas';
 import {VerticalPrint} from './estilos/VerticalPrint';
 import {REELS_DURACAO, ReelsAvatar} from './videos/reels-avatar/ReelsAvatar';
+import {DESTAQUES} from './videos/destaques-instagram';
 
 const FPS = 30;
 const SEIS_SEGUNDOS = 6 * FPS;
@@ -24,6 +25,11 @@ export const RemotionRoot: React.FC = () => (
     {/* Seus vídeos entram aqui: um <Folder name="001-slug"> por projeto, com o código em src/videos/<slug>/. */}
     <Folder name="001-reels-avatar">
       <Composition id="ReelsAvatar" component={ReelsAvatar} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(REELS_DURACAO * FPS)} />
+    </Folder>
+    <Folder name="002-destaques-instagram">
+      {DESTAQUES.map(({id, Componente, duracao}) => (
+        <Composition key={id} id={id} component={Componente} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(duracao * FPS)} />
+      ))}
     </Folder>
   </>
 );

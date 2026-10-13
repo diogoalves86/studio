@@ -75,7 +75,7 @@ export const PALAVRAS: Palavra[] = [
 ];
 
 // Início de cada trecho na narração (s). Os clipes sincronizados começam exatamente aqui.
-export const TRECHOS = {1a: 0.0, 1meio: 3.27, 1b: 18.35, fim: 23.28};
+export const TRECHOS = {"1a": 0.0, "1meio": 3.27, "1b": 18.35, fim: 23.28};
 
 const norm = (w: string) => w.toLowerCase().replace(/[^a-zà-ú0-9]/g, '');
 
