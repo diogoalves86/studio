@@ -13,3 +13,19 @@ projetos/000. exemplo/**/*.mov
 .claude/skills/
 .claude/settings.local.json
 skills-lock.json
+
+# Mídia (vídeo e imagem) não é versionada em nenhuma pasta.
+# Exceção: as imagens da galeria de estilos, exibidas em estilos/README.md.
+*.mp4
+*.mov
+*.m4v
+*.webm
+*.avi
+*.mkv
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.heic
+!estilos/imagens/*.jpg
