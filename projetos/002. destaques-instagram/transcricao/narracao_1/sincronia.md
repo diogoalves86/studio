@@ -2,18 +2,22 @@
 
 Gerado por `tools/sincronizar_avatar.py`.
 
-## 1a (0.00–3.27 s)
+## 1a (0.00–3.75 s)
 
-atraso mediano 5 ms · janelas > 45 ms: 0% · velocidade 0.70–1.48x
-
-Momentos artificiais (cobrir com motion ou card):
-
--  0.84– 0.97 s · 0.37–0.63× · «a»
-
-## 1b (18.35–23.28 s)
-
-atraso mediano 8 ms · janelas > 45 ms: 11% · velocidade 0.63–1.39x
+atraso mediano 5 ms · janelas > 45 ms: 8% · velocidade 0.43–1.25x
 
 Momentos artificiais (cobrir com motion ou card):
 
-- 23.14–23.28 s · 0.10–0.63× · «»
+-  0.88– 1.03 s · 0.34–0.64× · «a»
+-  2.38– 2.56 s · 0.28–0.61× · «O»
+
+## 1b (20.72–26.84 s)
+
+atraso mediano 5 ms · janelas > 45 ms: 9% · velocidade 0.13–1.13x
+
+Momentos artificiais (cobrir com motion ou card):
+
+- 20.72–21.02 s · 0.01–0.63× · «Você»
+- 23.53–23.86 s · 0.53–0.64× · «Testa»
+- 25.29–25.72 s · 0.01–0.64× · «Link»
+- 26.72–26.84 s · 0.12–0.65× · «»

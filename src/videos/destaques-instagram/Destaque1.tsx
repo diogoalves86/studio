@@ -41,12 +41,15 @@ const M = {
   gratis: em('grátis.'),
   link: em('link'),
 };
+// Pontos em que o clipe congela esperando a voz (sincronia.md): o avatar só volta à tela cheia depois deles.
+const VOLTA_PERGUNTA = em('que') - 0.05; // congela em «O», logo antes
+const VOLTA_LINK = M.link + 0.3; // congela no começo de «Link»
 
 // 0,84–2,0: notificações cobrem o trecho lento do clipe (0,84–0,97).
 const Notificacoes: React.FC<{t: number}> = ({t}) => {
   const bloco = useBloco();
   const mola = useMola();
-  const st = bloco(t, M.a - 0.06, M.pergunta + 0.62);
+  const st = bloco(t, M.a - 0.06, VOLTA_PERGUNTA);
   if (!st) return null;
   const msgs = ['E hoje, posta o quê? 🤔', 'Ainda sem pauta pra amanhã', 'Concorrente postou 3x hoje'];
   return (
@@ -280,7 +283,7 @@ const Checks: React.FC<{t: number}> = ({t}) => {
 
 const Gratis: React.FC<{t: number}> = ({t}) => {
   const mola = useMola();
-  const fora = prog(t, M.link - 0.25, 0.25);
+  const fora = prog(t, VOLTA_LINK - 0.25, 0.25);
   if (t < M.testa - 0.05 || fora >= 1) return null;
   const e = mola(t, M.testa, 10, 200);
   return (
@@ -354,18 +357,18 @@ export const CONFIG_1: Config = {
   estados: [
     {de: T.a, modo: 'cheia', escala: [1, 1.04]},
     {de: M.a - 0.06, modo: 'fora'},
-    {de: M.pergunta + 0.62, modo: 'cheia', escala: [1.06, 1.09]},
+    {de: VOLTA_PERGUNTA, modo: 'cheia', escala: [1.06, 1.09]},
     {de: M.agora, modo: 'cheia', escala: [1.09, 1.22], punch: true},
     {de: T.meio, modo: 'fora'},
     {de: T.b, modo: 'cheia', escala: [1, 1.04]},
     {de: M.aprova - 0.45, modo: 'card'},
-    {de: M.link - 0.05, modo: 'cheia', escala: [1.1, 1.22], punch: true},
+    {de: VOLTA_LINK, modo: 'cheia', escala: [1.1, 1.22], punch: true},
   ],
   semLegenda: [
-    [M.a - 0.06, M.pergunta + 0.6],
+    [M.a - 0.06, VOLTA_PERGUNTA],
     [M.legenda - 0.15, M.digo - 0.3],
     [M.consultor - 0.12, M.ele - 0.2],
-    [M.aprova - 0.45, M.link - 0.05],
+    [M.aprova - 0.45, M.link],
   ],
   corEspecial: {'fraca.': COR.vermelho, 'agora?': COR.azul},
   eventos: EVENTOS,

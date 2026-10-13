@@ -53,6 +53,7 @@ projetos/<NNN. slug>/
 2. **Cortar as pausas longas de cada voz (obrigatório, automático):**
    `python tools/cortar_pausas.py "<projeto>/hf/voz_<trecho>.mp3" "<projeto>/hf/voz_<trecho>_ritmo.wav"`
    Daqui em diante, use só a versão `_ritmo` (transcrição, referência do avatar, narração). Se o Diogo ainda achar o ritmo lento, rode de novo com `--pausa 0.15`.
+   **Vídeo de apresentação** (quem ainda não conhece o Digo, ex.: destaques do perfil): use mais cadência, `--pausa 0.22 --frases "<projeto>/transcricao/voz_<trecho>/palavras.json" --pausa-frase 0.45 --velocidade 0.95`. Isso dá ~15% a mais de duração, com respiro em cada fim de frase. O Diogo aprovou esse ritmo no projeto 002, porque o Reels padrão ficava rápido demais para quem está conhecendo o produto.
 3. **Transcrever cada arquivo** (vozes `_ritmo` e clipes com som):
    `python tools/transcrever.py "<projeto>/hf/<arquivo>" "<projeto>/transcricao/<id8>" pt`
    Confira se a última palavra termina perto do fim do áudio: o Whisper às vezes pula a frase final (aconteceu com "Link na bio: digosocial ponto com"). Se pular, transcreva só o final e junte os tempos.

@@ -6,20 +6,20 @@
    "nome": "2a",
    "audio": "hf/voz_2_como_ritmo.wav",
    "transcricao": "transcricao/voz_2_como_ritmo",
-   "ate": 1.7
+   "ate": 1.92
   },
   {
    "nome": "2meio",
    "audio": "hf/voz_2_como_ritmo.wav",
    "transcricao": "transcricao/voz_2_como_ritmo",
-   "de": 1.7,
-   "ate": 17.6
+   "de": 1.92,
+   "ate": 20.33
   },
   {
    "nome": "2b",
    "audio": "hf/voz_2_como_ritmo.wav",
    "transcricao": "transcricao/voz_2_como_ritmo",
-   "de": 17.6
+   "de": 20.33
   }
  ],
  "clipes": {
