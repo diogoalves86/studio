@@ -14,7 +14,7 @@ Para um vídeo novo, **siga este guia do começo ao fim** e copie o código de r
    - nunca usar modelo mais caro sem aprovação;
    - nenhum crédito sem custo aprovado.
 2. **Só a voz natural** dos áudios separados vai para o vídeo. O som que o Seedance gera junto com o clipe soa robótico e nunca entra na mixagem. Ele serve só para sincronizar a boca.
-3. **Ritmo de Reels:** pausas encurtadas para ~0,2 s (`tools/narracao.py`). Trechos de voz embaralhada ("o Aquad vê esse neitinho…") são cortados.
+3. **Ritmo de Reels: pausa longa sempre é cortada.** Toda voz baixada passa por `tools/cortar_pausas.py` **antes de qualquer outra etapa**: pausas acima de 0,25 s viram 0,2 s. A pausa é medida pela energia do áudio, nunca pelos tempos do Whisper, que às vezes marca o começo da palavra tarde e come sílabas ("Especialista" virou "Legalista" no projeto 002). A versão `voz_<trecho>_ritmo.wav` é a voz oficial do vídeo; o arquivo original fica intacto. Trechos de voz embaralhada ("o Aquad vê esse neitinho…") também são cortados.
 4. **Boca sincronizada quadro a quadro** com a voz natural (`tools/sincronizar_avatar.py`). A meta é atraso mediano ≤ 10 ms e no máximo ~5% de janelas acima de 45 ms.
 5. **O avatar só fica em tela cheia onde o movimento é natural.** Todo momento listado em "Momentos artificiais" no `sincronia.md` fica coberto por **motion em tela cheia** ou com o **avatar em card**.
 6. **Logo oficial** como foto de perfil e na tela final. É `~/Documents/DigoSocial Logo Quadrada 1024x1024.png`, copiada para `projetos/<NNN>/prints/logo.png`. Nunca usar um quadro do avatar nem recriar a logo.
@@ -32,7 +32,9 @@ O conector oficial pode estar **só de leitura** (saldo, histórico e modelos, s
 | Clipes de apoio | `seedance_2_0_mini` | 8 s, sem áudio | viram fundo desfocado das cenas animadas |
 
 - Não é preciso ter clipe do avatar para todos os trechos. Trechos sem clipe viram cena 100% animada.
-- Teste pendente: gerar o avatar com `audio_references` igual à voz separada, para a boca já nascer sincronizada. Se funcionar, a sincronia vira só um ajuste fino. Continue rodando o relatório.
+- **Ordem de geração (desde o projeto 002):** primeiro as vozes → `tools/cortar_pausas.py` → transcrição → recorte do trecho de cada clipe da voz `_ritmo` (com 0,4 s de silêncio no começo, porque o clipe costuma congelar no início) → upload desse recorte como `audio_references` do clipe do avatar, com `start_image` = a imagem oficial do avatar (job `ab4aaba1-b3ad-4857-bbd1-ad2489e44341`). Assim a boca já nasce no ritmo final, e a sincronia vira só um ajuste fino. Continue rodando o relatório.
+- **Voz do Diogo no Seed Audio:** `audio_references` = `58086f4c-58ea-4cc1-8bd4-e9f3402f7c5d`, `speech_rate` 5, `loudness_rate` 23, mp3 24 kHz.
+- **Preço observado (out/2026):** Seedance 2 Mini 720p = **1 crédito por segundo**; Seed Audio ≈ 0,1 crédito por segundo de fala. Confirme com `get_cost` antes de cada lote.
 
 ## 3. Pipeline
 
@@ -48,19 +50,23 @@ projetos/<NNN. slug>/
 ```
 
 1. **Organizar:** crie a pasta do projeto, baixe os áudios e clipes do lote mais recente para `hf/` e copie a logo para `prints/logo.png`.
-2. **Transcrever cada arquivo** (áudios separados e clipes com som):
+2. **Cortar as pausas longas de cada voz (obrigatório, automático):**
+   `python tools/cortar_pausas.py "<projeto>/hf/voz_<trecho>.mp3" "<projeto>/hf/voz_<trecho>_ritmo.wav"`
+   Daqui em diante, use só a versão `_ritmo` (transcrição, referência do avatar, narração). Se o Diogo ainda achar o ritmo lento, rode de novo com `--pausa 0.15`.
+3. **Transcrever cada arquivo** (vozes `_ritmo` e clipes com som):
    `python tools/transcrever.py "<projeto>/hf/<arquivo>" "<projeto>/transcricao/<id8>" pt`
+   Confira se a última palavra termina perto do fim do áudio: o Whisper às vezes pula a frase final (aconteceu com "Link na bio: digosocial ponto com"). Se pular, transcreva só o final e junte os tempos.
    Leia as transcrições: encontre a **ordem do roteiro** e os **trechos embaralhados** (palavras sem sentido) para cortar.
-3. **Escrever `narracao.json`** (modelo em `projetos/001. reels-avatar/narracao.json`): trechos na ordem do roteiro, com `cortes`, e os `clipes` de avatar com a transcrição do próprio clipe.
-4. **Montar a narração:**
+4. **Escrever `narracao.json`** (modelo em `projetos/001. reels-avatar/narracao.json`): trechos na ordem do roteiro, com `cortes`, e os `clipes` de avatar com a transcrição do próprio clipe.
+5. **Montar a narração:**
    `python tools/narracao.py "<projeto>" --ts src/videos/<slug>/palavras.ts`
-5. **Sincronizar o avatar:**
+6. **Sincronizar o avatar:**
    `python tools/sincronizar_avatar.py "<projeto>"`
    Leia `transcricao/narracao/sincronia.md`: os momentos artificiais definem onde entra motion ou card.
-6. **Gerar os efeitos sonoros:** `python tools/gerar_sfx.py "<projeto>"`.
-7. **Plano (aprovação):** escreva o `plano.md` com a timeline por palavra, seguindo as seções 4 a 8.
-8. **Programar:** copie `src/videos/reels-avatar/` para `src/videos/<slug>/` e troque cenas, marcas e caminhos. Registre a composição em `src/Root.tsx`.
-9. **Revisar** com preview em meia resolução e prancha de quadros. Depois vêm o **render final** e a **validação** (seção 9).
+7. **Gerar os efeitos sonoros:** `python tools/gerar_sfx.py "<projeto>"`.
+8. **Plano (aprovação):** escreva o `plano.md` com a timeline por palavra, seguindo as seções 4 a 8.
+9. **Programar:** copie `src/videos/reels-avatar/` para `src/videos/<slug>/` e troque cenas, marcas e caminhos. Registre a composição em `src/Root.tsx`.
+10. **Revisar** com preview em meia resolução e prancha de quadros. Depois vêm o **render final** e a **validação** (seção 9).
 
 ## 4. Formato, cor e tipografia
 

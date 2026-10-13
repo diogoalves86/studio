@@ -9,7 +9,7 @@ Responda sempre no idioma da pessoa (padrão: português do Brasil).
 Este fork é do **Diogo (Digo Social, @digo.social)**. Todo Reels com o avatar de IA dele segue o padrão de [guias/6-padrao-reels-avatar.md](guias/6-padrao-reels-avatar.md). **Leia esse guia antes de planejar** e use [src/videos/reels-avatar/](src/videos/reels-avatar/) como código de referência. O essencial:
 
 - avatar no **Seedance 2 Mini** e **voz gerada separada** (economia de créditos); nada mais caro sem aprovação;
-- só a **voz natural** vai para o vídeo, com pausas de ~0,2 s (`tools/narracao.py`);
+- só a **voz natural** vai para o vídeo, e **pausa longa sempre é cortada**: toda voz baixada passa por `tools/cortar_pausas.py` antes de qualquer outra etapa (pausas > 0,25 s viram 0,2 s), sem precisar o Diogo pedir;
 - boca **sincronizada quadro a quadro** (`tools/sincronizar_avatar.py`); os "momentos artificiais" do relatório ficam cobertos por motion em tela cheia ou com o avatar em card;
 - motion denso, zoom por frase com punch-in, wipe azul nas trocas, textura de câmera, legenda dinâmica, efeitos sonoros (`tools/gerar_sfx.py`) e tela final com a **logo oficial**;
 - final em 1080×1920, −14 LUFS, pico ≤ −1,5 dBTP;
@@ -87,6 +87,7 @@ src/videos/<slug>/        código de cada vídeo (Nível 1 e Nível 2 caminho B)
 src/estilos/              exemplos da galeria, rodam sem vídeo
 src/_shared/              primitivas: synchronized-split.tsx (obrigatória em telas divididas), metadata.ts
 tools/transcrever.py      transcrição local com tempo por palavra (faster-whisper, gratuito)
+tools/cortar_pausas.py    corta as pausas longas de cada voz baixada (sempre, antes de transcrever)
 tools/narracao.py         narração de voz natural com pausas curtas + palavras.ts (padrão Reels avatar)
 tools/sincronizar_avatar.py  boca do avatar sincronizada quadro a quadro + relatório de momentos artificiais
 tools/gerar_sfx.py        efeitos sonoros padrão, sintetizados localmente
