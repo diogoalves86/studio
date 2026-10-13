@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, Img, interpolate, Sequence, useVideoConfig} from 'remotion';
+import {AbsoluteFill, Freeze, Img, interpolate, Sequence, useVideoConfig} from 'remotion';
 import {Audio, Video} from '@remotion/media';
 import {Fundo, Wipe} from '../reels-avatar/Fundo';
 import {maoLivre, Textura} from '../reels-avatar/Textura';
@@ -154,7 +154,7 @@ const Legenda: React.FC<{c: Config}> = ({c}) => {
 };
 
 // Sons automáticos: troca de card, punch-in, cortes de zoom, wipes e a logo da tela final.
-const sonsDaCamera = (c: Config): Evento[] => {
+const sonsDaCamera = (c: Config, outro: boolean): Evento[] => {
   const ev: Evento[] = [];
   c.estados.forEach((e, i) => {
     const ant = c.estados[i - 1];
@@ -167,16 +167,17 @@ const sonsDaCamera = (c: Config): Evento[] => {
     else if (e.modo === 'cheia') ev.push({som: 'whoosh_in', em: e.de - 0.27, volume: 0.35});
   });
   const {meio, b, fim} = c.trechos;
-  for (const corte of [meio, b, fim]) ev.push({som: 'swoosh', em: corte - 0.32, volume: 0.6});
-  ev.push({som: 'impacto', em: fim + 0.08, volume: 0.5});
+  for (const corte of outro ? [meio, b, fim] : [meio, b]) ev.push({som: 'swoosh', em: corte - 0.32, volume: 0.6});
+  if (outro) ev.push({som: 'impacto', em: fim + 0.08, volume: 0.5});
   return ev;
 };
 
 const GERAL = 0.8;
 
-const EfeitosSonoros: React.FC<{c: Config}> = ({c}) => {
+const EfeitosSonoros: React.FC<{c: Config; outro: boolean}> = ({c, outro}) => {
   const {fps} = useVideoConfig();
-  const eventos = [...sonsDaCamera(c), ...c.eventos];
+  // Sem tela final (bloco do vídeo do feed), nada toca depois do fim da fala.
+  const eventos = [...sonsDaCamera(c, outro), ...c.eventos].filter((e) => outro || e.em < c.trechos.fim);
   return (
     <>
       {eventos.map((e, i) => (
@@ -207,7 +208,8 @@ const Encerramento: React.FC<{fim: number}> = ({fim}) => {
   );
 };
 
-export const Destaque: React.FC<{c: Config}> = ({c}) => {
+// `outro = false`: bloco do vídeo do feed (sem tela final; o avatar fica parado no último quadro durante a transição).
+export const Destaque: React.FC<{c: Config; outro?: boolean}> = ({c, outro = true}) => {
   const t = useT();
   const {fps, durationInFrames} = useVideoConfig();
   const q = (s: number) => Math.round(s * fps);
@@ -217,8 +219,11 @@ export const Destaque: React.FC<{c: Config}> = ({c}) => {
 
   return (
     <AbsoluteFill style={{background: COR.marinho}}>
-      <Audio src={ARQ.narracao(c.n)} />
-      <EfeitosSonoros c={c} />
+      {/* A narração para em trechos.fim (o feed corta o CTA do destaque 1 antes do fim do áudio). */}
+      <Sequence name="Narração" durationInFrames={q(fim) + 2} layout="none">
+        <Audio src={ARQ.narracao(c.n)} />
+      </Sequence>
+      <EfeitosSonoros c={c} outro={outro} />
 
       {/* Fundo das cenas: o próprio clipe do avatar desfocado e escurecido (sem B-roll). */}
       <Sequence name="Fundo" durationInFrames={durationInFrames}>
@@ -230,14 +235,21 @@ export const Destaque: React.FC<{c: Config}> = ({c}) => {
       <Sequence name={`${c.n}b · avatar fechamento`} from={q(b)} durationInFrames={q(fim) - q(b) + 3} premountFor={fps}>
         <Camera src={ARQ.clipe(c.n, 'b')} t={t} E={c.estados} />
       </Sequence>
+      {!outro && (
+        <Sequence name={`${c.n}b · último quadro`} from={q(fim) + 3}>
+          <Freeze frame={q(fim) - q(b) - 1}>
+            <Camera src={ARQ.clipe(c.n, 'b')} t={fim} E={c.estados} />
+          </Freeze>
+        </Sequence>
+      )}
 
       <Cena />
-      <Encerramento fim={fim} />
+      {outro && <Encerramento fim={fim} />}
       <Legenda c={c} />
       <Textura />
       <Wipe progresso={wipe(meio)} />
       <Wipe progresso={wipe(b)} />
-      <Wipe progresso={wipe(fim)} />
+      {outro && <Wipe progresso={wipe(fim)} />}
     </AbsoluteFill>
   );
 };

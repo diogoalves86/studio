@@ -8,6 +8,7 @@ import {VerticalPrint} from './estilos/VerticalPrint';
 import {REELS_DURACAO, ReelsAvatar} from './videos/reels-avatar/ReelsAvatar';
 import {DESTAQUES} from './videos/destaques-instagram';
 import {Capa} from './videos/destaques-instagram/Capa';
+import {FEED_DURACAO, FeedCompleto} from './videos/destaques-instagram/FeedCompleto';
 
 const FPS = 30;
 const SEIS_SEGUNDOS = 6 * FPS;
@@ -31,6 +32,7 @@ export const RemotionRoot: React.FC = () => (
       {DESTAQUES.map(({id, Componente, duracao}) => (
         <Composition key={id} id={id} component={Componente} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(duracao * FPS)} />
       ))}
+      <Composition id="FeedCompleto" component={FeedCompleto} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(FEED_DURACAO * FPS)} />
       <Composition id="CapaDestaque" component={Capa} width={1080} height={1920} fps={FPS} durationInFrames={1} defaultProps={{n: 1 as 1 | 2 | 3 | 4}} />
     </Folder>
   </>
