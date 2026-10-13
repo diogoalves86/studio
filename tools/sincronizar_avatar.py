@@ -1,7 +1,7 @@
 """Sincroniza a boca dos clipes do avatar (Seedance 2 Mini) com a narração de voz natural, quadro a quadro.
 
 Uso:
-    python tools/sincronizar_avatar.py "projetos/001. meu-reels" [trecho ...]
+    python tools/sincronizar_avatar.py "projetos/001. meu-reels" [--config narracao.json] [trecho ...]
 
 Rode depois de tools/narracao.py. Lê os clipes em <projeto>/narracao.json:
     "clipes": {
@@ -187,11 +187,17 @@ def main():
     if len(sys.argv) < 2:
         sys.exit(__doc__)
     projeto = Path(sys.argv[1])
-    cfg = json.loads((projeto / "narracao.json").read_text(encoding="utf-8"))
-    pasta = projeto / "transcricao" / "narracao"
+    args = sys.argv[2:]
+    config = "narracao.json"
+    if "--config" in args:
+        i = args.index("--config")
+        config = args[i + 1]
+        del args[i:i + 2]
+    cfg = json.loads((projeto / config).read_text(encoding="utf-8"))
+    pasta = projeto / cfg.get("mapa", "transcricao/narracao")
     mapa = json.loads((pasta / "mapa.json").read_text(encoding="utf-8"))
     narracao = projeto / cfg.get("saida", "video/narracao.wav")
-    escolhidos = sys.argv[2:] or list(cfg["clipes"])
+    escolhidos = args or list(cfg["clipes"])
     relatorio = ["# Sincronia do avatar", "", "Gerado por `tools/sincronizar_avatar.py`.", ""]
 
     for nome in escolhidos:

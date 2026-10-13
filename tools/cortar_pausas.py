@@ -3,6 +3,7 @@
 Uso:
     python tools/cortar_pausas.py "<entrada>.mp3" "<saida>.wav" [--pausa 0.2] [--min 0.25]
 
+Respiração e ruído antes da primeira e depois da última fala saem.
 Toda pausa com mais de --min segundos vira uma pausa de --pausa segundos
 (0,13 s depois da fala + 0,07 s antes da próxima). A pausa é medida pela
 energia do próprio áudio, quadro a quadro (10 ms), e não pelos tempos do
@@ -20,6 +21,7 @@ import sys
 TAXA = 16000          # análise em mono 16 kHz
 QUADRO = 0.01         # 10 ms
 ABAIXO_DO_PICO = 28   # dB abaixo do percentil 90 = silêncio
+ABAIXO_DO_PICO_BORDAS = 20  # no começo e no fim, respiração também sai
 
 
 def energia(caminho):
@@ -62,19 +64,19 @@ def main():
 
     pos, pre = a.pausa * 0.65, a.pausa * 0.35
     db, total = energia(a.entrada)
-    manter, cursor = [], 0.0
+    # Começo e fim: respiração e ruído baixo também saem (fala = até 20 dB abaixo do pico).
+    fala = sorted(db)[int(len(db) * 0.9)] - ABAIXO_DO_PICO_BORDAS
+    idx = [i for i, d in enumerate(db) if d > fala]
+    ini_fala, fim_fala = idx[0] * QUADRO, (idx[-1] + 1) * QUADRO
+    manter, cursor = [], max(0.0, ini_fala - pre)
     for ini, fim in pausas(db, a.min):
-        if ini <= 0.02:                       # silêncio no começo: deixa só o "pre"
-            cursor = max(0.0, fim - pre)
+        if fim <= ini_fala:                   # antes da primeira fala: já descartado
             continue
-        if fim >= total - 0.02:               # silêncio no fim: deixa só o "pos"
-            manter.append((cursor, min(total, ini + pos)))
-            cursor = None
+        if ini >= fim_fala - QUADRO:          # depois da última fala: tratado abaixo
             break
         manter.append((cursor, ini + pos))
         cursor = fim - pre
-    if cursor is not None:
-        manter.append((cursor, total))
+    manter.append((cursor, min(total, fim_fala + pos)))
 
     filtro = ''.join(
         f'[0:a]atrim={i:.3f}:{f:.3f},asetpts=PTS-STARTPTS,'

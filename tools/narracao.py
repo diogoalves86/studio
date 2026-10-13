@@ -1,14 +1,16 @@
 """Monta a narração de um Reels de avatar a partir dos áudios gerados separados (voz natural).
 
 Uso:
-    python tools/narracao.py "projetos/001. meu-reels" [--ts src/videos/<slug>/palavras.ts]
+    python tools/narracao.py "projetos/001. meu-reels" [--config narracao.json] [--ts src/videos/<slug>/palavras.ts]
 
-Lê <projeto>/narracao.json:
+Lê <projeto>/narracao.json (ou o arquivo de --config, um por vídeo quando o projeto tem vários):
     {
       "saida": "video/narracao.wav",                     (opcional; padrão video/narracao.wav)
+      "mapa": "transcricao/narracao",                    (opcional; pasta do mapa.json e do sincronia.md)
       "trechos": [
         {"nome": "gancho", "audio": "hf/audio_....mp3", "transcricao": "transcricao/<pasta>",
-         "cortes": [[9.10, 13.95]]},                     (opcional: trechos [início, fim) a excluir, ex. voz embaralhada)
+         "cortes": [[9.10, 13.95]],                      (opcional: trechos [início, fim) a excluir, ex. voz embaralhada)
+         "de": 0.0, "ate": 3.9},                         (opcional: usa só esse pedaço do áudio; vários trechos podem vir do mesmo áudio)
         ...
       ],
       "clipes": { ... }                                  (usado por tools/sincronizar_avatar.py)
@@ -16,6 +18,8 @@ Lê <projeto>/narracao.json:
 
 Para cada áudio: normaliza em -14 LUFS (pico -1,5 dBTP), corta os trechos ruins, junta as palavras em blocos de fala
 e encurta toda pausa para ~0,2 s (PRE + POS). Depois concatena tudo na ordem.
+Áudio já passado por tools/cortar_pausas.py (nome terminado em "_ritmo") entra inteiro, sem novo corte de pausa:
+as pausas já estão certas, e recortar pelos tempos do Whisper pode comer sílabas.
 
 Gera:
     <saida>                                  a narração final (WAV 48 kHz estéreo)
@@ -51,6 +55,23 @@ def blocos_de_fala(palavras, cortes):
     return blocos
 
 
+def duracao(arquivo):
+    return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(arquivo)],
+                                capture_output=True, text=True, check=True).stdout)
+
+
+def blocos_inteiros(palavras, cortes, de, ate):
+    """Voz já no ritmo: um bloco só de `de` a `ate`, partido apenas nos cortes."""
+    limites, a = [], de
+    for c0, c1 in sorted(cortes):
+        if a < c0 < ate:
+            limites.append((a, c0))
+        a = max(a, c1)
+    if a < ate:
+        limites.append((a, ate))
+    return [[a, b, [w for w in palavras if a <= w["s"] < b]] for a, b in limites]
+
+
 def palavras_ts(mapa):
     tr = {x["nome"]: x for x in mapa["trechos"]}
     linhas = ",\n".join(f"  {{w: {json.dumps(p['w'], ensure_ascii=False)}, s: {p['s']}, e: {p['e']}}}" for p in mapa["palavras"])
@@ -81,7 +102,8 @@ def main():
     if len(sys.argv) < 2:
         sys.exit(__doc__)
     projeto = Path(sys.argv[1])
-    cfg = json.loads((projeto / "narracao.json").read_text(encoding="utf-8"))
+    config = sys.argv[sys.argv.index("--config") + 1] if "--config" in sys.argv else "narracao.json"
+    cfg = json.loads((projeto / config).read_text(encoding="utf-8"))
     saida = projeto / cfg.get("saida", "video/narracao.wav")
     tmp = Path(tempfile.mkdtemp(prefix="narracao-"))
     partes, palavras, trechos, t_out = [], [], [], 0.0
@@ -91,9 +113,12 @@ def main():
         src = tmp / f"{nome}.wav"
         ffmpeg("-i", projeto / tr["audio"], "-af", LOUDNORM, "-ac", "2", src)
         ws = json.loads((projeto / tr["transcricao"] / "palavras.json").read_text(encoding="utf-8"))
+        de, ate = tr.get("de", 0.0), tr.get("ate", duracao(src))
+        ws = [w for w in ws if de <= w["s"] < ate]
+        pronto = Path(tr["audio"]).stem.endswith("_ritmo")
         inicio = t_out
-        for a, b, bw in blocos_de_fala(ws, cortes):
-            a0, b0 = max(0.0, a - PRE), b + POS
+        for a, b, bw in (blocos_inteiros(ws, cortes, de, ate) if pronto else blocos_de_fala(ws, cortes)):
+            a0, b0 = (a, b) if pronto else (max(de, a - PRE), min(ate, b + POS))
             for c, _ in cortes:  # a sobra do bloco não pode invadir um trecho cortado
                 if a0 < c <= b0:
                     b0 = min(b0, c)
@@ -112,7 +137,7 @@ def main():
     ffmpeg("-f", "concat", "-safe", "0", "-i", lista, "-c:a", "pcm_s16le", saida)
 
     mapa = {"trechos": trechos, "palavras": palavras}
-    pasta = projeto / "transcricao" / "narracao"
+    pasta = projeto / cfg.get("mapa", "transcricao/narracao")
     pasta.mkdir(parents=True, exist_ok=True)
     (pasta / "mapa.json").write_text(json.dumps(mapa, ensure_ascii=False, indent=1), encoding="utf-8")
     if "--ts" in sys.argv:

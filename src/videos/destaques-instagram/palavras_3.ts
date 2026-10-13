@@ -1,0 +1,65 @@
+// Gerado por tools/narracao.py a partir de transcricao/narracao/mapa.json. Não editar à mão.
+export type Palavra = {w: string; s: number; e: number};
+
+export const PALAVRAS: Palavra[] = [
+  {w: "O", s: 0.0, e: 0.32},
+  {w: "Digo", s: 0.32, e: 0.6},
+  {w: "é", s: 0.6, e: 0.7},
+  {w: "pra", s: 0.7, e: 0.82},
+  {w: "quem", s: 0.82, e: 1.04},
+  {w: "vende", s: 1.04, e: 1.3},
+  {w: "confiança.", s: 1.3, e: 1.98},
+  {w: "Especialista,", s: 2.44, e: 3.0},
+  {w: "advogado,", s: 3.22, e: 3.96},
+  {w: "médico,", s: 4.3, e: 4.62},
+  {w: "psicólogo,", s: 4.94, e: 5.6},
+  {w: "coach,", s: 5.92, e: 6.24},
+  {w: "consultor.", s: 6.4, e: 6.92},
+  {w: "Negócio", s: 7.14, e: 7.56},
+  {w: "local,", s: 7.56, e: 7.92},
+  {w: "clínica,", s: 8.26, e: 8.62},
+  {w: "salão,", s: 8.78, e: 9.12},
+  {w: "academia.", s: 9.32, e: 9.66},
+  {w: "E", s: 10.08, e: 10.22},
+  {w: "social", s: 10.22, e: 10.46},
+  {w: "media,", s: 10.46, e: 10.92},
+  {w: "que", s: 11.06, e: 11.28},
+  {w: "precisa", s: 11.28, e: 11.62},
+  {w: "defender", s: 11.62, e: 12.04},
+  {w: "a", s: 12.04, e: 12.4},
+  {w: "pauta", s: 12.4, e: 12.74},
+  {w: "com", s: 12.74, e: 12.9},
+  {w: "dado,", s: 12.9, e: 13.24},
+  {w: "não", s: 13.42, e: 13.58},
+  {w: "com", s: 13.58, e: 13.76},
+  {w: "achismo.", s: 13.76, e: 14.28},
+  {w: "Se", s: 14.5, e: 14.76},
+  {w: "a", s: 14.76, e: 14.88},
+  {w: "sua", s: 14.88, e: 14.98},
+  {w: "venda", s: 14.98, e: 15.3},
+  {w: "depende", s: 15.3, e: 15.62},
+  {w: "de", s: 15.62, e: 15.78},
+  {w: "aparecer", s: 15.78, e: 16.14},
+  {w: "toda", s: 16.14, e: 16.4},
+  {w: "semana", s: 16.4, e: 16.74},
+  {w: "com", s: 16.74, e: 16.94},
+  {w: "autoridade,", s: 16.94, e: 17.62},
+  {w: "o", s: 17.86, e: 18.08},
+  {w: "Digo", s: 18.08, e: 18.28},
+  {w: "é", s: 18.28, e: 18.38},
+  {w: "pra", s: 18.38, e: 18.5},
+  {w: "você.", s: 18.5, e: 18.8},
+];
+
+// Início de cada trecho na narração (s). Os clipes sincronizados começam exatamente aqui.
+export const TRECHOS = {3a: 0.0, 3meio: 2.21, 3b: 14.39, fim: 19.02};
+
+const norm = (w: string) => w.toLowerCase().replace(/[^a-zà-ú0-9]/g, '');
+
+// Palavra falada (primeira ocorrência depois de `depois`): todo gatilho sai daqui, nunca de um número solto.
+export const palavra = (texto: string, depois = -1): Palavra => {
+  const p = PALAVRAS.find((x) => x.s > depois && norm(x.w) === norm(texto));
+  if (!p) throw new Error(`palavra não encontrada: ${texto} depois de ${depois}`);
+  return p;
+};
+export const em = (texto: string, depois = -1) => palavra(texto, depois).s;

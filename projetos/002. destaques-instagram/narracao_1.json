@@ -1,0 +1,37 @@
+{
+ "saida": "video/narracao_1_oque.wav",
+ "mapa": "transcricao/narracao_1",
+ "trechos": [
+  {
+   "nome": "1a",
+   "audio": "hf/voz_1_oque_ritmo.wav",
+   "transcricao": "transcricao/voz_1_oque_ritmo",
+   "ate": 3.27
+  },
+  {
+   "nome": "1meio",
+   "audio": "hf/voz_1_oque_ritmo.wav",
+   "transcricao": "transcricao/voz_1_oque_ritmo",
+   "de": 3.27,
+   "ate": 18.35
+  },
+  {
+   "nome": "1b",
+   "audio": "hf/voz_1_oque_ritmo.wav",
+   "transcricao": "transcricao/voz_1_oque_ritmo",
+   "de": 18.35
+  }
+ ],
+ "clipes": {
+  "1a": {
+   "video": "hf/avatar_1a.mp4",
+   "transcricao": "transcricao/avatar_1a",
+   "saida": "hf/sync_1a.mp4"
+  },
+  "1b": {
+   "video": "hf/avatar_1b.mp4",
+   "transcricao": "transcricao/avatar_1b",
+   "saida": "hf/sync_1b.mp4"
+  }
+ }
+}

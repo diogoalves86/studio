@@ -1,0 +1,37 @@
+{
+ "saida": "video/narracao_2_como.wav",
+ "mapa": "transcricao/narracao_2",
+ "trechos": [
+  {
+   "nome": "2a",
+   "audio": "hf/voz_2_como_ritmo.wav",
+   "transcricao": "transcricao/voz_2_como_ritmo",
+   "ate": 1.7
+  },
+  {
+   "nome": "2meio",
+   "audio": "hf/voz_2_como_ritmo.wav",
+   "transcricao": "transcricao/voz_2_como_ritmo",
+   "de": 1.7,
+   "ate": 17.6
+  },
+  {
+   "nome": "2b",
+   "audio": "hf/voz_2_como_ritmo.wav",
+   "transcricao": "transcricao/voz_2_como_ritmo",
+   "de": 17.6
+  }
+ ],
+ "clipes": {
+  "2a": {
+   "video": "hf/avatar_2a.mp4",
+   "transcricao": "transcricao/avatar_2a",
+   "saida": "hf/sync_2a.mp4"
+  },
+  "2b": {
+   "video": "hf/avatar_2b.mp4",
+   "transcricao": "transcricao/avatar_2b",
+   "saida": "hf/sync_2b.mp4"
+  }
+ }
+}

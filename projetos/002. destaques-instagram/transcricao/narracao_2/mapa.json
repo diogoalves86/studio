@@ -1,0 +1,477 @@
+{
+ "trechos": [
+  {
+   "nome": "2a",
+   "inicio": 0.0,
+   "fim": 1.7
+  },
+  {
+   "nome": "2meio",
+   "inicio": 1.7,
+   "fim": 17.6
+  },
+  {
+   "nome": "2b",
+   "inicio": 17.6,
+   "fim": 19.834
+  }
+ ],
+ "palavras": [
+  {
+   "w": "Olha",
+   "s": 0.0,
+   "e": 0.18,
+   "trecho": "2a"
+  },
+  {
+   "w": "como",
+   "s": 0.18,
+   "e": 0.36,
+   "trecho": "2a"
+  },
+  {
+   "w": "o",
+   "s": 0.36,
+   "e": 0.54,
+   "trecho": "2a"
+  },
+  {
+   "w": "Digo",
+   "s": 0.54,
+   "e": 0.64,
+   "trecho": "2a"
+  },
+  {
+   "w": "funciona",
+   "s": 0.64,
+   "e": 1.0,
+   "trecho": "2a"
+  },
+  {
+   "w": "na",
+   "s": 1.0,
+   "e": 1.14,
+   "trecho": "2a"
+  },
+  {
+   "w": "prática.",
+   "s": 1.14,
+   "e": 1.56,
+   "trecho": "2a"
+  },
+  {
+   "w": "Toda",
+   "s": 1.84,
+   "e": 2.1,
+   "trecho": "2meio"
+  },
+  {
+   "w": "segunda,",
+   "s": 2.1,
+   "e": 2.38,
+   "trecho": "2meio"
+  },
+  {
+   "w": "o",
+   "s": 2.48,
+   "e": 2.64,
+   "trecho": "2meio"
+  },
+  {
+   "w": "pulso",
+   "s": 2.64,
+   "e": 2.84,
+   "trecho": "2meio"
+  },
+  {
+   "w": "semanal",
+   "s": 2.84,
+   "e": 3.2,
+   "trecho": "2meio"
+  },
+  {
+   "w": "mostra",
+   "s": 3.2,
+   "e": 3.46,
+   "trecho": "2meio"
+  },
+  {
+   "w": "o",
+   "s": 3.46,
+   "e": 3.54,
+   "trecho": "2meio"
+  },
+  {
+   "w": "que",
+   "s": 3.54,
+   "e": 3.62,
+   "trecho": "2meio"
+  },
+  {
+   "w": "funcionou",
+   "s": 3.62,
+   "e": 4.12,
+   "trecho": "2meio"
+  },
+  {
+   "w": "e",
+   "s": 4.12,
+   "e": 4.36,
+   "trecho": "2meio"
+  },
+  {
+   "w": "onde",
+   "s": 4.36,
+   "e": 4.56,
+   "trecho": "2meio"
+  },
+  {
+   "w": "concentrar",
+   "s": 4.56,
+   "e": 5.0,
+   "trecho": "2meio"
+  },
+  {
+   "w": "a",
+   "s": 5.0,
+   "e": 5.12,
+   "trecho": "2meio"
+  },
+  {
+   "w": "energia.",
+   "s": 5.12,
+   "e": 5.4,
+   "trecho": "2meio"
+  },
+  {
+   "w": "Durante",
+   "s": 5.82,
+   "e": 6.06,
+   "trecho": "2meio"
+  },
+  {
+   "w": "a",
+   "s": 6.06,
+   "e": 6.16,
+   "trecho": "2meio"
+  },
+  {
+   "w": "semana,",
+   "s": 6.16,
+   "e": 6.42,
+   "trecho": "2meio"
+  },
+  {
+   "w": "o",
+   "s": 6.52,
+   "e": 6.58,
+   "trecho": "2meio"
+  },
+  {
+   "w": "radar",
+   "s": 6.58,
+   "e": 6.78,
+   "trecho": "2meio"
+  },
+  {
+   "w": "avisa",
+   "s": 6.78,
+   "e": 7.06,
+   "trecho": "2meio"
+  },
+  {
+   "w": "as",
+   "s": 7.06,
+   "e": 7.18,
+   "trecho": "2meio"
+  },
+  {
+   "w": "oportunidades",
+   "s": 7.18,
+   "e": 7.86,
+   "trecho": "2meio"
+  },
+  {
+   "w": "antes",
+   "s": 7.86,
+   "e": 8.08,
+   "trecho": "2meio"
+  },
+  {
+   "w": "da",
+   "s": 8.08,
+   "e": 8.22,
+   "trecho": "2meio"
+  },
+  {
+   "w": "pauta",
+   "s": 8.22,
+   "e": 8.5,
+   "trecho": "2meio"
+  },
+  {
+   "w": "esfriar.",
+   "s": 8.5,
+   "e": 8.86,
+   "trecho": "2meio"
+  },
+  {
+   "w": "Aí",
+   "s": 9.12,
+   "e": 9.24,
+   "trecho": "2meio"
+  },
+  {
+   "w": "você",
+   "s": 9.24,
+   "e": 9.38,
+   "trecho": "2meio"
+  },
+  {
+   "w": "pergunta",
+   "s": 9.38,
+   "e": 9.68,
+   "trecho": "2meio"
+  },
+  {
+   "w": "para",
+   "s": 9.68,
+   "e": 9.78,
+   "trecho": "2meio"
+  },
+  {
+   "w": "o",
+   "s": 9.78,
+   "e": 9.84,
+   "trecho": "2meio"
+  },
+  {
+   "w": "consultor,",
+   "s": 9.84,
+   "e": 10.26,
+   "trecho": "2meio"
+  },
+  {
+   "w": "ele",
+   "s": 10.32,
+   "e": 10.38,
+   "trecho": "2meio"
+  },
+  {
+   "w": "recomenda",
+   "s": 10.38,
+   "e": 10.72,
+   "trecho": "2meio"
+  },
+  {
+   "w": "a",
+   "s": 10.72,
+   "e": 10.88,
+   "trecho": "2meio"
+  },
+  {
+   "w": "pauta,",
+   "s": 10.88,
+   "e": 11.12,
+   "trecho": "2meio"
+  },
+  {
+   "w": "explica",
+   "s": 11.16,
+   "e": 11.4,
+   "trecho": "2meio"
+  },
+  {
+   "w": "o",
+   "s": 11.4,
+   "e": 11.48,
+   "trecho": "2meio"
+  },
+  {
+   "w": "motivo",
+   "s": 11.48,
+   "e": 11.8,
+   "trecho": "2meio"
+  },
+  {
+   "w": "e",
+   "s": 11.8,
+   "e": 11.92,
+   "trecho": "2meio"
+  },
+  {
+   "w": "já",
+   "s": 11.92,
+   "e": 12.0,
+   "trecho": "2meio"
+  },
+  {
+   "w": "monta",
+   "s": 12.0,
+   "e": 12.24,
+   "trecho": "2meio"
+  },
+  {
+   "w": "o",
+   "s": 12.24,
+   "e": 12.28,
+   "trecho": "2meio"
+  },
+  {
+   "w": "rascunho.",
+   "s": 12.28,
+   "e": 12.72,
+   "trecho": "2meio"
+  },
+  {
+   "w": "Vai",
+   "s": 13.0,
+   "e": 13.2,
+   "trecho": "2meio"
+  },
+  {
+   "w": "para",
+   "s": 13.2,
+   "e": 13.3,
+   "trecho": "2meio"
+  },
+  {
+   "w": "o",
+   "s": 13.3,
+   "e": 13.38,
+   "trecho": "2meio"
+  },
+  {
+   "w": "calendário,",
+   "s": 13.38,
+   "e": 13.82,
+   "trecho": "2meio"
+  },
+  {
+   "w": "você",
+   "s": 13.98,
+   "e": 14.24,
+   "trecho": "2meio"
+  },
+  {
+   "w": "aprova",
+   "s": 14.24,
+   "e": 14.7,
+   "trecho": "2meio"
+  },
+  {
+   "w": "e",
+   "s": 14.7,
+   "e": 14.98,
+   "trecho": "2meio"
+  },
+  {
+   "w": "o",
+   "s": 14.98,
+   "e": 15.06,
+   "trecho": "2meio"
+  },
+  {
+   "w": "resultado",
+   "s": 15.06,
+   "e": 15.36,
+   "trecho": "2meio"
+  },
+  {
+   "w": "do",
+   "s": 15.36,
+   "e": 15.54,
+   "trecho": "2meio"
+  },
+  {
+   "w": "post",
+   "s": 15.54,
+   "e": 15.74,
+   "trecho": "2meio"
+  },
+  {
+   "w": "volta",
+   "s": 15.74,
+   "e": 16.0,
+   "trecho": "2meio"
+  },
+  {
+   "w": "como",
+   "s": 16.0,
+   "e": 16.14,
+   "trecho": "2meio"
+  },
+  {
+   "w": "aprendizado",
+   "s": 16.14,
+   "e": 16.64,
+   "trecho": "2meio"
+  },
+  {
+   "w": "para",
+   "s": 16.64,
+   "e": 16.8,
+   "trecho": "2meio"
+  },
+  {
+   "w": "a",
+   "s": 16.8,
+   "e": 16.88,
+   "trecho": "2meio"
+  },
+  {
+   "w": "próxima",
+   "s": 16.88,
+   "e": 17.1,
+   "trecho": "2meio"
+  },
+  {
+   "w": "semana.",
+   "s": 17.1,
+   "e": 17.52,
+   "trecho": "2meio"
+  },
+  {
+   "w": "E",
+   "s": 17.68,
+   "e": 17.76,
+   "trecho": "2b"
+  },
+  {
+   "w": "nada",
+   "s": 17.76,
+   "e": 17.94,
+   "trecho": "2b"
+  },
+  {
+   "w": "é",
+   "s": 17.94,
+   "e": 18.02,
+   "trecho": "2b"
+  },
+  {
+   "w": "publicado",
+   "s": 18.02,
+   "e": 18.52,
+   "trecho": "2b"
+  },
+  {
+   "w": "sem",
+   "s": 18.52,
+   "e": 18.7,
+   "trecho": "2b"
+  },
+  {
+   "w": "você",
+   "s": 18.7,
+   "e": 18.9,
+   "trecho": "2b"
+  },
+  {
+   "w": "aprovar.",
+   "s": 18.9,
+   "e": 19.3,
+   "trecho": "2b"
+  }
+ ]
+}
