@@ -20,6 +20,7 @@ Para um vídeo novo, **siga este guia do começo ao fim** e copie o código de r
 6. **Logo oficial** como foto de perfil e na tela final. É `~/Documents/DigoSocial Logo Quadrada 1024x1024.png`, copiada para `projetos/<NNN>/prints/logo.png`. Nunca usar um quadro do avatar nem recriar a logo.
 7. **Todo gatilho sai de uma palavra falada** (`marcas.ts`). Nunca use um tempo em segundos solto no código. Conteúdo não aparece antes da palavra; um contêiner pode entrar até ~0,25 s antes, vazio.
 8. **Mídia não é versionada:** vídeo, áudio e imagem ficam fora do git (ver seção 10).
+9. **Texto da voz escrito como é falado (regra crucial).** O que vai para o gerador de voz (`seed_audio`) e para a fala dos clipes do avatar é o texto **do jeito que deve soar**, não o português ortograficamente correto. Acento, grafia e pontuação servem para guiar a pronúncia, mesmo que fiquem "errados" no papel. Exemplo do projeto 003: "Tem **lójinha** no Instagram?" (com acento) fez o "ó" sair aberto, como o Diogo fala; com "lojinha" a voz saiu estranha. O roteiro, a legenda e os textos na tela continuam no português correto. Registre a grafia fonética usada no `plano.md`.
 
 ## 2. O que pedir na Higgsfield (ou achar no histórico)
 
@@ -27,7 +28,7 @@ O conector oficial pode estar **só de leitura** (saldo, histórico e modelos, s
 
 | Asset | Modelo | Configuração | Observação |
 |---|---|---|---|
-| Voz de cada trecho | `seed_audio` | o texto do trecho | um arquivo por bloco do roteiro (gancho, exemplo, …) |
+| Voz de cada trecho | `seed_audio` | o texto do trecho **escrito como é falado** (regra 9) | um arquivo por bloco do roteiro (gancho, exemplo, …) |
 | Avatar falando | `seedance_2_0_mini` | 720p, 9:16, 4–15 s, `generate_audio: true` | o áudio nativo **com o mesmo texto** é o que permite sincronizar a boca |
 | Clipes de apoio | `seedance_2_0_mini` | 8 s, sem áudio | viram fundo desfocado das cenas animadas |
 

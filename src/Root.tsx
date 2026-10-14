@@ -10,6 +10,7 @@ import {DESTAQUES} from './videos/destaques-instagram';
 import {Capa} from './videos/destaques-instagram/Capa';
 import {CapaUnica} from './videos/destaques-instagram/CapaUnica';
 import {FEED_DURACAO, FeedCompleto} from './videos/destaques-instagram/FeedCompleto';
+import {DestaqueLojinha, LOJINHA_DURACAO} from './videos/destaque-lojinha';
 
 const FPS = 30;
 const SEIS_SEGUNDOS = 6 * FPS;
@@ -36,6 +37,9 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="FeedCompleto" component={FeedCompleto} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(FEED_DURACAO * FPS)} />
       <Composition id="CapaDestaqueUnico" component={CapaUnica} width={1080} height={1920} fps={FPS} durationInFrames={1} defaultProps={{v: 'logo' as 'logo' | 'rosto' | 'icone'}} />
       <Composition id="CapaDestaque" component={Capa} width={1080} height={1920} fps={FPS} durationInFrames={1} defaultProps={{n: 1 as 1 | 2 | 3 | 4}} />
+    </Folder>
+    <Folder name="003-destaque-lojinha">
+      <Composition id="DestaqueLojinha" component={DestaqueLojinha} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(LOJINHA_DURACAO * FPS)} />
     </Folder>
   </>
 );
