@@ -11,6 +11,7 @@ import {Capa} from './videos/destaques-instagram/Capa';
 import {CapaUnica} from './videos/destaques-instagram/CapaUnica';
 import {FEED_DURACAO, FeedCompleto} from './videos/destaques-instagram/FeedCompleto';
 import {DestaqueLojinha, LOJINHA_DURACAO} from './videos/destaque-lojinha';
+import {Sexta22h, SEXTA_DURACAO} from './videos/sexta-22h';
 
 const FPS = 30;
 const SEIS_SEGUNDOS = 6 * FPS;
@@ -40,6 +41,9 @@ export const RemotionRoot: React.FC = () => (
     </Folder>
     <Folder name="003-destaque-lojinha">
       <Composition id="DestaqueLojinha" component={DestaqueLojinha} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(LOJINHA_DURACAO * FPS)} />
+    </Folder>
+    <Folder name="004-sexta-22h">
+      <Composition id="Sexta22h" component={Sexta22h} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(SEXTA_DURACAO * FPS)} />
     </Folder>
   </>
 );
