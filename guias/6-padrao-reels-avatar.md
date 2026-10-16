@@ -35,6 +35,8 @@ O conector oficial pode estar **só de leitura** (saldo, histórico e modelos, s
 - Não é preciso ter clipe do avatar para todos os trechos. Trechos sem clipe viram cena 100% animada.
 - **Ordem de geração (desde o projeto 002):** primeiro as vozes → `tools/cortar_pausas.py` → transcrição → recorte do trecho de cada clipe da voz `_ritmo` (com 0,4 s de silêncio no começo, porque o clipe costuma congelar no início) → upload desse recorte como `audio_references` do clipe do avatar, com `start_image` = a imagem oficial do avatar (job `ab4aaba1-b3ad-4857-bbd1-ad2489e44341`). Assim a boca já nasce no ritmo final, e a sincronia vira só um ajuste fino. Continue rodando o relatório.
 - **Voz do Diogo no Seed Audio:** `audio_references` = `58086f4c-58ea-4cc1-8bd4-e9f3402f7c5d`, `speech_rate` 5, `loudness_rate` 23, mp3 24 kHz.
+  - **Vídeo de dica / explicação (padrão aprovado no projeto 005):** `speech_rate` **−10** (com 5 a voz sai corrida e chegou a engolir palavra: "esquece de você" virou "esquece de funciona"). O ritmo final é ajustado no corte de pausas (passo 2).
+  - **Pergunta não sai em tom de pergunta** com o "?" sozinho. Escreva a pergunta com uma muleta falada no fim, como "Você posta e some, **né?**". Essa foi a única de três grafias testadas que subiu a entonação; "Você posta... e some?!" e "E aí? Você posta e some??" saíram como afirmação. Se a pergunta for o gancho, gere só ela à parte (≈0,2 crédito), compare e emende no lugar.
 - **Preço observado (out/2026):** Seedance 2 Mini 720p = **1 crédito por segundo**; Seed Audio ≈ 0,1 crédito por segundo de fala. Confirme com `get_cost` antes de cada lote.
 
 ## 3. Pipeline
@@ -55,6 +57,7 @@ projetos/<NNN. slug>/
    `python tools/cortar_pausas.py "<projeto>/hf/voz_<trecho>.mp3" "<projeto>/hf/voz_<trecho>_ritmo.wav"`
    Daqui em diante, use só a versão `_ritmo` (transcrição, referência do avatar, narração). Se o Diogo ainda achar o ritmo lento, rode de novo com `--pausa 0.15`.
    **Vídeo de apresentação** (quem ainda não conhece o Digo, ex.: destaques do perfil): use mais cadência, `--pausa 0.22 --frases "<projeto>/transcricao/voz_<trecho>/palavras.json" --pausa-frase 0.45 --velocidade 0.95`. Isso dá ~15% a mais de duração, com respiro em cada fim de frase. O Diogo aprovou esse ritmo no projeto 002, porque o Reels padrão ficava rápido demais para quem está conhecendo o produto.
+   **Vídeo de dica / explicação** (ensinar algo, ex.: como o algoritmo funciona): voz gerada com `speech_rate` −10 e corte com `--pausa 0.18 --frases "<projeto>/transcricao/voz_<trecho>/palavras.json" --pausa-frase 0.32 --velocidade 1.3`. A fala fica clara, com respiro curto em cada fim de frase, sem arrastar. No projeto 005, 46,7 s de voz bruta viraram 35,7 s. O Diogo achou o Reels padrão (speech_rate 5) rápido demais para explicação e a versão 1,2× ainda lenta.
 3. **Transcrever cada arquivo** (vozes `_ritmo` e clipes com som):
    `python tools/transcrever.py "<projeto>/hf/<arquivo>" "<projeto>/transcricao/<id8>" pt`
    Confira se a última palavra termina perto do fim do áudio: o Whisper às vezes pula a frase final (aconteceu com "Link na bio: digosocial ponto com"). Se pular, transcreva só o final e junte os tempos.
