@@ -1,0 +1,993 @@
+{
+ "trechos": [
+  {
+   "nome": "a",
+   "inicio": 0.0,
+   "fim": 4.09
+  },
+  {
+   "nome": "meio",
+   "inicio": 4.09,
+   "fim": 39.05
+  },
+  {
+   "nome": "b",
+   "inicio": 39.05,
+   "fim": 43.933
+  }
+ ],
+ "palavras": [
+  {
+   "w": "Você",
+   "s": 0.0,
+   "e": 0.22,
+   "trecho": "a"
+  },
+  {
+   "w": "começa",
+   "s": 0.22,
+   "e": 0.58,
+   "trecho": "a"
+  },
+  {
+   "w": "o",
+   "s": 0.58,
+   "e": 0.7,
+   "trecho": "a"
+  },
+  {
+   "w": "Reels",
+   "s": 0.7,
+   "e": 0.92,
+   "trecho": "a"
+  },
+  {
+   "w": "com",
+   "s": 0.92,
+   "e": 1.1,
+   "trecho": "a"
+  },
+  {
+   "w": "oi,",
+   "s": 1.1,
+   "e": 1.5,
+   "trecho": "a"
+  },
+  {
+   "w": "gente,",
+   "s": 1.56,
+   "e": 1.76,
+   "trecho": "a"
+  },
+  {
+   "w": "né?",
+   "s": 1.88,
+   "e": 1.98,
+   "trecho": "a"
+  },
+  {
+   "w": "É",
+   "s": 2.38,
+   "e": 2.6,
+   "trecho": "a"
+  },
+  {
+   "w": "exatamente",
+   "s": 2.6,
+   "e": 2.96,
+   "trecho": "a"
+  },
+  {
+   "w": "aí",
+   "s": 2.96,
+   "e": 3.18,
+   "trecho": "a"
+  },
+  {
+   "w": "que",
+   "s": 3.18,
+   "e": 3.26,
+   "trecho": "a"
+  },
+  {
+   "w": "a",
+   "s": 3.26,
+   "e": 3.32,
+   "trecho": "a"
+  },
+  {
+   "w": "pessoa",
+   "s": 3.32,
+   "e": 3.5,
+   "trecho": "a"
+  },
+  {
+   "w": "vai",
+   "s": 3.5,
+   "e": 3.64,
+   "trecho": "a"
+  },
+  {
+   "w": "embora.",
+   "s": 3.64,
+   "e": 3.94,
+   "trecho": "a"
+  },
+  {
+   "w": "Pensa",
+   "s": 4.24,
+   "e": 4.5,
+   "trecho": "meio"
+  },
+  {
+   "w": "no",
+   "s": 4.5,
+   "e": 4.62,
+   "trecho": "meio"
+  },
+  {
+   "w": "Reels",
+   "s": 4.62,
+   "e": 4.84,
+   "trecho": "meio"
+  },
+  {
+   "w": "do",
+   "s": 4.84,
+   "e": 4.94,
+   "trecho": "meio"
+  },
+  {
+   "w": "lado",
+   "s": 4.94,
+   "e": 5.08,
+   "trecho": "meio"
+  },
+  {
+   "w": "de",
+   "s": 5.08,
+   "e": 5.2,
+   "trecho": "meio"
+  },
+  {
+   "w": "quem",
+   "s": 5.2,
+   "e": 5.32,
+   "trecho": "meio"
+  },
+  {
+   "w": "assiste.",
+   "s": 5.32,
+   "e": 5.8,
+   "trecho": "meio"
+  },
+  {
+   "w": "Ninguém",
+   "s": 6.28,
+   "e": 6.72,
+   "trecho": "meio"
+  },
+  {
+   "w": "escolheu",
+   "s": 6.72,
+   "e": 7.12,
+   "trecho": "meio"
+  },
+  {
+   "w": "te",
+   "s": 7.12,
+   "e": 7.24,
+   "trecho": "meio"
+  },
+  {
+   "w": "ver.",
+   "s": 7.24,
+   "e": 7.46,
+   "trecho": "meio"
+  },
+  {
+   "w": "A",
+   "s": 7.64,
+   "e": 7.92,
+   "trecho": "meio"
+  },
+  {
+   "w": "pessoa",
+   "s": 7.92,
+   "e": 8.14,
+   "trecho": "meio"
+  },
+  {
+   "w": "tá",
+   "s": 8.14,
+   "e": 8.24,
+   "trecho": "meio"
+  },
+  {
+   "w": "passando",
+   "s": 8.24,
+   "e": 8.56,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 8.56,
+   "e": 8.7,
+   "trecho": "meio"
+  },
+  {
+   "w": "dedo",
+   "s": 8.7,
+   "e": 8.94,
+   "trecho": "meio"
+  },
+  {
+   "w": "e",
+   "s": 8.94,
+   "e": 9.14,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 9.14,
+   "e": 9.24,
+   "trecho": "meio"
+  },
+  {
+   "w": "próximo",
+   "s": 9.24,
+   "e": 9.52,
+   "trecho": "meio"
+  },
+  {
+   "w": "vídeo",
+   "s": 9.52,
+   "e": 9.82,
+   "trecho": "meio"
+  },
+  {
+   "w": "tá",
+   "s": 9.82,
+   "e": 10.0,
+   "trecho": "meio"
+  },
+  {
+   "w": "um",
+   "s": 10.0,
+   "e": 10.08,
+   "trecho": "meio"
+  },
+  {
+   "w": "toque",
+   "s": 10.08,
+   "e": 10.3,
+   "trecho": "meio"
+  },
+  {
+   "w": "de",
+   "s": 10.3,
+   "e": 10.42,
+   "trecho": "meio"
+  },
+  {
+   "w": "distância.",
+   "s": 10.42,
+   "e": 10.92,
+   "trecho": "meio"
+  },
+  {
+   "w": "E",
+   "s": 11.16,
+   "e": 11.6,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 11.6,
+   "e": 11.68,
+   "trecho": "meio"
+  },
+  {
+   "w": "chefe",
+   "s": 11.68,
+   "e": 11.9,
+   "trecho": "meio"
+  },
+  {
+   "w": "do",
+   "s": 11.9,
+   "e": 11.98,
+   "trecho": "meio"
+  },
+  {
+   "w": "Instagram",
+   "s": 11.98,
+   "e": 12.22,
+   "trecho": "meio"
+  },
+  {
+   "w": "já",
+   "s": 12.22,
+   "e": 12.4,
+   "trecho": "meio"
+  },
+  {
+   "w": "disse,",
+   "s": 12.4,
+   "e": 12.72,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 12.84,
+   "e": 12.94,
+   "trecho": "meio"
+  },
+  {
+   "w": "tempo",
+   "s": 12.94,
+   "e": 13.18,
+   "trecho": "meio"
+  },
+  {
+   "w": "assistido",
+   "s": 13.18,
+   "e": 13.74,
+   "trecho": "meio"
+  },
+  {
+   "w": "é",
+   "s": 13.74,
+   "e": 13.96,
+   "trecho": "meio"
+  },
+  {
+   "w": "um",
+   "s": 13.96,
+   "e": 14.04,
+   "trecho": "meio"
+  },
+  {
+   "w": "dos",
+   "s": 14.04,
+   "e": 14.14,
+   "trecho": "meio"
+  },
+  {
+   "w": "sinais",
+   "s": 14.14,
+   "e": 14.48,
+   "trecho": "meio"
+  },
+  {
+   "w": "que",
+   "s": 14.48,
+   "e": 14.58,
+   "trecho": "meio"
+  },
+  {
+   "w": "mais",
+   "s": 14.58,
+   "e": 14.76,
+   "trecho": "meio"
+  },
+  {
+   "w": "pesam.",
+   "s": 14.76,
+   "e": 15.12,
+   "trecho": "meio"
+  },
+  {
+   "w": "Quem",
+   "s": 15.44,
+   "e": 15.68,
+   "trecho": "meio"
+  },
+  {
+   "w": "sai",
+   "s": 15.68,
+   "e": 15.88,
+   "trecho": "meio"
+  },
+  {
+   "w": "no",
+   "s": 15.88,
+   "e": 15.98,
+   "trecho": "meio"
+  },
+  {
+   "w": "começo",
+   "s": 15.98,
+   "e": 16.3,
+   "trecho": "meio"
+  },
+  {
+   "w": "derruba",
+   "s": 16.3,
+   "e": 16.68,
+   "trecho": "meio"
+  },
+  {
+   "w": "esse",
+   "s": 16.68,
+   "e": 16.84,
+   "trecho": "meio"
+  },
+  {
+   "w": "tempo.",
+   "s": 16.84,
+   "e": 17.08,
+   "trecho": "meio"
+  },
+  {
+   "w": "Lembra",
+   "s": 17.32,
+   "e": 17.56,
+   "trecho": "meio"
+  },
+  {
+   "w": "que",
+   "s": 17.56,
+   "e": 17.64,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 17.64,
+   "e": 17.7,
+   "trecho": "meio"
+  },
+  {
+   "w": "Instagram",
+   "s": 17.7,
+   "e": 17.96,
+   "trecho": "meio"
+  },
+  {
+   "w": "testa",
+   "s": 17.96,
+   "e": 18.32,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 18.32,
+   "e": 18.4,
+   "trecho": "meio"
+  },
+  {
+   "w": "vídeo",
+   "s": 18.4,
+   "e": 18.54,
+   "trecho": "meio"
+  },
+  {
+   "w": "com",
+   "s": 18.54,
+   "e": 18.68,
+   "trecho": "meio"
+  },
+  {
+   "w": "pouca",
+   "s": 18.68,
+   "e": 18.9,
+   "trecho": "meio"
+  },
+  {
+   "w": "gente",
+   "s": 18.9,
+   "e": 19.08,
+   "trecho": "meio"
+  },
+  {
+   "w": "primeiro.",
+   "s": 19.08,
+   "e": 19.4,
+   "trecho": "meio"
+  },
+  {
+   "w": "Se",
+   "s": 19.64,
+   "e": 19.84,
+   "trecho": "meio"
+  },
+  {
+   "w": "essas",
+   "s": 19.84,
+   "e": 19.98,
+   "trecho": "meio"
+  },
+  {
+   "w": "pessoas",
+   "s": 19.98,
+   "e": 20.22,
+   "trecho": "meio"
+  },
+  {
+   "w": "vão",
+   "s": 20.22,
+   "e": 20.34,
+   "trecho": "meio"
+  },
+  {
+   "w": "embora",
+   "s": 20.34,
+   "e": 20.52,
+   "trecho": "meio"
+  },
+  {
+   "w": "nos",
+   "s": 20.52,
+   "e": 20.7,
+   "trecho": "meio"
+  },
+  {
+   "w": "primeiros",
+   "s": 20.7,
+   "e": 21.0,
+   "trecho": "meio"
+  },
+  {
+   "w": "segundos,",
+   "s": 21.0,
+   "e": 21.36,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 21.54,
+   "e": 21.66,
+   "trecho": "meio"
+  },
+  {
+   "w": "seu",
+   "s": 21.66,
+   "e": 21.86,
+   "trecho": "meio"
+  },
+  {
+   "w": "Reels",
+   "s": 21.86,
+   "e": 22.12,
+   "trecho": "meio"
+  },
+  {
+   "w": "para",
+   "s": 22.12,
+   "e": 22.3,
+   "trecho": "meio"
+  },
+  {
+   "w": "ali.",
+   "s": 22.3,
+   "e": 22.48,
+   "trecho": "meio"
+  },
+  {
+   "w": "O",
+   "s": 22.76,
+   "e": 23.14,
+   "trecho": "meio"
+  },
+  {
+   "w": "começo",
+   "s": 23.14,
+   "e": 23.4,
+   "trecho": "meio"
+  },
+  {
+   "w": "decide",
+   "s": 23.4,
+   "e": 23.66,
+   "trecho": "meio"
+  },
+  {
+   "w": "se",
+   "s": 23.66,
+   "e": 23.78,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 23.78,
+   "e": 23.86,
+   "trecho": "meio"
+  },
+  {
+   "w": "resto",
+   "s": 23.86,
+   "e": 24.02,
+   "trecho": "meio"
+  },
+  {
+   "w": "vai",
+   "s": 24.02,
+   "e": 24.18,
+   "trecho": "meio"
+  },
+  {
+   "w": "ser",
+   "s": 24.18,
+   "e": 24.32,
+   "trecho": "meio"
+  },
+  {
+   "w": "visto.",
+   "s": 24.32,
+   "e": 24.6,
+   "trecho": "meio"
+  },
+  {
+   "w": "Dica",
+   "s": 25.02,
+   "e": 25.46,
+   "trecho": "meio"
+  },
+  {
+   "w": "1.",
+   "s": 25.46,
+   "e": 25.6,
+   "trecho": "meio"
+  },
+  {
+   "w": "Começa",
+   "s": 25.84,
+   "e": 26.16,
+   "trecho": "meio"
+  },
+  {
+   "w": "pela",
+   "s": 26.16,
+   "e": 26.34,
+   "trecho": "meio"
+  },
+  {
+   "w": "frase",
+   "s": 26.34,
+   "e": 26.6,
+   "trecho": "meio"
+  },
+  {
+   "w": "mais",
+   "s": 26.6,
+   "e": 26.82,
+   "trecho": "meio"
+  },
+  {
+   "w": "forte.",
+   "s": 26.82,
+   "e": 27.16,
+   "trecho": "meio"
+  },
+  {
+   "w": "O",
+   "s": 27.36,
+   "e": 27.56,
+   "trecho": "meio"
+  },
+  {
+   "w": "resultado.",
+   "s": 27.56,
+   "e": 27.94,
+   "trecho": "meio"
+  },
+  {
+   "w": "A",
+   "s": 28.24,
+   "e": 28.56,
+   "trecho": "meio"
+  },
+  {
+   "w": "dor",
+   "s": 28.56,
+   "e": 28.76,
+   "trecho": "meio"
+  },
+  {
+   "w": "ou",
+   "s": 28.76,
+   "e": 28.94,
+   "trecho": "meio"
+  },
+  {
+   "w": "a",
+   "s": 28.94,
+   "e": 29.04,
+   "trecho": "meio"
+  },
+  {
+   "w": "promessa.",
+   "s": 29.04,
+   "e": 29.48,
+   "trecho": "meio"
+  },
+  {
+   "w": "O",
+   "s": 29.48,
+   "e": 29.88,
+   "trecho": "meio"
+  },
+  {
+   "w": "Oi,",
+   "s": 29.88,
+   "e": 30.02,
+   "trecho": "meio"
+  },
+  {
+   "w": "gente,",
+   "s": 30.08,
+   "e": 30.16,
+   "trecho": "meio"
+  },
+  {
+   "w": "fica",
+   "s": 30.3,
+   "e": 30.42,
+   "trecho": "meio"
+  },
+  {
+   "w": "pra",
+   "s": 30.42,
+   "e": 30.56,
+   "trecho": "meio"
+  },
+  {
+   "w": "depois",
+   "s": 30.56,
+   "e": 30.92,
+   "trecho": "meio"
+  },
+  {
+   "w": "ou",
+   "s": 30.92,
+   "e": 31.2,
+   "trecho": "meio"
+  },
+  {
+   "w": "sai.",
+   "s": 31.2,
+   "e": 31.48,
+   "trecho": "meio"
+  },
+  {
+   "w": "Dica",
+   "s": 31.74,
+   "e": 32.0,
+   "trecho": "meio"
+  },
+  {
+   "w": "2.",
+   "s": 32.0,
+   "e": 32.24,
+   "trecho": "meio"
+  },
+  {
+   "w": "Escreve",
+   "s": 32.5,
+   "e": 32.98,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 32.98,
+   "e": 33.04,
+   "trecho": "meio"
+  },
+  {
+   "w": "gancho",
+   "s": 33.04,
+   "e": 33.34,
+   "trecho": "meio"
+  },
+  {
+   "w": "na",
+   "s": 33.34,
+   "e": 33.44,
+   "trecho": "meio"
+  },
+  {
+   "w": "tela.",
+   "s": 33.44,
+   "e": 33.7,
+   "trecho": "meio"
+  },
+  {
+   "w": "Já",
+   "s": 33.86,
+   "e": 34.12,
+   "trecho": "meio"
+  },
+  {
+   "w": "no",
+   "s": 34.12,
+   "e": 34.24,
+   "trecho": "meio"
+  },
+  {
+   "w": "primeiro",
+   "s": 34.24,
+   "e": 34.48,
+   "trecho": "meio"
+  },
+  {
+   "w": "segundo.",
+   "s": 34.48,
+   "e": 34.86,
+   "trecho": "meio"
+  },
+  {
+   "w": "Muita",
+   "s": 35.16,
+   "e": 35.64,
+   "trecho": "meio"
+  },
+  {
+   "w": "gente",
+   "s": 35.64,
+   "e": 35.64,
+   "trecho": "meio"
+  },
+  {
+   "w": "assiste",
+   "s": 35.64,
+   "e": 36.0,
+   "trecho": "meio"
+  },
+  {
+   "w": "sem",
+   "s": 36.0,
+   "e": 36.18,
+   "trecho": "meio"
+  },
+  {
+   "w": "som.",
+   "s": 36.18,
+   "e": 36.4,
+   "trecho": "meio"
+  },
+  {
+   "w": "E",
+   "s": 36.64,
+   "e": 37.02,
+   "trecho": "meio"
+  },
+  {
+   "w": "repara,",
+   "s": 37.02,
+   "e": 37.36,
+   "trecho": "meio"
+  },
+  {
+   "w": "esse",
+   "s": 37.46,
+   "e": 37.6,
+   "trecho": "meio"
+  },
+  {
+   "w": "vídeo",
+   "s": 37.6,
+   "e": 37.74,
+   "trecho": "meio"
+  },
+  {
+   "w": "começou",
+   "s": 37.74,
+   "e": 38.06,
+   "trecho": "meio"
+  },
+  {
+   "w": "exatamente",
+   "s": 38.06,
+   "e": 38.46,
+   "trecho": "meio"
+  },
+  {
+   "w": "assim.",
+   "s": 38.46,
+   "e": 38.88,
+   "trecho": "meio"
+  },
+  {
+   "w": "Manda",
+   "s": 39.22,
+   "e": 39.44,
+   "trecho": "b"
+  },
+  {
+   "w": "pra",
+   "s": 39.44,
+   "e": 39.56,
+   "trecho": "b"
+  },
+  {
+   "w": "quem",
+   "s": 39.56,
+   "e": 39.68,
+   "trecho": "b"
+  },
+  {
+   "w": "ainda",
+   "s": 39.68,
+   "e": 39.82,
+   "trecho": "b"
+  },
+  {
+   "w": "começa",
+   "s": 39.82,
+   "e": 40.14,
+   "trecho": "b"
+  },
+  {
+   "w": "com",
+   "s": 40.14,
+   "e": 40.32,
+   "trecho": "b"
+  },
+  {
+   "w": "Oi,",
+   "s": 40.32,
+   "e": 40.64,
+   "trecho": "b"
+  },
+  {
+   "w": "gente.",
+   "s": 40.72,
+   "e": 40.9,
+   "trecho": "b"
+  },
+  {
+   "w": "E",
+   "s": 41.28,
+   "e": 41.5,
+   "trecho": "b"
+  },
+  {
+   "w": "segue",
+   "s": 41.5,
+   "e": 41.76,
+   "trecho": "b"
+  },
+  {
+   "w": "o",
+   "s": 41.76,
+   "e": 41.84,
+   "trecho": "b"
+  },
+  {
+   "w": "Digo",
+   "s": 41.84,
+   "e": 41.98,
+   "trecho": "b"
+  },
+  {
+   "w": "Social.",
+   "s": 41.98,
+   "e": 42.3,
+   "trecho": "b"
+  },
+  {
+   "w": "Toda",
+   "s": 42.62,
+   "e": 42.88,
+   "trecho": "b"
+  },
+  {
+   "w": "semana",
+   "s": 42.88,
+   "e": 43.12,
+   "trecho": "b"
+  },
+  {
+   "w": "tem",
+   "s": 43.12,
+   "e": 43.38,
+   "trecho": "b"
+  },
+  {
+   "w": "mais.",
+   "s": 43.38,
+   "e": 43.64,
+   "trecho": "b"
+  }
+ ]
+}
