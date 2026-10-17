@@ -1,0 +1,4 @@
+{
+ "A": {"voz": "voz_final_ritmo.wav", "s": 0, "e": 4.49, "atraso_no_clipe": 0.4, "clipe_s": 5},
+ "B": {"voz": "voz_final_ritmo.wav", "s": 33.40, "e": 35.69, "atraso_no_clipe": 0.4, "clipe_s": 4}
+}

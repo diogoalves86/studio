@@ -161,6 +161,7 @@ Gerados por `tools/gerar_sfx.py` e disparados em `EfeitosSonoros.tsx`, sempre li
   - 1080×1920, 30 fps, h264 com uma trilha AAC estéreo;
   - duração = fim da narração + 1,4 s;
   - **−14 LUFS** e pico **≤ −1,5 dBTP** (`ffmpeg -af loudnorm=print_format=summary -f null -`);
+  - se ficar abaixo de −14,5 LUFS (aconteceu no 005, com a voz de dica a 1,3×: −15,2), suba o ganho **antes** do limitador e meça de novo: `-af "volume=1.3dB,alimiter=limit=0.8:attack=3:release=60:level=disabled,aresample=48000"` deu −13,9 LUFS e −1,9 dBTP;
   - prancha de quadros do arquivo final.
 - **Legenda do post:** gancho em pergunta, o exemplo ❌/✅, o segredo em uma linha, um pedido para salvar ou compartilhar, o CTA "Segue o @digo.social" e as hashtags (`#marketingdigital #instagram #reels #criadordeconteudo #dicasdeinstagram #crescernoinstagram #socialmedia #digosocial`).
 
