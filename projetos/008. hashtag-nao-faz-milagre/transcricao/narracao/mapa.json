@@ -1,0 +1,1065 @@
+{
+ "trechos": [
+  {
+   "nome": "a",
+   "inicio": 0.0,
+   "fim": 3.75
+  },
+  {
+   "nome": "meio",
+   "inicio": 3.75,
+   "fim": 40.17
+  },
+  {
+   "nome": "b",
+   "inicio": 40.17,
+   "fim": 45.153
+  }
+ ],
+ "palavras": [
+  {
+   "w": "Você",
+   "s": 0.0,
+   "e": 0.2,
+   "trecho": "a"
+  },
+  {
+   "w": "coloca",
+   "s": 0.2,
+   "e": 0.48,
+   "trecho": "a"
+  },
+  {
+   "w": "30",
+   "s": 0.48,
+   "e": 0.74,
+   "trecho": "a"
+  },
+  {
+   "w": "hashtags",
+   "s": 0.74,
+   "e": 1.12,
+   "trecho": "a"
+  },
+  {
+   "w": "no",
+   "s": 1.12,
+   "e": 1.3,
+   "trecho": "a"
+  },
+  {
+   "w": "post,",
+   "s": 1.3,
+   "e": 1.6,
+   "trecho": "a"
+  },
+  {
+   "w": "né?",
+   "s": 1.68,
+   "e": 1.76,
+   "trecho": "a"
+  },
+  {
+   "w": "Só",
+   "s": 1.96,
+   "e": 2.22,
+   "trecho": "a"
+  },
+  {
+   "w": "que",
+   "s": 2.22,
+   "e": 2.32,
+   "trecho": "a"
+  },
+  {
+   "w": "não",
+   "s": 2.32,
+   "e": 2.4,
+   "trecho": "a"
+  },
+  {
+   "w": "é",
+   "s": 2.4,
+   "e": 2.5,
+   "trecho": "a"
+  },
+  {
+   "w": "isso",
+   "s": 2.5,
+   "e": 2.6,
+   "trecho": "a"
+  },
+  {
+   "w": "que",
+   "s": 2.6,
+   "e": 2.68,
+   "trecho": "a"
+  },
+  {
+   "w": "faz",
+   "s": 2.68,
+   "e": 2.82,
+   "trecho": "a"
+  },
+  {
+   "w": "ele",
+   "s": 2.82,
+   "e": 2.96,
+   "trecho": "a"
+  },
+  {
+   "w": "chegar",
+   "s": 2.96,
+   "e": 3.14,
+   "trecho": "a"
+  },
+  {
+   "w": "em",
+   "s": 3.14,
+   "e": 3.26,
+   "trecho": "a"
+  },
+  {
+   "w": "mais",
+   "s": 3.26,
+   "e": 3.4,
+   "trecho": "a"
+  },
+  {
+   "w": "gente.",
+   "s": 3.4,
+   "e": 3.64,
+   "trecho": "a"
+  },
+  {
+   "w": "Quem",
+   "s": 3.86,
+   "e": 4.1,
+   "trecho": "meio"
+  },
+  {
+   "w": "disse",
+   "s": 4.1,
+   "e": 4.3,
+   "trecho": "meio"
+  },
+  {
+   "w": "foi",
+   "s": 4.3,
+   "e": 4.42,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 4.42,
+   "e": 4.5,
+   "trecho": "meio"
+  },
+  {
+   "w": "próprio",
+   "s": 4.5,
+   "e": 4.72,
+   "trecho": "meio"
+  },
+  {
+   "w": "chefe",
+   "s": 4.72,
+   "e": 4.98,
+   "trecho": "meio"
+  },
+  {
+   "w": "do",
+   "s": 4.98,
+   "e": 5.08,
+   "trecho": "meio"
+  },
+  {
+   "w": "Instagram.",
+   "s": 5.08,
+   "e": 5.38,
+   "trecho": "meio"
+  },
+  {
+   "w": "Hashtag",
+   "s": 5.8,
+   "e": 6.16,
+   "trecho": "meio"
+  },
+  {
+   "w": "não",
+   "s": 6.16,
+   "e": 6.34,
+   "trecho": "meio"
+  },
+  {
+   "w": "aumenta",
+   "s": 6.34,
+   "e": 6.68,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 6.68,
+   "e": 6.76,
+   "trecho": "meio"
+  },
+  {
+   "w": "alcance.",
+   "s": 6.76,
+   "e": 7.22,
+   "trecho": "meio"
+  },
+  {
+   "w": "Tanto",
+   "s": 7.38,
+   "e": 7.7,
+   "trecho": "meio"
+  },
+  {
+   "w": "que",
+   "s": 7.7,
+   "e": 7.78,
+   "trecho": "meio"
+  },
+  {
+   "w": "agora",
+   "s": 7.78,
+   "e": 8.02,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 8.02,
+   "e": 8.14,
+   "trecho": "meio"
+  },
+  {
+   "w": "limite",
+   "s": 8.14,
+   "e": 8.36,
+   "trecho": "meio"
+  },
+  {
+   "w": "é",
+   "s": 8.36,
+   "e": 8.46,
+   "trecho": "meio"
+  },
+  {
+   "w": "de",
+   "s": 8.46,
+   "e": 8.58,
+   "trecho": "meio"
+  },
+  {
+   "w": "5",
+   "s": 8.58,
+   "e": 8.8,
+   "trecho": "meio"
+  },
+  {
+   "w": "por",
+   "s": 8.8,
+   "e": 8.98,
+   "trecho": "meio"
+  },
+  {
+   "w": "post.",
+   "s": 8.98,
+   "e": 9.34,
+   "trecho": "meio"
+  },
+  {
+   "w": "Mas",
+   "s": 9.74,
+   "e": 10.1,
+   "trecho": "meio"
+  },
+  {
+   "w": "ela",
+   "s": 10.1,
+   "e": 10.24,
+   "trecho": "meio"
+  },
+  {
+   "w": "não",
+   "s": 10.24,
+   "e": 10.36,
+   "trecho": "meio"
+  },
+  {
+   "w": "é",
+   "s": 10.36,
+   "e": 10.46,
+   "trecho": "meio"
+  },
+  {
+   "w": "inútil.",
+   "s": 10.46,
+   "e": 10.82,
+   "trecho": "meio"
+  },
+  {
+   "w": "Ela",
+   "s": 11.02,
+   "e": 11.2,
+   "trecho": "meio"
+  },
+  {
+   "w": "diz",
+   "s": 11.2,
+   "e": 11.38,
+   "trecho": "meio"
+  },
+  {
+   "w": "do",
+   "s": 11.38,
+   "e": 11.46,
+   "trecho": "meio"
+  },
+  {
+   "w": "que",
+   "s": 11.46,
+   "e": 11.54,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 11.54,
+   "e": 11.62,
+   "trecho": "meio"
+  },
+  {
+   "w": "seu",
+   "s": 11.62,
+   "e": 11.72,
+   "trecho": "meio"
+  },
+  {
+   "w": "post",
+   "s": 11.72,
+   "e": 11.98,
+   "trecho": "meio"
+  },
+  {
+   "w": "fala",
+   "s": 11.98,
+   "e": 12.26,
+   "trecho": "meio"
+  },
+  {
+   "w": "pra",
+   "s": 12.26,
+   "e": 12.38,
+   "trecho": "meio"
+  },
+  {
+   "w": "ele",
+   "s": 12.38,
+   "e": 12.48,
+   "trecho": "meio"
+  },
+  {
+   "w": "aparecer",
+   "s": 12.48,
+   "e": 12.76,
+   "trecho": "meio"
+  },
+  {
+   "w": "na",
+   "s": 12.76,
+   "e": 12.88,
+   "trecho": "meio"
+  },
+  {
+   "w": "busca.",
+   "s": 12.88,
+   "e": 13.22,
+   "trecho": "meio"
+  },
+  {
+   "w": "E",
+   "s": 13.52,
+   "e": 13.7,
+   "trecho": "meio"
+  },
+  {
+   "w": "a",
+   "s": 13.7,
+   "e": 13.78,
+   "trecho": "meio"
+  },
+  {
+   "w": "busca",
+   "s": 13.78,
+   "e": 13.96,
+   "trecho": "meio"
+  },
+  {
+   "w": "do",
+   "s": 13.96,
+   "e": 14.06,
+   "trecho": "meio"
+  },
+  {
+   "w": "Instagram",
+   "s": 14.06,
+   "e": 14.36,
+   "trecho": "meio"
+  },
+  {
+   "w": "lê",
+   "s": 14.36,
+   "e": 14.5,
+   "trecho": "meio"
+  },
+  {
+   "w": "mais",
+   "s": 14.5,
+   "e": 14.68,
+   "trecho": "meio"
+  },
+  {
+   "w": "coisa.",
+   "s": 14.68,
+   "e": 15.06,
+   "trecho": "meio"
+  },
+  {
+   "w": "A",
+   "s": 15.26,
+   "e": 15.58,
+   "trecho": "meio"
+  },
+  {
+   "w": "legenda,",
+   "s": 15.58,
+   "e": 16.0,
+   "trecho": "meio"
+  },
+  {
+   "w": "a",
+   "s": 16.22,
+   "e": 16.4,
+   "trecho": "meio"
+  },
+  {
+   "w": "bio",
+   "s": 16.4,
+   "e": 16.62,
+   "trecho": "meio"
+  },
+  {
+   "w": "e",
+   "s": 16.62,
+   "e": 16.78,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 16.78,
+   "e": 16.88,
+   "trecho": "meio"
+  },
+  {
+   "w": "seu",
+   "s": 16.88,
+   "e": 16.94,
+   "trecho": "meio"
+  },
+  {
+   "w": "nome",
+   "s": 16.94,
+   "e": 17.1,
+   "trecho": "meio"
+  },
+  {
+   "w": "de",
+   "s": 17.1,
+   "e": 17.2,
+   "trecho": "meio"
+  },
+  {
+   "w": "perfil.",
+   "s": 17.2,
+   "e": 17.58,
+   "trecho": "meio"
+  },
+  {
+   "w": "Então,",
+   "s": 18.0,
+   "e": 18.18,
+   "trecho": "meio"
+  },
+  {
+   "w": "dica",
+   "s": 18.26,
+   "e": 18.42,
+   "trecho": "meio"
+  },
+  {
+   "w": "1.",
+   "s": 18.42,
+   "e": 18.62,
+   "trecho": "meio"
+  },
+  {
+   "w": "Escreve",
+   "s": 18.9,
+   "e": 19.26,
+   "trecho": "meio"
+  },
+  {
+   "w": "na",
+   "s": 19.26,
+   "e": 19.34,
+   "trecho": "meio"
+  },
+  {
+   "w": "legenda",
+   "s": 19.34,
+   "e": 19.68,
+   "trecho": "meio"
+  },
+  {
+   "w": "a",
+   "s": 19.68,
+   "e": 19.82,
+   "trecho": "meio"
+  },
+  {
+   "w": "palavra",
+   "s": 19.82,
+   "e": 20.1,
+   "trecho": "meio"
+  },
+  {
+   "w": "que",
+   "s": 20.1,
+   "e": 20.26,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 20.26,
+   "e": 20.36,
+   "trecho": "meio"
+  },
+  {
+   "w": "seu",
+   "s": 20.36,
+   "e": 20.42,
+   "trecho": "meio"
+  },
+  {
+   "w": "cliente",
+   "s": 20.42,
+   "e": 20.78,
+   "trecho": "meio"
+  },
+  {
+   "w": "digitaria",
+   "s": 20.78,
+   "e": 21.2,
+   "trecho": "meio"
+  },
+  {
+   "w": "na",
+   "s": 21.2,
+   "e": 21.3,
+   "trecho": "meio"
+  },
+  {
+   "w": "busca.",
+   "s": 21.3,
+   "e": 21.62,
+   "trecho": "meio"
+  },
+  {
+   "w": "Tipo,",
+   "s": 21.82,
+   "e": 22.14,
+   "trecho": "meio"
+  },
+  {
+   "w": "brigadeiro",
+   "s": 22.2,
+   "e": 22.56,
+   "trecho": "meio"
+  },
+  {
+   "w": "gourmet",
+   "s": 22.56,
+   "e": 22.84,
+   "trecho": "meio"
+  },
+  {
+   "w": "em",
+   "s": 22.84,
+   "e": 22.98,
+   "trecho": "meio"
+  },
+  {
+   "w": "Curitiba.",
+   "s": 22.98,
+   "e": 23.4,
+   "trecho": "meio"
+  },
+  {
+   "w": "Dica",
+   "s": 23.76,
+   "e": 24.1,
+   "trecho": "meio"
+  },
+  {
+   "w": "2.",
+   "s": 24.1,
+   "e": 24.34,
+   "trecho": "meio"
+  },
+  {
+   "w": "Escolhe",
+   "s": 24.9,
+   "e": 25.12,
+   "trecho": "meio"
+  },
+  {
+   "w": "as",
+   "s": 25.12,
+   "e": 25.24,
+   "trecho": "meio"
+  },
+  {
+   "w": "5",
+   "s": 25.24,
+   "e": 25.36,
+   "trecho": "meio"
+  },
+  {
+   "w": "hashtags,",
+   "s": 25.36,
+   "e": 25.8,
+   "trecho": "meio"
+  },
+  {
+   "w": "com",
+   "s": 25.92,
+   "e": 26.0,
+   "trecho": "meio"
+  },
+  {
+   "w": "método.",
+   "s": 26.0,
+   "e": 26.42,
+   "trecho": "meio"
+  },
+  {
+   "w": "Uma",
+   "s": 26.8,
+   "e": 27.16,
+   "trecho": "meio"
+  },
+  {
+   "w": "do",
+   "s": 27.16,
+   "e": 27.28,
+   "trecho": "meio"
+  },
+  {
+   "w": "produto,",
+   "s": 27.28,
+   "e": 27.58,
+   "trecho": "meio"
+  },
+  {
+   "w": "uma",
+   "s": 27.72,
+   "e": 27.8,
+   "trecho": "meio"
+  },
+  {
+   "w": "do",
+   "s": 27.8,
+   "e": 27.94,
+   "trecho": "meio"
+  },
+  {
+   "w": "nicho,",
+   "s": 27.94,
+   "e": 28.26,
+   "trecho": "meio"
+  },
+  {
+   "w": "uma",
+   "s": 28.32,
+   "e": 28.4,
+   "trecho": "meio"
+  },
+  {
+   "w": "da",
+   "s": 28.4,
+   "e": 28.52,
+   "trecho": "meio"
+  },
+  {
+   "w": "cidade,",
+   "s": 28.52,
+   "e": 28.92,
+   "trecho": "meio"
+  },
+  {
+   "w": "uma",
+   "s": 29.08,
+   "e": 29.2,
+   "trecho": "meio"
+  },
+  {
+   "w": "do",
+   "s": 29.2,
+   "e": 29.36,
+   "trecho": "meio"
+  },
+  {
+   "w": "público.",
+   "s": 29.36,
+   "e": 29.68,
+   "trecho": "meio"
+  },
+  {
+   "w": "E",
+   "s": 29.68,
+   "e": 30.02,
+   "trecho": "meio"
+  },
+  {
+   "w": "uma",
+   "s": 30.02,
+   "e": 30.14,
+   "trecho": "meio"
+  },
+  {
+   "w": "da",
+   "s": 30.14,
+   "e": 30.24,
+   "trecho": "meio"
+  },
+  {
+   "w": "sua",
+   "s": 30.24,
+   "e": 30.42,
+   "trecho": "meio"
+  },
+  {
+   "w": "marca.",
+   "s": 30.42,
+   "e": 30.76,
+   "trecho": "meio"
+  },
+  {
+   "w": "E",
+   "s": 30.96,
+   "e": 31.16,
+   "trecho": "meio"
+  },
+  {
+   "w": "testa.",
+   "s": 31.16,
+   "e": 31.56,
+   "trecho": "meio"
+  },
+  {
+   "w": "Pesquisa",
+   "s": 31.86,
+   "e": 32.34,
+   "trecho": "meio"
+  },
+  {
+   "w": "a",
+   "s": 32.34,
+   "e": 32.44,
+   "trecho": "meio"
+  },
+  {
+   "w": "hashtag.",
+   "s": 32.44,
+   "e": 32.72,
+   "trecho": "meio"
+  },
+  {
+   "w": "Se",
+   "s": 33.16,
+   "e": 33.42,
+   "trecho": "meio"
+  },
+  {
+   "w": "só",
+   "s": 33.42,
+   "e": 33.56,
+   "trecho": "meio"
+  },
+  {
+   "w": "aparece",
+   "s": 33.56,
+   "e": 33.84,
+   "trecho": "meio"
+  },
+  {
+   "w": "perfil",
+   "s": 33.84,
+   "e": 34.16,
+   "trecho": "meio"
+  },
+  {
+   "w": "gigante",
+   "s": 34.16,
+   "e": 34.54,
+   "trecho": "meio"
+  },
+  {
+   "w": "ou",
+   "s": 34.54,
+   "e": 34.66,
+   "trecho": "meio"
+  },
+  {
+   "w": "nada",
+   "s": 34.66,
+   "e": 34.84,
+   "trecho": "meio"
+  },
+  {
+   "w": "a",
+   "s": 34.84,
+   "e": 34.92,
+   "trecho": "meio"
+  },
+  {
+   "w": "ver",
+   "s": 34.92,
+   "e": 34.98,
+   "trecho": "meio"
+  },
+  {
+   "w": "com",
+   "s": 34.98,
+   "e": 35.1,
+   "trecho": "meio"
+  },
+  {
+   "w": "você,",
+   "s": 35.1,
+   "e": 35.34,
+   "trecho": "meio"
+  },
+  {
+   "w": "troca.",
+   "s": 35.48,
+   "e": 35.82,
+   "trecho": "meio"
+  },
+  {
+   "w": "O",
+   "s": 35.96,
+   "e": 36.16,
+   "trecho": "meio"
+  },
+  {
+   "w": "alcance",
+   "s": 36.16,
+   "e": 36.48,
+   "trecho": "meio"
+  },
+  {
+   "w": "vem",
+   "s": 36.48,
+   "e": 36.62,
+   "trecho": "meio"
+  },
+  {
+   "w": "do",
+   "s": 36.62,
+   "e": 36.74,
+   "trecho": "meio"
+  },
+  {
+   "w": "gancho",
+   "s": 36.74,
+   "e": 37.08,
+   "trecho": "meio"
+  },
+  {
+   "w": "e",
+   "s": 37.08,
+   "e": 37.12,
+   "trecho": "meio"
+  },
+  {
+   "w": "do",
+   "s": 37.12,
+   "e": 37.18,
+   "trecho": "meio"
+  },
+  {
+   "w": "conteúdo",
+   "s": 37.18,
+   "e": 37.5,
+   "trecho": "meio"
+  },
+  {
+   "w": "que",
+   "s": 37.5,
+   "e": 37.66,
+   "trecho": "meio"
+  },
+  {
+   "w": "se",
+   "s": 37.66,
+   "e": 37.8,
+   "trecho": "meio"
+  },
+  {
+   "w": "manda.",
+   "s": 37.8,
+   "e": 38.1,
+   "trecho": "meio"
+  },
+  {
+   "w": "A",
+   "s": 38.36,
+   "e": 38.5,
+   "trecho": "meio"
+  },
+  {
+   "w": "hashtag",
+   "s": 38.5,
+   "e": 38.82,
+   "trecho": "meio"
+  },
+  {
+   "w": "ajuda",
+   "s": 38.82,
+   "e": 39.1,
+   "trecho": "meio"
+  },
+  {
+   "w": "quem",
+   "s": 39.1,
+   "e": 39.24,
+   "trecho": "meio"
+  },
+  {
+   "w": "procura",
+   "s": 39.24,
+   "e": 39.54,
+   "trecho": "meio"
+  },
+  {
+   "w": "te",
+   "s": 39.54,
+   "e": 39.64,
+   "trecho": "meio"
+  },
+  {
+   "w": "achar.",
+   "s": 39.64,
+   "e": 39.98,
+   "trecho": "meio"
+  },
+  {
+   "w": "Manda",
+   "s": 40.36,
+   "e": 40.58,
+   "trecho": "b"
+  },
+  {
+   "w": "pra",
+   "s": 40.58,
+   "e": 40.72,
+   "trecho": "b"
+  },
+  {
+   "w": "quem",
+   "s": 40.72,
+   "e": 40.86,
+   "trecho": "b"
+  },
+  {
+   "w": "ainda",
+   "s": 40.86,
+   "e": 41.02,
+   "trecho": "b"
+  },
+  {
+   "w": "cola",
+   "s": 41.02,
+   "e": 41.26,
+   "trecho": "b"
+  },
+  {
+   "w": "30",
+   "s": 41.26,
+   "e": 41.56,
+   "trecho": "b"
+  },
+  {
+   "w": "hashtags.",
+   "s": 41.56,
+   "e": 42.18,
+   "trecho": "b"
+  },
+  {
+   "w": "E",
+   "s": 42.42,
+   "e": 42.66,
+   "trecho": "b"
+  },
+  {
+   "w": "segue",
+   "s": 42.66,
+   "e": 42.9,
+   "trecho": "b"
+  },
+  {
+   "w": "o",
+   "s": 42.9,
+   "e": 42.98,
+   "trecho": "b"
+  },
+  {
+   "w": "Digo",
+   "s": 42.98,
+   "e": 43.14,
+   "trecho": "b"
+  },
+  {
+   "w": "Social.",
+   "s": 43.14,
+   "e": 43.46,
+   "trecho": "b"
+  },
+  {
+   "w": "Toda",
+   "s": 43.78,
+   "e": 44.06,
+   "trecho": "b"
+  },
+  {
+   "w": "semana",
+   "s": 44.06,
+   "e": 44.42,
+   "trecho": "b"
+  },
+  {
+   "w": "tem",
+   "s": 44.42,
+   "e": 44.72,
+   "trecho": "b"
+  },
+  {
+   "w": "mais.",
+   "s": 44.72,
+   "e": 44.98,
+   "trecho": "b"
+  }
+ ]
+}

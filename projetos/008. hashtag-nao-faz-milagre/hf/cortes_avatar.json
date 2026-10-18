@@ -1,0 +1,4 @@
+{
+ "A": {"voz": "voz_hashtag_ritmo.wav", "s": 0, "e": 3.75, "atraso_no_clipe": 0.4, "clipe_s": 5},
+ "B": {"voz": "voz_hashtag_ritmo.wav", "s": 40.17, "e": 45.14, "atraso_no_clipe": 0.4, "clipe_s": 6}
+}

@@ -185,9 +185,11 @@ Gerados por `tools/gerar_sfx.py` e disparados em `EfeitosSonoros.tsx`, sempre li
 O Diogo prefere **Reels de dica que ensinam algo útil de verdade**, sem vender o Digo Social. O modelo é o projeto `005. pare-de-sumir`, aprovado em 16/10/2026. Ao sugerir ideias, priorize esse formato. Reels de venda, como o 004, ficam para quando ele pedir.
 
 - **Gancho em pergunta** que cutuca uma dor real ("Você posta e some, né?"), com a muleta "né?" para a voz subir o tom (seção 2).
+- **Fonte na tela (autoridade, pedido do Diogo em 17/10/2026):** toda afirmação factual ganha um selo animado "📰 Fonte: <veículo> · <título traduzido>", que entra junto com a fala, mais um cartão "FONTES" de ~1,5 s no fim do meio com todos os veículos (nome em texto, sem logo de marca). Pessoa citada aparece com foto de licença livre, nome, cargo e crédito da foto.
 - **O porquê antes da dica:** explique em uma ou duas frases como a coisa funciona (ex.: o Instagram mostra o post primeiro para pouca gente; quem conversa com você te vê mais). Use só o que o próprio Instagram ou o Adam Mosseri já disseram, e cite as fontes no `roteiro.md`. Nada de números de blog.
 - **Duas dicas práticas**, aplicáveis no mesmo dia, cada uma demonstrada na tela com um exemplo (ruim × bom, antes × depois).
 - **Sem venda:** o Digo Social não aparece como solução. A logo entra só no CTA e na tela final.
 - **CTA para seguir:** "Se essa dica te ajudou, segue o Digo Social. Toda semana tem mais." Na legenda do post, peça para salvar ("💾 Salva pra não esquecer").
+- **Hashtags na legenda: no máximo 5, específicas** (o Instagram limita a 5 por post, e o Mosseri diz que hashtag não aumenta o alcance, só ajuda na busca). Nada de genéricas como #reels, #instagram ou #viral.
 - **Voz de dica** (seção 2 e passo 2 da seção 3): ~35–40 s.
 - **Visual:** a explicação vira diagrama animado (círculo de alcance, conversa VOCÊ ↔ SEGUIDOR, thread de comentários). O avatar fica só na abertura e no "Segue o Digo".
