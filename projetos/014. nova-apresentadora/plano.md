@@ -108,3 +108,7 @@ As tentativas de reencaixar a voz na boca do clipe do Seedance não passaram de 
 - O áudio do clipe é a própria voz 1 (mesmo F0 de 211 Hz), com todas as palavras, inclusive o "Ó".
 - Sincronia: diferença média de início das palavras de −5 ms (máx. 150 ms), **atraso mediano 0 ms, 0% das janelas acima de 45 ms, velocidade 0,97–1,01×**. Só os últimos 0,13 s (silêncio final) ficam parados.
 - Saída: `video/teste_wan.mp4`, 1080×1920, −14,8 LUFS, pico −1,6 dBTP.
+
+## Atraso da boca (19/10/2026)
+
+O Diogo ainda via a boca fora de sincronia, inclusive no Wan 2.7. O relatório media áudio contra áudio e mostrava 0 ms. Olhando a boca quadro a quadro, o "m" de "semana" soa por volta de 3,58 s, mas os lábios só fecham entre 3,63 e 3,73 s: **a boca vem ~0,1 s depois do som**. Foram testadas a voz atrasada em +67, +100 e +133 ms, e o Diogo escolheu **+100 ms**. A mesma correção foi aplicada no vídeo do Seedance (`video/teste_seedance_voz+100ms.mp4`) para comparar os modelos.
