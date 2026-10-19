@@ -4,13 +4,27 @@ Este é o **padrão obrigatório** para todo vídeo do canal **Digo Social (@dig
 
 Para um vídeo novo, **siga este guia do começo ao fim** e copie o código de referência. A direção editorial ([guia 5](5-direcao-editorial.md)) continua valendo: o roteiro de cada vídeo decide as cenas, e este guia decide **como** elas são feitas. Se o Diogo pedir algo diferente, siga o pedido e registre no `plano.md`.
 
+## 0. Apresentadora oficial (desde 19/10/2026)
+
+O avatar de IA do Diogo foi **substituído** por uma personagem nova, criada no projeto `014. nova-apresentadora`. Ela é a apresentadora de **todos os vídeos novos**. O avatar antigo e a voz clonada do Diogo ficam só para manutenção dos projetos 001–013.
+
+| Item | Valor |
+|---|---|
+| Personagem | mulher negra brasileira de ~30 anos, cabelo cacheado natural, brincos pequenos dourados, camiseta azul-marinho com a logo do Digo Social e "@digo.social" **ao lado** da logo, no lado direito do peito dela (lado esquerdo da tela), no mesmo cenário azul com o play ao fundo |
+| Imagem oficial (`start_image` dos clipes) | job `4312127e-0351-40fb-8acd-4902cae5c0b0` (cópia local: `projetos/014. nova-apresentadora/hf/apresentadora_oficial.png`) |
+| Voz oficial | `text2speech_v2`, `variant: elevenlabs`, `voice_type: preset`, `voice_id: 5c615d8a-5135-539d-8ab0-497b7ceabbae` (preset "Kayla") |
+
+- **Por que essa voz:** todas as vozes prontas da Higgsfield são nativas em inglês. Nos testes em português (ElevenLabs e MiniMax × Kayla, Naomi e Maya), a Kayla no ElevenLabs foi a mais natural. Custa ~0,6 crédito por frase curta. O ElevenLabs não tem `speech_rate`: o ritmo fica todo no `cortar_pausas.py` (passo 2 da seção 3).
+- **Com essa voz, a regra 9 vale ainda mais:** a grafia fonética foi o que fez a fala soar brasileira. Grafias aprovadas: "Instagrâm", "sômi" (some), "djíca" (dica), "tchi" (te), "gênti" (gente), "présta", "pôuca", "ségui", "Dígo Sociáu". Siga a mesma lógica nas palavras novas: "e" final vira "i", "de/te" viram "dji/tchi", vogais abertas ganham acento agudo e as fechadas, circunflexo.
+- **Variações da imagem:** gere a partir da imagem oficial (referência) com `gpt_image_2_5`, `quality: high`, `resolution: 2k`. A logo e o @ na camiseta são as únicas exceções à regra "sem texto em imagem gerada", e só porque o Diogo pediu. Confira sempre a grafia do @ com zoom.
+
 ---
 
 ## 1. Regras inegociáveis
 
 1. **Geração econômica na Higgsfield:**
    - avatar gerado no **Seedance 2 Mini** (`seedance_2_0_mini`, 720p, 9:16);
-   - **voz gerada separada** (`seed_audio`);
+   - **voz gerada separada** (voz oficial da seção 0; `seed_audio` só nos projetos antigos);
    - nunca usar modelo mais caro sem aprovação;
    - nenhum crédito sem custo aprovado.
 2. **Só a voz natural** dos áudios separados vai para o vídeo. O som que o Seedance gera junto com o clipe soa robótico e nunca entra na mixagem. Ele serve só para sincronizar a boca.
@@ -20,7 +34,7 @@ Para um vídeo novo, **siga este guia do começo ao fim** e copie o código de r
 6. **Logo oficial** como foto de perfil e na tela final. É `~/Documents/DigoSocial Logo Quadrada 1024x1024.png`, copiada para `projetos/<NNN>/prints/logo.png`. Nunca usar um quadro do avatar nem recriar a logo.
 7. **Todo gatilho sai de uma palavra falada** (`marcas.ts`). Nunca use um tempo em segundos solto no código. Conteúdo não aparece antes da palavra; um contêiner pode entrar até ~0,25 s antes, vazio.
 8. **Mídia não é versionada:** vídeo, áudio e imagem ficam fora do git (ver seção 10).
-9. **Texto da voz escrito como é falado (regra crucial).** O que vai para o gerador de voz (`seed_audio`) e para a fala dos clipes do avatar é o texto **do jeito que deve soar**, não o português ortograficamente correto. Acento, grafia e pontuação servem para guiar a pronúncia, mesmo que fiquem "errados" no papel. Exemplo do projeto 003: "Tem **lójinha** no Instagram?" (com acento) fez o "ó" sair aberto, como o Diogo fala; com "lojinha" a voz saiu estranha. O roteiro, a legenda e os textos na tela continuam no português correto. Registre a grafia fonética usada no `plano.md`.
+9. **Texto da voz escrito como é falado (regra crucial).** O que vai para o gerador de voz e para a fala dos clipes do avatar é o texto **do jeito que deve soar**, não o português ortograficamente correto. Acento, grafia e pontuação servem para guiar a pronúncia, mesmo que fiquem "errados" no papel. Exemplo do projeto 003: "Tem **lójinha** no Instagram?" (com acento) fez o "ó" sair aberto, como o Diogo fala; com "lojinha" a voz saiu estranha. O roteiro, a legenda e os textos na tela continuam no português correto. Registre a grafia fonética usada no `plano.md`.
 
 ## 2. O que pedir na Higgsfield (ou achar no histórico)
 
@@ -28,13 +42,13 @@ O conector oficial pode estar **só de leitura** (saldo, histórico e modelos, s
 
 | Asset | Modelo | Configuração | Observação |
 |---|---|---|---|
-| Voz de cada trecho | `seed_audio` | o texto do trecho **escrito como é falado** (regra 9) | um arquivo por bloco do roteiro (gancho, exemplo, …) |
+| Voz de cada trecho | voz oficial da seção 0 (`text2speech_v2` ElevenLabs) | o texto do trecho **escrito como é falado** (regra 9) | um arquivo por bloco do roteiro (gancho, exemplo, …) |
 | Avatar falando | `seedance_2_0_mini` | 720p, 9:16, 4–15 s, `generate_audio: true` | o áudio nativo **com o mesmo texto** é o que permite sincronizar a boca |
 | Clipes de apoio | `seedance_2_0_mini` | 8 s, sem áudio | viram fundo desfocado das cenas animadas |
 
 - Não é preciso ter clipe do avatar para todos os trechos. Trechos sem clipe viram cena 100% animada.
-- **Ordem de geração (desde o projeto 002):** primeiro as vozes → `tools/cortar_pausas.py` → transcrição → recorte do trecho de cada clipe da voz `_ritmo` (com 0,4 s de silêncio no começo, porque o clipe costuma congelar no início) → upload desse recorte como `audio_references` do clipe do avatar, com `start_image` = a imagem oficial do avatar (job `ab4aaba1-b3ad-4857-bbd1-ad2489e44341`). Assim a boca já nasce no ritmo final, e a sincronia vira só um ajuste fino. Continue rodando o relatório.
-- **Voz do Diogo no Seed Audio:** `audio_references` = `58086f4c-58ea-4cc1-8bd4-e9f3402f7c5d`, `speech_rate` 5, `loudness_rate` 23, mp3 24 kHz.
+- **Ordem de geração (desde o projeto 002):** primeiro as vozes → `tools/cortar_pausas.py` → transcrição → recorte do trecho de cada clipe da voz `_ritmo` (com 0,4 s de silêncio no começo, porque o clipe costuma congelar no início) → upload desse recorte como `audio_references` do clipe do avatar, com `start_image` = a imagem oficial da apresentadora (seção 0; o avatar antigo do Diogo era o job `ab4aaba1-b3ad-4857-bbd1-ad2489e44341`). Assim a boca já nasce no ritmo final, e a sincronia vira só um ajuste fino. Continue rodando o relatório.
+- **Voz do Diogo no Seed Audio (só projetos 001–013):** `audio_references` = `58086f4c-58ea-4cc1-8bd4-e9f3402f7c5d`, `speech_rate` 5, `loudness_rate` 23, mp3 24 kHz.
   - **Vídeo de dica / explicação (padrão aprovado no projeto 005):** `speech_rate` **−10** (com 5 a voz sai corrida e chegou a engolir palavra: "esquece de você" virou "esquece de funciona"). O ritmo final é ajustado no corte de pausas (passo 2).
   - **Pergunta não sai em tom de pergunta** com o "?" sozinho. Escreva a pergunta com uma muleta falada no fim, como "Você posta e some, **né?**". Essa foi a única de três grafias testadas que subiu a entonação; "Você posta... e some?!" e "E aí? Você posta e some??" saíram como afirmação. Se a pergunta for o gancho, gere só ela à parte (≈0,2 crédito), compare e emende no lugar.
 - **Preço observado (out/2026):** Seedance 2 Mini 720p = **1 crédito por segundo**; Seed Audio ≈ 0,1 crédito por segundo de fala. Confirme com `get_cost` antes de cada lote.
