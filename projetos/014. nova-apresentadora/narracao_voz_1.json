@@ -2,7 +2,7 @@
  "saida": "video/narracao_voz1.wav",
  "mapa": "transcricao/narracao_voz1",
  "trechos": [
-  {"nome": "teste", "audio": "hf/testes_voz4/1_imagem_oficial_respiro.wav", "transcricao": "transcricao/voz4_1_imagem_oficial_respiro"}
+  {"nome": "teste", "audio": "hf/voz1_ritmo.wav", "transcricao": "transcricao/voz4_1_imagem_oficial_respiro"}
  ],
  "clipes": {
   "teste": {"video": "hf/avatar_voz1.mp4", "transcricao": "transcricao/avatar_voz1", "saida": "hf/sync_voz1.mp4"}

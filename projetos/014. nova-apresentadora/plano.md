@@ -88,3 +88,14 @@ Sem `pitch_rate`, `speech_rate` 0, corte `--pausa 0.25 --pausa-frase 0.45 --caud
 | 4 | `audio_references` = amostra Soraya | `3e929b4a…` | 162 Hz | 12,4 st |
 
 O Diogo gostou da 1 e da 3. Vídeos de teste (Seedance 2 Mini): voz 1 = clipe `d691757e-1ebf-4388-86ad-09c9b22482b6` (atraso mediano 5 ms, 8% > 45 ms); voz 3 = clipe `71e6ae09-07db-4e39-82c5-b0af7948ec8f` (10 ms, 19% > 45 ms, com gestos de mão).
+
+## Sincronia da voz 1 (19/10/2026)
+
+O Diogo escolheu a voz 1, mas a boca não acompanhava. Causas:
+
+1. **Erro na montagem:** a voz entrou no `narracao.py` sem o sufixo `_ritmo` e teve as pausas cortadas de novo (7,6 s → 6,97 s), enquanto a boca falava em 7,7 s. **Regra: a voz já cortada sempre se chama `<nome>_ritmo.wav`.**
+2. **Clipe mais longo que a voz:** com o clipe de 9 s para 8,4 s de referência, o Seedance falou ~20% mais devagar e pulou o "Ó". **Regra: a referência tem exatamente a duração do clipe** (0,15 s de silêncio no início e a voz cortada logo depois da última palavra), e o prompt pede "exact lip-sync… same speed and timing, no extra pauses".
+
+Duas tentativas grátis de reencaixar a voz na boca (mover as pausas; esticar cada frase) pioraram o resultado e foram descartadas.
+
+Com as duas correções: clipe novo `0030e4f3-17de-496a-b70f-47f9c3e8175e` (referência de 8,0 s para 8 s) com atraso mediano de 5 ms, 6% das janelas acima de 45 ms e velocidade de 0,28 a 1,57×; o clipe anterior `d691757e…` ressincronizado também chegou a 6%, mas com aceleração de até 2,5× no "Ó".
