@@ -4,25 +4,25 @@
  "trechos": [
   {
    "nome": "a",
-   "audio": "hf/voz_gancho_limpa_ritmo.wav",
-   "transcricao": "transcricao/voz_gancho_limpa_ritmo",
-   "ate": 8.55
+   "audio": "hf/voz_gancho_ritmo.wav",
+   "transcricao": "transcricao/voz_gancho_ritmo",
+   "ate": 7.85
   },
   {
    "nome": "meio",
-   "audio": "hf/voz_gancho_limpa_ritmo.wav",
-   "transcricao": "transcricao/voz_gancho_limpa_ritmo",
-   "de": 8.55
+   "audio": "hf/voz_gancho_ritmo.wav",
+   "transcricao": "transcricao/voz_gancho_ritmo",
+   "de": 7.85
   },
   {
    "nome": "corpo",
-   "audio": "hf/voz_meio_limpa_ritmo.wav",
-   "transcricao": "transcricao/voz_meio_limpa_ritmo"
+   "audio": "hf/voz_meio_ritmo.wav",
+   "transcricao": "transcricao/voz_meio_ritmo"
   },
   {
    "nome": "b",
-   "audio": "hf/voz_cta_limpa_ritmo.wav",
-   "transcricao": "transcricao/voz_cta_limpa_ritmo"
+   "audio": "hf/voz_cta_ritmo.wav",
+   "transcricao": "transcricao/voz_cta_ritmo"
   }
  ],
  "clipes": {

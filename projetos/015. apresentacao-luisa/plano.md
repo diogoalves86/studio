@@ -54,3 +54,15 @@ Ordem: voz → `cortar_pausas.py` (receita da Luísa, saída `_ritmo.wav`) → t
 - **Final:** `edicoes/015. apresentacao-luisa/apresentacao-luisa_final.mp4`, 1080×1920, 30 fps, h264 + AAC estéreo, 65,27 s (fim da fala + 1,4 s), −13,9 LUFS, pico −1,8 dBTP (`volume=1.9dB` antes do limitador; sem ganho dava −15,8). Na prancha final ainda saiu a legenda "OUTRO LUGAR" sobre o texto da cena; foi escondida e o vídeo, renderizado de novo.
 - **Aprovado pelo Diogo em 19/10/2026.** É o modelo de Reels com a Luísa: voz ElevenLabs v4 (clone v2), clipes no Seedance Mini e imagem adiantada 3 quadros.
 - **Volume:** o Diogo preferiu **−24 LUFS** (pico −10 dBTP), que disfarça o ruído leve da voz. Arquivo para postar: `edicoes/015. apresentacao-luisa/apresentacao-luisa_final_-24LUFS.mp4`. Esse passa a ser o volume padrão dos vídeos da Luísa.
+
+## Versão final com a voz Onyx (19/10/2026)
+
+O ruído do clone v2 incomodava, então o vídeo foi refeito com a voz pronta **Onyx** (ElevenLabs v4, `8911390e…`), escolhida pelo Diogo entre 5 vozes prontas.
+
+- **Voz:** 3 blocos, todas as palavras certas, corte a 1,2× e só um `highpass=f=70` (sem filtro de ruído). A narração tem 59,07 s; o trecho `a` vai até 7,85 s.
+- **Clipes:** A = job `60365fba-72e3-4ed6-bda0-ea379de76822` (8 s); B = job `95004fed-496b-4721-9d9f-cb8c08c8b4d0` (4 s).
+- **Sincronia:** A com 5 ms e 3% das janelas acima de 45 ms; B com 5 ms e 13%. O "OI! 👋" vai de 0,58 a 1,22 s; no CTA, a Luísa volta em tela cheia em «segue» + 0,2 s e sai em «toda» − 0,2 s.
+- **Legenda:** o Whisper escreveu "vêm"; a legenda mostra "veem".
+- **Volume:** de volta a −14 LUFS a pedido do Diogo (voz limpa). Com `volume=1.5dB` antes do limitador, deu −14,0 LUFS e pico −1,9 dBTP.
+- **Final:** `edicoes/015. apresentacao-luisa/apresentacao-luisa_final.mp4`, 60,5 s. A versão anterior (clone v2) foi guardada em `versao_clone_v2/`.
+- **Custo desta refação:** ~17 créditos (~4,9 de voz e 12 de clipes), mais 3,5 do teste das vozes prontas.

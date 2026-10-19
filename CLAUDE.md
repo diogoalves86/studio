@@ -13,7 +13,7 @@ Este fork é do **Diogo (Digo Social, @digo.social)**. Todo Reels com o avatar d
 - só a **voz natural** vai para o vídeo, e **pausa longa sempre é cortada**: toda voz baixada passa por `tools/cortar_pausas.py` antes de qualquer outra etapa (pausas > 0,25 s viram 0,2 s), sem precisar o Diogo pedir;
 - boca **sincronizada quadro a quadro** (`tools/sincronizar_avatar.py`); os "momentos artificiais" do relatório ficam cobertos por motion em tela cheia ou com o avatar em card;
 - motion denso, zoom por frase com punch-in, wipe azul nas trocas, textura de câmera, legenda dinâmica, efeitos sonoros (`tools/gerar_sfx.py`) e tela final com a **logo oficial**;
-- final em 1080×1920, −14 LUFS, pico ≤ −1,5 dBTP (vídeos com a Luísa: **−24 LUFS**);
+- final em 1080×1920, −14 LUFS, pico ≤ −1,5 dBTP;
 - **texto da voz escrito como é falado:** o que vai para o gerador de voz e para a fala do avatar segue a pronúncia, não a ortografia (ex.: "Tem **lójinha** no Instagram?"); roteiro, legenda e telas ficam no português correto;
 - **nunca versionar vídeo, áudio ou imagem**; commits no `main` do fork (`origin`).
 

@@ -31,8 +31,9 @@ const M = {
   menos: em('menos'),
   marca1: em('marca'),
   seus: em('seus'),
-  veem: em('veem'),
-  quem1: em('quem', em('veem')),
+  // O Whisper escreveu "vêm" (a fala diz "veem"); a legenda corrige abaixo.
+  veem: em('vêm'),
+  quem1: em('quem', em('vêm')),
   quase: em('quase'),
   motivo: em('motivo'),
   premiar: em('premiar'),
@@ -516,8 +517,9 @@ const Dica2: React.FC<{t: number}> = ({t}) => {
 
 // ---------- Fechamento: fontes + seguir ----------
 
-const B1 = M.segue2 - 0.15;
-const B2 = M.toda2 - 0.12;
+// CTA: a Luísa volta em tela cheia depois do congelamento em «segue» (56,16–56,28 s) e sai antes do de 57,38 s.
+const B1 = M.segue2 + 0.2;
+const B2 = M.toda2 - 0.2;
 
 const FONTES = [
   'Tubefilter · fev/2021 e abr/2022',
@@ -668,8 +670,8 @@ const EVENTOS: Evento[] = [
   {som: 'impacto', em: B2, volume: 0.5},
 ];
 
-// Legenda: o Whisper separa "d" e "'água"; juntamos em "D'ÁGUA".
-const LEGENDA = PALAVRAS.reduce<typeof PALAVRAS>((acc, p) => {
+// Legenda: o Whisper separa "d" e "'água" (juntamos em "D'ÁGUA") e escreveu "vêm" no lugar de "veem".
+const LEGENDA = PALAVRAS.map((p) => (p.w === 'vêm,' ? {...p, w: 'veem,'} : p)).reduce<typeof PALAVRAS>((acc, p) => {
   const ant = acc[acc.length - 1];
   if (ant && ant.w === 'd' && p.w.startsWith("'")) acc[acc.length - 1] = {w: `d${p.w}`, s: ant.s, e: p.e};
   else acc.push(p);
@@ -677,9 +679,9 @@ const LEGENDA = PALAVRAS.reduce<typeof PALAVRAS>((acc, p) => {
 }, []);
 
 // Alternância da Luísa na abertura (ajustada pelos momentos artificiais de sincronia.md):
-// 0,79–1,19 s («Eu» congelado) fica coberto pelo "OI! 👋"; 5,05–5,23 e 6,89–7,52 caem no card.
-const A0 = 0.7;
-const A1 = 1.25;
+// 0,63–1,19 s («Eu» congelado) fica coberto pelo "OI! 👋"; 4,79–4,98 e 6,49–7,06 caem no card.
+const A0 = 0.58;
+const A1 = 1.22;
 const A2 = M.toda1 - 0.1;
 
 const Oi: React.FC<{t: number}> = ({t}) => {
