@@ -16,6 +16,7 @@ import {PareDeSumir, SUMIR_DURACAO} from './videos/pare-de-sumir';
 import {CurtidaNaoCresce, CURTIDA_DURACAO} from './videos/curtida-nao-cresce';
 import {TresSegundos, TRES_DURACAO} from './videos/tres-segundos';
 import {HashtagNaoFazMilagre, HASHTAG_DURACAO} from './videos/hashtag-nao-faz-milagre';
+import {PerfilTresSegundos, PERFIL_DURACAO} from './videos/perfil-tres-segundos';
 
 const FPS = 30;
 const SEIS_SEGUNDOS = 6 * FPS;
@@ -60,6 +61,12 @@ export const RemotionRoot: React.FC = () => (
     </Folder>
     <Folder name="008-hashtag-nao-faz-milagre">
       <Composition id="HashtagNaoFazMilagre" component={HashtagNaoFazMilagre} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(HASHTAG_DURACAO * FPS)} />
+    </Folder>
+    <Folder name="009-perfil-tres-segundos">
+      <Composition id="PerfilTresSegundos" component={PerfilTresSegundos} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(PERFIL_DURACAO * FPS)} />
+    </Folder>
+    </Folder>
+    </Folder>
     </Folder>
   </>
 );
