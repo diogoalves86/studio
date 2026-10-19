@@ -1,3 +1,3 @@
-<!-- large-v3-turbo | cpu | 5.068s -->
+<!-- large-v3-turbo | cpu | 4.833s -->
 [00:00.000] Se essa dica te ajudou, segue o Digo Social.
-[00:03.240] Toda semana tem mais.
+[00:03.080] Toda semana tem mais.
