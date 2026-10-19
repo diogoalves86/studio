@@ -14,7 +14,7 @@ Este fork é do **Diogo (Digo Social, @digo.social)**. Todo Reels com o avatar d
 - boca **sincronizada quadro a quadro** (`tools/sincronizar_avatar.py`); os "momentos artificiais" do relatório ficam cobertos por motion em tela cheia ou com o avatar em card;
 - motion denso, zoom por frase com punch-in, wipe azul nas trocas, textura de câmera, legenda dinâmica, efeitos sonoros (`tools/gerar_sfx.py`) e tela final com a **logo oficial**;
 - final em 1080×1920, −14 LUFS, pico ≤ −1,5 dBTP;
-- **texto da voz escrito como é falado:** o que vai para o gerador de voz e para a fala do avatar segue a pronúncia, não a ortografia (ex.: "Tem **lójinha** no Instagrâm?"); roteiro, legenda e telas ficam no português correto;
+- **texto da voz escrito como é falado:** o que vai para o gerador de voz e para a fala do avatar segue a pronúncia, não a ortografia (ex.: "Tem **lójinha** no Instagrâ?"); roteiro, legenda e telas ficam no português correto;
 - **nunca versionar vídeo, áudio ou imagem**; commits no `main` do fork (`origin`).
 
 ## Início de toda sessão

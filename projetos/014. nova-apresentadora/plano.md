@@ -20,7 +20,7 @@ Texto da amostra G (escrito como se fala):
 
 > Você pósta e sômi, né? Então, présta atenção, porque o Instagram móstra o seu póst primeiro pra pôuca gênti. Se essa djíca tchi ajudou, ségui o Dígo Sociáu.
 
-Ajuste pedido depois: "Instagrâm" (circunflexo no último "a").
+Ajustes pedidos depois: "Instagrâm" e, no teste em vídeo, "Instagrâ" (sem o "m").
 
 Voz oficial: `text2speech_v2`, `variant: elevenlabs`, `voice_type: preset`, `voice_id: 5c615d8a-5135-539d-8ab0-497b7ceabbae`.
 
@@ -35,3 +35,12 @@ Voz oficial: `text2speech_v2`, `variant: elevenlabs`, `voice_type: preset`, `voi
 ## Custo
 
 Cerca de 15,5 créditos: 7 testes de voz (~4,2), 4 rostos (2,75) e 3 rodadas de logo na camiseta (2,75 cada).
+
+## Vídeo de teste (19/10/2026)
+
+- Fala: "Oi, gente! Eu sou a nova cara do Digo Social. Toda semana tem dica de Instagram aqui. Segue o @digo.social!"
+- Texto da voz: "Ôi, gênti! Eu sou a nova cara do Dígo Sociáu. Tóda semana tem djíca de Instagrâ aqui. Ségui o Dígo Sociáu!" (o Diogo corrigiu "Instagrâm" para "Instagrâ").
+- Voz: job `8538c71b-4e43-4704-865a-b6f08e39af21`, 8,56 s → 6,68 s no corte de dica (1,2×).
+- Clipe: Seedance 2 Mini 720p 9:16, 8 s, `start_image` = `4312127e…`, `audio_references` = voz `_ritmo` com 0,4 s de silêncio na frente. Job `e456cee0-57d3-4d08-820a-ec6db9711737` (8 créditos).
+- Sincronia: atraso mediano 10 ms, 4% das janelas acima de 45 ms, velocidade 0,72–1,65×. Momentos artificiais: «Oi,» (0,01–0,13 s) e «Instagram aqui.» (4,76–4,93 s).
+- Saída: `video/teste_apresentadora.mp4`, 1080×1920, −14,4 LUFS, pico −4,5 dBTP.

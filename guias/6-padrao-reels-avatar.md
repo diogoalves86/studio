@@ -15,7 +15,7 @@ O avatar de IA do Diogo foi **substituído** por uma personagem nova, criada no 
 | Voz oficial | `text2speech_v2`, `variant: elevenlabs`, `voice_type: preset`, `voice_id: 5c615d8a-5135-539d-8ab0-497b7ceabbae` (preset "Kayla") |
 
 - **Por que essa voz:** todas as vozes prontas da Higgsfield são nativas em inglês. Nos testes em português (ElevenLabs e MiniMax × Kayla, Naomi e Maya), a Kayla no ElevenLabs foi a mais natural. Custa ~0,6 crédito por frase curta. O ElevenLabs não tem `speech_rate`: o ritmo fica todo no `cortar_pausas.py` (passo 2 da seção 3).
-- **Com essa voz, a regra 9 vale ainda mais:** a grafia fonética foi o que fez a fala soar brasileira. Grafias aprovadas: "Instagrâm", "sômi" (some), "djíca" (dica), "tchi" (te), "gênti" (gente), "présta", "pôuca", "ségui", "Dígo Sociáu". Siga a mesma lógica nas palavras novas: "e" final vira "i", "de/te" viram "dji/tchi", vogais abertas ganham acento agudo e as fechadas, circunflexo.
+- **Com essa voz, a regra 9 vale ainda mais:** a grafia fonética foi o que fez a fala soar brasileira. Grafias aprovadas: "Instagrâ", "sômi" (some), "djíca" (dica), "tchi" (te), "gênti" (gente), "présta", "pôuca", "ségui", "Dígo Sociáu". Siga a mesma lógica nas palavras novas: "e" final vira "i", "de/te" viram "dji/tchi", vogais abertas ganham acento agudo e as fechadas, circunflexo.
 - **Variações da imagem:** gere a partir da imagem oficial (referência) com `gpt_image_2_5`, `quality: high`, `resolution: 2k`. A logo e o @ na camiseta são as únicas exceções à regra "sem texto em imagem gerada", e só porque o Diogo pediu. Confira sempre a grafia do @ com zoom.
 
 ---
