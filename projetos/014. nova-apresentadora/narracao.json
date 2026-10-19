@@ -2,9 +2,9 @@
  "saida": "video/narracao.wav",
  "mapa": "transcricao/narracao",
  "trechos": [
-  {"nome": "teste", "audio": "hf/voz_teste_ritmo.wav", "transcricao": "transcricao/voz_teste_ritmo"}
+  {"nome": "teste", "audio": "hf/voz_teste2_ritmo.wav", "transcricao": "transcricao/voz_teste2_ritmo"}
  ],
  "clipes": {
-  "teste": {"video": "hf/avatar_teste.mp4", "transcricao": "transcricao/avatar_teste", "saida": "hf/sync_teste.mp4"}
+  "teste": {"video": "hf/avatar_teste2.mp4", "transcricao": "transcricao/avatar_teste2", "saida": "hf/sync_teste2.mp4"}
  }
 }

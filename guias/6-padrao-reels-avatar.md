@@ -12,10 +12,10 @@ O avatar de IA do Diogo foi **substituído** por uma personagem nova, criada no 
 |---|---|
 | Personagem | mulher negra brasileira de ~30 anos, cabelo cacheado natural, brincos pequenos dourados, camiseta azul-marinho com a logo do Digo Social e "@digo.social" **ao lado** da logo, no lado direito do peito dela (lado esquerdo da tela), no mesmo cenário azul com o play ao fundo |
 | Imagem oficial (`start_image` dos clipes) | job `4312127e-0351-40fb-8acd-4902cae5c0b0` (cópia local: `projetos/014. nova-apresentadora/hf/apresentadora_oficial.png`) |
-| Voz oficial | `text2speech_v2`, `variant: elevenlabs`, `voice_type: preset`, `voice_id: 5c615d8a-5135-539d-8ab0-497b7ceabbae` (preset "Kayla") |
+| Voz oficial | `seed_audio`, `speech_rate` −10, `format` mp3, `medias: [{role: audio_references, value: f2303dcf-150b-43ac-a939-a1f6a16e502b}]` (voz criada pelo Seed Audio a partir da imagem dela e travada por clonagem) |
 
-- **Por que essa voz:** todas as vozes prontas da Higgsfield são nativas em inglês. Nos testes em português (ElevenLabs e MiniMax × Kayla, Naomi e Maya), a Kayla no ElevenLabs foi a mais natural. Custa ~0,6 crédito por frase curta. O ElevenLabs não tem `speech_rate`: o ritmo fica todo no `cortar_pausas.py` (passo 2 da seção 3).
-- **Com essa voz, a regra 9 vale ainda mais:** a grafia fonética foi o que fez a fala soar brasileira. Grafias aprovadas: "Instagrâ", "sômi" (some), "djíca" (dica), "tchi" (te), "gênti" (gente), "présta", "pôuca", "ségui", "Dígo Sociáu". Siga a mesma lógica nas palavras novas: "e" final vira "i", "de/te" viram "dji/tchi", vogais abertas ganham acento agudo e as fechadas, circunflexo.
+- **Por que essa voz:** todas as vozes prontas da Higgsfield são nativas em inglês. A primeira escolha (ElevenLabs "Kayla") foi descartada no vídeo de teste: "não ficou nada a ver com a personagem". Na segunda rodada, o Diogo escolheu a voz que o Seed Audio criou a partir da **imagem oficial** (`image_references`). Essa voz muda a cada geração, por isso a amostra aprovada (job `f2303dcf…`) vira `audio_references` de toda fala nova, como era feito com a voz do Diogo. A clonagem mantém o tom (F0 mediano de 235 Hz nas duas). Custa ~1,1 crédito por frase curta.
+- **Com essa voz, a regra 9 vale ainda mais:** a grafia fonética foi o que fez a fala soar brasileira. Grafias aprovadas: "Instagrâ", "Tôda semana" (não "Tóda"), "sômi" (some), "dica" (sem mexer: "djíca"/"djica" saíram como "de dica"/"dia"), "tchi" (te), "gênti" (gente), "présta", "pôuca", "ségui", "Dígo Sociáu". Siga a mesma lógica nas palavras novas: "e" final vira "i", "te" vira "tchi", vogais abertas ganham acento agudo e as fechadas, circunflexo.
 - **Variações da imagem:** gere a partir da imagem oficial (referência) com `gpt_image_2_5`, `quality: high`, `resolution: 2k`. A logo e o @ na camiseta são as únicas exceções à regra "sem texto em imagem gerada", e só porque o Diogo pediu. Confira sempre a grafia do @ com zoom.
 
 ---
@@ -24,7 +24,7 @@ O avatar de IA do Diogo foi **substituído** por uma personagem nova, criada no 
 
 1. **Geração econômica na Higgsfield:**
    - avatar gerado no **Seedance 2 Mini** (`seedance_2_0_mini`, 720p, 9:16);
-   - **voz gerada separada** (voz oficial da seção 0; `seed_audio` só nos projetos antigos);
+   - **voz gerada separada** (`seed_audio` com a voz oficial da seção 0);
    - nunca usar modelo mais caro sem aprovação;
    - nenhum crédito sem custo aprovado.
 2. **Só a voz natural** dos áudios separados vai para o vídeo. O som que o Seedance gera junto com o clipe soa robótico e nunca entra na mixagem. Ele serve só para sincronizar a boca.
@@ -42,7 +42,7 @@ O conector oficial pode estar **só de leitura** (saldo, histórico e modelos, s
 
 | Asset | Modelo | Configuração | Observação |
 |---|---|---|---|
-| Voz de cada trecho | voz oficial da seção 0 (`text2speech_v2` ElevenLabs) | o texto do trecho **escrito como é falado** (regra 9) | um arquivo por bloco do roteiro (gancho, exemplo, …) |
+| Voz de cada trecho | `seed_audio` com a voz oficial da seção 0 | o texto do trecho **escrito como é falado** (regra 9) | um arquivo por bloco do roteiro (gancho, exemplo, …) |
 | Avatar falando | `seedance_2_0_mini` | 720p, 9:16, 4–15 s, `generate_audio: true` | o áudio nativo **com o mesmo texto** é o que permite sincronizar a boca |
 | Clipes de apoio | `seedance_2_0_mini` | 8 s, sem áudio | viram fundo desfocado das cenas animadas |
 

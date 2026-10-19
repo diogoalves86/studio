@@ -44,3 +44,28 @@ Cerca de 15,5 créditos: 7 testes de voz (~4,2), 4 rostos (2,75) e 3 rodadas de 
 - Clipe: Seedance 2 Mini 720p 9:16, 8 s, `start_image` = `4312127e…`, `audio_references` = voz `_ritmo` com 0,4 s de silêncio na frente. Job `e456cee0-57d3-4d08-820a-ec6db9711737` (8 créditos).
 - Sincronia: atraso mediano 10 ms, 4% das janelas acima de 45 ms, velocidade 0,72–1,65×. Momentos artificiais: «Oi,» (0,01–0,13 s) e «Instagram aqui.» (4,76–4,93 s).
 - Saída: `video/teste_apresentadora.mp4`, 1080×1920, −14,4 LUFS, pico −4,5 dBTP.
+
+**Resultado:** o Diogo reprovou a voz: "não ficou nada a ver com a personagem".
+
+## Segunda rodada de voz (19/10/2026)
+
+Análise: o F0 mediano da Kayla em português foi 186 Hz (mais jovem que a personagem). Foram testadas vozes mais graves e quentes, mais uma criada a partir da imagem dela:
+
+| # | Voz | F0 | |
+|---|---|---|---|
+| 1 | `seed_audio` + `image_references` = imagem oficial | 235 Hz | **escolhida** |
+| 2 | ElevenLabs Onyx | 186 Hz | |
+| 3 | ElevenLabs Soraya | 167 Hz | |
+| 4 | ElevenLabs Sienna | 203 Hz | |
+| 5 | ElevenLabs Nadine | 190 Hz | |
+
+A voz criada pela imagem muda a cada geração, então a amostra 1 (job `f2303dcf-150b-43ac-a939-a1f6a16e502b`) virou `audio_references`. A clonagem manteve o timbre (235 Hz).
+
+Grafias: "djíca"/"djica" saíram como "de dica"/"dia", então "dica" fica normal; o Diogo pediu "Tôda semana" (não "Tóda").
+
+## Vídeo de teste 2
+
+- Texto da voz: "Ôi, gênti! Eu sou a nova cara do Dígo Sociáu. Tôda semana tem dica de Instagrâ aqui. Ségui o Dígo Sociáu!"
+- Voz: job `b801f406-bfc5-487c-9a0a-baae07135a30`, 8,02 s → 6,29 s no corte de dica.
+- Clipe: job `b632fda4-89f5-4144-b59a-1ee1e637822c`. Sincronia: atraso mediano 5 ms, 4% das janelas acima de 45 ms.
+- Saída: `video/teste_apresentadora_v2.mp4`, −14,4 LUFS, pico −1,7 dBTP.
