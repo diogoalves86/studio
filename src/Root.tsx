@@ -19,6 +19,7 @@ import {HashtagNaoFazMilagre, HASHTAG_DURACAO} from './videos/hashtag-nao-faz-mi
 import {PerfilTresSegundos, PERFIL_DURACAO} from './videos/perfil-tres-segundos';
 import {StoryDirectViraPost, STORY_DURACAO} from './videos/story-direct-vira-post';
 import {TaticasDaEleicao, TATICAS_DURACAO} from './videos/taticas-da-eleicao';
+import {StoriesVende, STORIES_VENDE_DURACAO} from './videos/stories-vende';
 
 const FPS = 30;
 const SEIS_SEGUNDOS = 6 * FPS;
@@ -73,6 +74,8 @@ export const RemotionRoot: React.FC = () => (
     <Folder name="011-taticas-da-eleicao">
       <Composition id="TaticasDaEleicao" component={TaticasDaEleicao} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(TATICAS_DURACAO * FPS)} />
     </Folder>
+    <Folder name="012-stories-vende">
+      <Composition id="StoriesVende" component={StoriesVende} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(STORIES_VENDE_DURACAO * FPS)} />
     </Folder>
   </>
 );

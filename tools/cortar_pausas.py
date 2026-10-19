@@ -16,6 +16,11 @@ inserindo silêncio no ponto mais silencioso quando a voz emenda as frases; e
 --velocidade 0.95 deixa a fala 5% mais lenta sem mudar o tom. Use quando o
 vídeo apresenta algo novo e precisa respirar (ex.: destaques 1 e 2 do projeto 002).
 
+Cortes suaves (opcional): --cauda 0.8 mantém mais da pausa logo depois da palavra
+(o fim de "nova", "mais" etc. não some), --limiar 30 trata o fim baixinho das
+palavras como fala e --fade 0.04 deixa a saída de cada trecho menos abrupta.
+Padrão dos Reels de dica desde o 012: --cauda 0.8 --limiar 30 --fade 0.04.
+
 Rode em TODA voz baixada da Higgsfield, antes de transcrever. A saída é a
 voz oficial do vídeo; o arquivo original nunca é alterado.
 """
@@ -46,8 +51,8 @@ def energia(caminho):
     return db, len(amostras) / TAXA
 
 
-def pausas(db, minimo):
-    limiar = sorted(db)[int(len(db) * 0.9)] - ABAIXO_DO_PICO
+def pausas(db, minimo, abaixo=ABAIXO_DO_PICO):
+    limiar = sorted(db)[int(len(db) * 0.9)] - abaixo
     trechos, i = [], 0
     while i < len(db):
         if db[i] < limiar:
@@ -87,6 +92,9 @@ def main():
     ap.add_argument('--frases', help='palavras.json da voz ORIGINAL: garante --pausa-frase depois de cada fim de frase')
     ap.add_argument('--pausa-frase', type=float, default=0.45, help='pausa depois de ponto final/interrogação, com --frases (s)')
     ap.add_argument('--velocidade', type=float, default=1.0, help='ritmo da fala (0,95 = 5%% mais lenta, mesmo tom de voz)')
+    ap.add_argument('--cauda', type=float, default=0.65, help='fração da pausa mantida DEPOIS da fala (o resto fica antes da próxima); maior = fim de palavra menos cortado')
+    ap.add_argument('--limiar', type=float, default=ABAIXO_DO_PICO, help='dB abaixo do pico que contam como silêncio; maior = fins de palavra baixinhos contam como fala')
+    ap.add_argument('--fade', type=float, default=0.012, help='fade de saída de cada trecho (s); maior = corte menos abrupto')
     a = ap.parse_args()
 
     db, total = energia(a.entrada)
@@ -97,29 +105,29 @@ def main():
     frases = fins_de_frase(a.frases, db, total) if a.frases else []
 
     # Pausas medidas (ini, fim) e pontos de fim de frase sem pausa medida (c, c). Cada item vira ("audio", ini, fim) ou ("silencio", s).
-    eventos = [(ini, fim) for ini, fim in pausas(db, a.min) if fim > ini_fala and ini < fim_fala - QUADRO]
+    eventos = [(ini, fim) for ini, fim in pausas(db, a.min, a.limiar) if fim > ini_fala and ini < fim_fala - QUADRO]
     eh_frase = lambda ini, fim: any(ini - 0.08 <= c <= fim + 0.08 for c in frases)
     eventos += [(c, c) for c in frases if not any(ini - 0.08 <= c <= fim + 0.08 for ini, fim in eventos) and ini_fala < c < fim_fala]
     eventos.sort()
 
-    pre0 = a.pausa * 0.35
+    pre0 = a.pausa * (1 - a.cauda)
     partes, cursor = [], max(0.0, ini_fala - pre0)
     for ini, fim in eventos:
         alvo = a.pausa_frase if (a.frases and eh_frase(ini, fim)) else a.pausa
         if fim - ini >= alvo:                 # pausa longa: encurta para o alvo
-            partes.append(('audio', cursor, ini + alvo * 0.65))
-            cursor = fim - alvo * 0.35
+            partes.append(('audio', cursor, ini + alvo * a.cauda))
+            cursor = fim - alvo * (1 - a.cauda)
         else:                                 # pausa curta no fim de frase: completa com silêncio no meio
             meio = (ini + fim) / 2
             partes += [('audio', cursor, meio), ('silencio', alvo - (fim - ini) - (0.05 if fim == ini else 0))]
             cursor = meio
-    partes.append(('audio', cursor, min(total, fim_fala + a.pausa * 0.65)))
+    partes.append(('audio', cursor, min(total, fim_fala + a.pausa * a.cauda)))
     partes = [p for p in partes if p[0] == 'audio' or p[1] > 0.01]
 
     filtro = ''
     for k, p in enumerate(partes):
         if p[0] == 'audio':
-            filtro += f'[0:a]atrim={p[1]:.3f}:{p[2]:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.008,areverse,afade=t=in:d=0.012,areverse[s{k}];'
+            filtro += f'[0:a]atrim={p[1]:.3f}:{p[2]:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.008,areverse,afade=t=in:d={a.fade:.3f},areverse[s{k}];'
         else:
             filtro += f'[0:a]atrim=0:{p[1]:.3f},asetpts=PTS-STARTPTS,volume=0[s{k}];'
     filtro += ''.join(f'[s{k}]' for k in range(len(partes))) + f'concat=n={len(partes)}:v=0:a=1'
