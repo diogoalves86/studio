@@ -8,7 +8,7 @@ Responda sempre no idioma da pessoa (padrão: português do Brasil).
 
 Este fork é do **Diogo (Digo Social, @digo.social)**. Todo Reels com o avatar de IA dele segue o padrão de [guias/6-padrao-reels-avatar.md](guias/6-padrao-reels-avatar.md). **Leia esse guia antes de planejar** e use [src/videos/reels-avatar/](src/videos/reels-avatar/) como código de referência. O essencial:
 
-- **apresentadora oficial desde 19/10/2026:** a personagem nova (mulher negra de ~30 anos) e a voz dela no Seed Audio (seção 0 do guia 6) substituem o avatar e a voz do Diogo em todos os vídeos novos;
+- **apresentadora oficial desde 19/10/2026:** a personagem nova (mulher negra de ~30 anos) e a voz dela (ElevenLabs Onyx, seção 0 do guia 6) substituem o avatar e a voz do Diogo em todos os vídeos novos;
 - avatar no **Seedance 2 Mini** e **voz gerada separada** (economia de créditos); nada mais caro sem aprovação;
 - só a **voz natural** vai para o vídeo, e **pausa longa sempre é cortada**: toda voz baixada passa por `tools/cortar_pausas.py` antes de qualquer outra etapa (pausas > 0,25 s viram 0,2 s), sem precisar o Diogo pedir;
 - boca **sincronizada quadro a quadro** (`tools/sincronizar_avatar.py`); os "momentos artificiais" do relatório ficam cobertos por motion em tela cheia ou com o avatar em card;
