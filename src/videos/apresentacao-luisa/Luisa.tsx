@@ -710,6 +710,7 @@ export const CONFIG: Config = {
     [A0, A1],
     [M.toda1, T.meio],
     [M.motivo, M.adam],
+    [M.outro2, M.em2024],
     [M.primeira2, M.segunda],
     [T.b, B2],
     [B2, T.fim],
