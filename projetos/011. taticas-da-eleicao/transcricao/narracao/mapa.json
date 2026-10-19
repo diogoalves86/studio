@@ -1,0 +1,1293 @@
+{
+ "trechos": [
+  {
+   "nome": "a",
+   "inicio": 0.0,
+   "fim": 4.48
+  },
+  {
+   "nome": "meio",
+   "inicio": 4.48,
+   "fim": 49.76
+  },
+  {
+   "nome": "b",
+   "inicio": 49.76,
+   "fim": 54.812
+  }
+ ],
+ "palavras": [
+  {
+   "w": "Não",
+   "s": 0.0,
+   "e": 0.12,
+   "trecho": "a"
+  },
+  {
+   "w": "importa",
+   "s": 0.12,
+   "e": 0.38,
+   "trecho": "a"
+  },
+  {
+   "w": "em",
+   "s": 0.38,
+   "e": 0.48,
+   "trecho": "a"
+  },
+  {
+   "w": "quem",
+   "s": 0.48,
+   "e": 0.56,
+   "trecho": "a"
+  },
+  {
+   "w": "você",
+   "s": 0.56,
+   "e": 0.8,
+   "trecho": "a"
+  },
+  {
+   "w": "vota,",
+   "s": 0.8,
+   "e": 1.16,
+   "trecho": "a"
+  },
+  {
+   "w": "o",
+   "s": 1.32,
+   "e": 1.36,
+   "trecho": "a"
+  },
+  {
+   "w": "Lula",
+   "s": 1.36,
+   "e": 1.52,
+   "trecho": "a"
+  },
+  {
+   "w": "e",
+   "s": 1.52,
+   "e": 1.6,
+   "trecho": "a"
+  },
+  {
+   "w": "o",
+   "s": 1.6,
+   "e": 1.66,
+   "trecho": "a"
+  },
+  {
+   "w": "Flávio",
+   "s": 1.66,
+   "e": 1.86,
+   "trecho": "a"
+  },
+  {
+   "w": "Bolsonaro",
+   "s": 1.86,
+   "e": 2.22,
+   "trecho": "a"
+  },
+  {
+   "w": "estão",
+   "s": 2.22,
+   "e": 2.46,
+   "trecho": "a"
+  },
+  {
+   "w": "usando",
+   "s": 2.46,
+   "e": 2.68,
+   "trecho": "a"
+  },
+  {
+   "w": "o",
+   "s": 2.68,
+   "e": 2.74,
+   "trecho": "a"
+  },
+  {
+   "w": "Instagram",
+   "s": 2.74,
+   "e": 2.94,
+   "trecho": "a"
+  },
+  {
+   "w": "de",
+   "s": 2.94,
+   "e": 3.1,
+   "trecho": "a"
+  },
+  {
+   "w": "um",
+   "s": 3.1,
+   "e": 3.14,
+   "trecho": "a"
+  },
+  {
+   "w": "jeito",
+   "s": 3.14,
+   "e": 3.3,
+   "trecho": "a"
+  },
+  {
+   "w": "que",
+   "s": 3.3,
+   "e": 3.4,
+   "trecho": "a"
+  },
+  {
+   "w": "dá",
+   "s": 3.4,
+   "e": 3.5,
+   "trecho": "a"
+  },
+  {
+   "w": "pra",
+   "s": 3.5,
+   "e": 3.62,
+   "trecho": "a"
+  },
+  {
+   "w": "copiar",
+   "s": 3.62,
+   "e": 3.88,
+   "trecho": "a"
+  },
+  {
+   "w": "no",
+   "s": 3.88,
+   "e": 3.98,
+   "trecho": "a"
+  },
+  {
+   "w": "seu",
+   "s": 3.98,
+   "e": 4.08,
+   "trecho": "a"
+  },
+  {
+   "w": "negócio.",
+   "s": 4.08,
+   "e": 4.42,
+   "trecho": "a"
+  },
+  {
+   "w": "Começa",
+   "s": 4.66,
+   "e": 5.0,
+   "trecho": "meio"
+  },
+  {
+   "w": "pelo",
+   "s": 5.0,
+   "e": 5.18,
+   "trecho": "meio"
+  },
+  {
+   "w": "Lula.",
+   "s": 5.18,
+   "e": 5.46,
+   "trecho": "meio"
+  },
+  {
+   "w": "A",
+   "s": 5.82,
+   "e": 6.08,
+   "trecho": "meio"
+  },
+  {
+   "w": "campanha",
+   "s": 6.08,
+   "e": 6.36,
+   "trecho": "meio"
+  },
+  {
+   "w": "passou",
+   "s": 6.36,
+   "e": 6.64,
+   "trecho": "meio"
+  },
+  {
+   "w": "a",
+   "s": 6.64,
+   "e": 6.72,
+   "trecho": "meio"
+  },
+  {
+   "w": "gravar",
+   "s": 6.72,
+   "e": 6.96,
+   "trecho": "meio"
+  },
+  {
+   "w": "vídeo",
+   "s": 6.96,
+   "e": 7.14,
+   "trecho": "meio"
+  },
+  {
+   "w": "selfie,",
+   "s": 7.14,
+   "e": 7.56,
+   "trecho": "meio"
+  },
+  {
+   "w": "falando",
+   "s": 7.74,
+   "e": 7.88,
+   "trecho": "meio"
+  },
+  {
+   "w": "direto",
+   "s": 7.88,
+   "e": 8.2,
+   "trecho": "meio"
+  },
+  {
+   "w": "pra",
+   "s": 8.2,
+   "e": 8.32,
+   "trecho": "meio"
+  },
+  {
+   "w": "câmera,",
+   "s": 8.32,
+   "e": 8.66,
+   "trecho": "meio"
+  },
+  {
+   "w": "e",
+   "s": 8.78,
+   "e": 8.96,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 8.96,
+   "e": 9.04,
+   "trecho": "meio"
+  },
+  {
+   "w": "engajamento",
+   "s": 9.04,
+   "e": 9.46,
+   "trecho": "meio"
+  },
+  {
+   "w": "subiu.",
+   "s": 9.46,
+   "e": 9.82,
+   "trecho": "meio"
+  },
+  {
+   "w": "E",
+   "s": 10.04,
+   "e": 10.22,
+   "trecho": "meio"
+  },
+  {
+   "w": "não",
+   "s": 10.22,
+   "e": 10.3,
+   "trecho": "meio"
+  },
+  {
+   "w": "posta",
+   "s": 10.3,
+   "e": 10.58,
+   "trecho": "meio"
+  },
+  {
+   "w": "sozinha.",
+   "s": 10.58,
+   "e": 11.0,
+   "trecho": "meio"
+  },
+  {
+   "w": "Chamou",
+   "s": 11.32,
+   "e": 11.7,
+   "trecho": "meio"
+  },
+  {
+   "w": "deputados",
+   "s": 11.7,
+   "e": 12.14,
+   "trecho": "meio"
+  },
+  {
+   "w": "jovens",
+   "s": 12.14,
+   "e": 12.5,
+   "trecho": "meio"
+  },
+  {
+   "w": "e",
+   "s": 12.5,
+   "e": 12.62,
+   "trecho": "meio"
+  },
+  {
+   "w": "influenciadores",
+   "s": 12.62,
+   "e": 13.12,
+   "trecho": "meio"
+  },
+  {
+   "w": "pra",
+   "s": 13.12,
+   "e": 13.28,
+   "trecho": "meio"
+  },
+  {
+   "w": "gravar",
+   "s": 13.28,
+   "e": 13.58,
+   "trecho": "meio"
+  },
+  {
+   "w": "junto.",
+   "s": 13.58,
+   "e": 13.86,
+   "trecho": "meio"
+  },
+  {
+   "w": "No",
+   "s": 14.08,
+   "e": 14.24,
+   "trecho": "meio"
+  },
+  {
+   "w": "seu",
+   "s": 14.24,
+   "e": 14.36,
+   "trecho": "meio"
+  },
+  {
+   "w": "negócio,",
+   "s": 14.36,
+   "e": 14.74,
+   "trecho": "meio"
+  },
+  {
+   "w": "grava",
+   "s": 14.88,
+   "e": 15.08,
+   "trecho": "meio"
+  },
+  {
+   "w": "você",
+   "s": 15.08,
+   "e": 15.32,
+   "trecho": "meio"
+  },
+  {
+   "w": "mesmo,",
+   "s": 15.32,
+   "e": 15.64,
+   "trecho": "meio"
+  },
+  {
+   "w": "sem",
+   "s": 15.72,
+   "e": 15.86,
+   "trecho": "meio"
+  },
+  {
+   "w": "produção.",
+   "s": 15.86,
+   "e": 16.16,
+   "trecho": "meio"
+  },
+  {
+   "w": "E",
+   "s": 16.42,
+   "e": 16.66,
+   "trecho": "meio"
+  },
+  {
+   "w": "deixe",
+   "s": 16.66,
+   "e": 16.88,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 16.88,
+   "e": 16.98,
+   "trecho": "meio"
+  },
+  {
+   "w": "cliente",
+   "s": 16.98,
+   "e": 17.28,
+   "trecho": "meio"
+  },
+  {
+   "w": "falar",
+   "s": 17.28,
+   "e": 17.5,
+   "trecho": "meio"
+  },
+  {
+   "w": "por",
+   "s": 17.5,
+   "e": 17.72,
+   "trecho": "meio"
+  },
+  {
+   "w": "você.",
+   "s": 17.72,
+   "e": 18.02,
+   "trecho": "meio"
+  },
+  {
+   "w": "Reposta",
+   "s": 18.76,
+   "e": 19.18,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 19.18,
+   "e": 19.3,
+   "trecho": "meio"
+  },
+  {
+   "w": "story",
+   "s": 19.3,
+   "e": 19.62,
+   "trecho": "meio"
+  },
+  {
+   "w": "de",
+   "s": 19.62,
+   "e": 19.78,
+   "trecho": "meio"
+  },
+  {
+   "w": "quem",
+   "s": 19.78,
+   "e": 19.92,
+   "trecho": "meio"
+  },
+  {
+   "w": "te",
+   "s": 19.92,
+   "e": 20.04,
+   "trecho": "meio"
+  },
+  {
+   "w": "marcou",
+   "s": 20.04,
+   "e": 20.46,
+   "trecho": "meio"
+  },
+  {
+   "w": "e",
+   "s": 20.46,
+   "e": 20.8,
+   "trecho": "meio"
+  },
+  {
+   "w": "pede",
+   "s": 20.8,
+   "e": 21.02,
+   "trecho": "meio"
+  },
+  {
+   "w": "um",
+   "s": 21.02,
+   "e": 21.12,
+   "trecho": "meio"
+  },
+  {
+   "w": "vídeo",
+   "s": 21.12,
+   "e": 21.32,
+   "trecho": "meio"
+  },
+  {
+   "w": "curtinho",
+   "s": 21.32,
+   "e": 21.76,
+   "trecho": "meio"
+  },
+  {
+   "w": "de",
+   "s": 21.76,
+   "e": 21.9,
+   "trecho": "meio"
+  },
+  {
+   "w": "quem",
+   "s": 21.9,
+   "e": 22.06,
+   "trecho": "meio"
+  },
+  {
+   "w": "amou.",
+   "s": 22.06,
+   "e": 22.34,
+   "trecho": "meio"
+  },
+  {
+   "w": "Agora",
+   "s": 23.18,
+   "e": 23.62,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 23.62,
+   "e": 23.72,
+   "trecho": "meio"
+  },
+  {
+   "w": "Flávio.",
+   "s": 23.72,
+   "e": 24.08,
+   "trecho": "meio"
+  },
+  {
+   "w": "A",
+   "s": 24.22,
+   "e": 24.46,
+   "trecho": "meio"
+  },
+  {
+   "w": "equipe",
+   "s": 24.46,
+   "e": 24.68,
+   "trecho": "meio"
+  },
+  {
+   "w": "diz",
+   "s": 24.68,
+   "e": 24.84,
+   "trecho": "meio"
+  },
+  {
+   "w": "que",
+   "s": 24.84,
+   "e": 24.92,
+   "trecho": "meio"
+  },
+  {
+   "w": "a",
+   "s": 24.92,
+   "e": 25.0,
+   "trecho": "meio"
+  },
+  {
+   "w": "ideia",
+   "s": 25.0,
+   "e": 25.18,
+   "trecho": "meio"
+  },
+  {
+   "w": "é",
+   "s": 25.18,
+   "e": 25.36,
+   "trecho": "meio"
+  },
+  {
+   "w": "mostrar",
+   "s": 25.36,
+   "e": 25.68,
+   "trecho": "meio"
+  },
+  {
+   "w": "quem",
+   "s": 25.68,
+   "e": 25.9,
+   "trecho": "meio"
+  },
+  {
+   "w": "ele",
+   "s": 25.9,
+   "e": 26.06,
+   "trecho": "meio"
+  },
+  {
+   "w": "é,",
+   "s": 26.06,
+   "e": 26.22,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 26.32,
+   "e": 26.42,
+   "trecho": "meio"
+  },
+  {
+   "w": "jeito",
+   "s": 26.42,
+   "e": 26.58,
+   "trecho": "meio"
+  },
+  {
+   "w": "de",
+   "s": 26.58,
+   "e": 26.7,
+   "trecho": "meio"
+  },
+  {
+   "w": "falar,",
+   "s": 26.7,
+   "e": 27.0,
+   "trecho": "meio"
+  },
+  {
+   "w": "sem",
+   "s": 27.26,
+   "e": 27.48,
+   "trecho": "meio"
+  },
+  {
+   "w": "personagem.",
+   "s": 27.48,
+   "e": 27.98,
+   "trecho": "meio"
+  },
+  {
+   "w": "E",
+   "s": 27.98,
+   "e": 28.46,
+   "trecho": "meio"
+  },
+  {
+   "w": "ele",
+   "s": 28.46,
+   "e": 28.56,
+   "trecho": "meio"
+  },
+  {
+   "w": "planejou",
+   "s": 28.56,
+   "e": 28.9,
+   "trecho": "meio"
+  },
+  {
+   "w": "colocar",
+   "s": 28.9,
+   "e": 29.18,
+   "trecho": "meio"
+  },
+  {
+   "w": "90",
+   "s": 29.18,
+   "e": 29.5,
+   "trecho": "meio"
+  },
+  {
+   "w": "%",
+   "s": 29.5,
+   "e": 29.8,
+   "trecho": "meio"
+  },
+  {
+   "w": "da",
+   "s": 29.8,
+   "e": 29.98,
+   "trecho": "meio"
+  },
+  {
+   "w": "campanha",
+   "s": 29.98,
+   "e": 30.26,
+   "trecho": "meio"
+  },
+  {
+   "w": "no",
+   "s": 30.26,
+   "e": 30.4,
+   "trecho": "meio"
+  },
+  {
+   "w": "digital.",
+   "s": 30.4,
+   "e": 30.68,
+   "trecho": "meio"
+  },
+  {
+   "w": "No",
+   "s": 30.92,
+   "e": 31.1,
+   "trecho": "meio"
+  },
+  {
+   "w": "seu",
+   "s": 31.1,
+   "e": 31.2,
+   "trecho": "meio"
+  },
+  {
+   "w": "negócio,",
+   "s": 31.2,
+   "e": 31.54,
+   "trecho": "meio"
+  },
+  {
+   "w": "mostra",
+   "s": 31.7,
+   "e": 31.9,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 31.9,
+   "e": 32.0,
+   "trecho": "meio"
+  },
+  {
+   "w": "seu",
+   "s": 32.0,
+   "e": 32.06,
+   "trecho": "meio"
+  },
+  {
+   "w": "jeito",
+   "s": 32.06,
+   "e": 32.24,
+   "trecho": "meio"
+  },
+  {
+   "w": "de",
+   "s": 32.24,
+   "e": 32.36,
+   "trecho": "meio"
+  },
+  {
+   "w": "verdade,",
+   "s": 32.36,
+   "e": 32.64,
+   "trecho": "meio"
+  },
+  {
+   "w": "os",
+   "s": 32.82,
+   "e": 32.9,
+   "trecho": "meio"
+  },
+  {
+   "w": "bastidores,",
+   "s": 32.9,
+   "e": 33.34,
+   "trecho": "meio"
+  },
+  {
+   "w": "a",
+   "s": 33.48,
+   "e": 33.52,
+   "trecho": "meio"
+  },
+  {
+   "w": "sua",
+   "s": 33.52,
+   "e": 33.66,
+   "trecho": "meio"
+  },
+  {
+   "w": "voz,",
+   "s": 33.66,
+   "e": 33.98,
+   "trecho": "meio"
+  },
+  {
+   "w": "e",
+   "s": 34.08,
+   "e": 34.2,
+   "trecho": "meio"
+  },
+  {
+   "w": "coloca",
+   "s": 34.2,
+   "e": 34.44,
+   "trecho": "meio"
+  },
+  {
+   "w": "a",
+   "s": 34.44,
+   "e": 34.52,
+   "trecho": "meio"
+  },
+  {
+   "w": "energia",
+   "s": 34.52,
+   "e": 34.74,
+   "trecho": "meio"
+  },
+  {
+   "w": "onde",
+   "s": 34.74,
+   "e": 34.88,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 34.88,
+   "e": 34.98,
+   "trecho": "meio"
+  },
+  {
+   "w": "seu",
+   "s": 34.98,
+   "e": 35.02,
+   "trecho": "meio"
+  },
+  {
+   "w": "cliente",
+   "s": 35.02,
+   "e": 35.32,
+   "trecho": "meio"
+  },
+  {
+   "w": "está.",
+   "s": 35.32,
+   "e": 35.5,
+   "trecho": "meio"
+  },
+  {
+   "w": "E",
+   "s": 35.88,
+   "e": 36.22,
+   "trecho": "meio"
+  },
+  {
+   "w": "os",
+   "s": 36.22,
+   "e": 36.32,
+   "trecho": "meio"
+  },
+  {
+   "w": "dois",
+   "s": 36.32,
+   "e": 36.44,
+   "trecho": "meio"
+  },
+  {
+   "w": "fazem",
+   "s": 36.44,
+   "e": 36.66,
+   "trecho": "meio"
+  },
+  {
+   "w": "uma",
+   "s": 36.66,
+   "e": 36.78,
+   "trecho": "meio"
+  },
+  {
+   "w": "coisa",
+   "s": 36.78,
+   "e": 36.98,
+   "trecho": "meio"
+  },
+  {
+   "w": "igual.",
+   "s": 36.98,
+   "e": 37.26,
+   "trecho": "meio"
+  },
+  {
+   "w": "Levaram",
+   "s": 37.64,
+   "e": 38.06,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 38.06,
+   "e": 38.16,
+   "trecho": "meio"
+  },
+  {
+   "w": "público",
+   "s": 38.16,
+   "e": 38.36,
+   "trecho": "meio"
+  },
+  {
+   "w": "pra",
+   "s": 38.36,
+   "e": 38.5,
+   "trecho": "meio"
+  },
+  {
+   "w": "canais",
+   "s": 38.5,
+   "e": 38.76,
+   "trecho": "meio"
+  },
+  {
+   "w": "de",
+   "s": 38.76,
+   "e": 38.86,
+   "trecho": "meio"
+  },
+  {
+   "w": "WhatsApp,",
+   "s": 38.86,
+   "e": 39.2,
+   "trecho": "meio"
+  },
+  {
+   "w": "que",
+   "s": 39.3,
+   "e": 39.44,
+   "trecho": "meio"
+  },
+  {
+   "w": "juntos",
+   "s": 39.44,
+   "e": 39.62,
+   "trecho": "meio"
+  },
+  {
+   "w": "passam",
+   "s": 39.62,
+   "e": 39.96,
+   "trecho": "meio"
+  },
+  {
+   "w": "de",
+   "s": 39.96,
+   "e": 40.08,
+   "trecho": "meio"
+  },
+  {
+   "w": "5",
+   "s": 40.08,
+   "e": 40.44,
+   "trecho": "meio"
+  },
+  {
+   "w": "milhões",
+   "s": 40.44,
+   "e": 40.72,
+   "trecho": "meio"
+  },
+  {
+   "w": "de",
+   "s": 40.72,
+   "e": 40.88,
+   "trecho": "meio"
+  },
+  {
+   "w": "pessoas.",
+   "s": 40.88,
+   "e": 41.22,
+   "trecho": "meio"
+  },
+  {
+   "w": "Porque",
+   "s": 41.54,
+   "e": 41.96,
+   "trecho": "meio"
+  },
+  {
+   "w": "o",
+   "s": 41.96,
+   "e": 42.04,
+   "trecho": "meio"
+  },
+  {
+   "w": "Instagram",
+   "s": 42.04,
+   "e": 42.32,
+   "trecho": "meio"
+  },
+  {
+   "w": "não",
+   "s": 42.32,
+   "e": 42.54,
+   "trecho": "meio"
+  },
+  {
+   "w": "empurra",
+   "s": 42.54,
+   "e": 42.9,
+   "trecho": "meio"
+  },
+  {
+   "w": "post",
+   "s": 42.9,
+   "e": 43.16,
+   "trecho": "meio"
+  },
+  {
+   "w": "político",
+   "s": 43.16,
+   "e": 43.52,
+   "trecho": "meio"
+  },
+  {
+   "w": "pra",
+   "s": 43.52,
+   "e": 43.68,
+   "trecho": "meio"
+  },
+  {
+   "w": "quem",
+   "s": 43.68,
+   "e": 43.8,
+   "trecho": "meio"
+  },
+  {
+   "w": "não",
+   "s": 43.8,
+   "e": 43.9,
+   "trecho": "meio"
+  },
+  {
+   "w": "segue.",
+   "s": 43.9,
+   "e": 44.12,
+   "trecho": "meio"
+  },
+  {
+   "w": "No",
+   "s": 44.56,
+   "e": 44.78,
+   "trecho": "meio"
+  },
+  {
+   "w": "seu",
+   "s": 44.78,
+   "e": 44.9,
+   "trecho": "meio"
+  },
+  {
+   "w": "negócio,",
+   "s": 44.9,
+   "e": 45.18,
+   "trecho": "meio"
+  },
+  {
+   "w": "cria",
+   "s": 45.46,
+   "e": 45.56,
+   "trecho": "meio"
+  },
+  {
+   "w": "um",
+   "s": 45.56,
+   "e": 45.64,
+   "trecho": "meio"
+  },
+  {
+   "w": "canal",
+   "s": 45.64,
+   "e": 45.84,
+   "trecho": "meio"
+  },
+  {
+   "w": "de",
+   "s": 45.84,
+   "e": 45.96,
+   "trecho": "meio"
+  },
+  {
+   "w": "transmissão",
+   "s": 45.96,
+   "e": 46.44,
+   "trecho": "meio"
+  },
+  {
+   "w": "e",
+   "s": 46.44,
+   "e": 46.54,
+   "trecho": "meio"
+  },
+  {
+   "w": "levam",
+   "s": 46.54,
+   "e": 46.78,
+   "trecho": "meio"
+  },
+  {
+   "w": "quem",
+   "s": 46.78,
+   "e": 46.88,
+   "trecho": "meio"
+  },
+  {
+   "w": "já",
+   "s": 46.88,
+   "e": 47.02,
+   "trecho": "meio"
+  },
+  {
+   "w": "te",
+   "s": 47.02,
+   "e": 47.12,
+   "trecho": "meio"
+  },
+  {
+   "w": "segue",
+   "s": 47.12,
+   "e": 47.34,
+   "trecho": "meio"
+  },
+  {
+   "w": "pra",
+   "s": 47.34,
+   "e": 47.5,
+   "trecho": "meio"
+  },
+  {
+   "w": "lá.",
+   "s": 47.5,
+   "e": 47.64,
+   "trecho": "meio"
+  },
+  {
+   "w": "Assim",
+   "s": 47.88,
+   "e": 48.12,
+   "trecho": "meio"
+  },
+  {
+   "w": "você",
+   "s": 48.12,
+   "e": 48.3,
+   "trecho": "meio"
+  },
+  {
+   "w": "não",
+   "s": 48.3,
+   "e": 48.4,
+   "trecho": "meio"
+  },
+  {
+   "w": "depende",
+   "s": 48.4,
+   "e": 48.64,
+   "trecho": "meio"
+  },
+  {
+   "w": "só",
+   "s": 48.64,
+   "e": 48.94,
+   "trecho": "meio"
+  },
+  {
+   "w": "do",
+   "s": 48.94,
+   "e": 49.08,
+   "trecho": "meio"
+  },
+  {
+   "w": "algoritmo.",
+   "s": 49.08,
+   "e": 49.64,
+   "trecho": "meio"
+  },
+  {
+   "w": "Manda",
+   "s": 49.88,
+   "e": 50.24,
+   "trecho": "b"
+  },
+  {
+   "w": "pra",
+   "s": 50.24,
+   "e": 50.36,
+   "trecho": "b"
+  },
+  {
+   "w": "quem",
+   "s": 50.36,
+   "e": 50.5,
+   "trecho": "b"
+  },
+  {
+   "w": "tem",
+   "s": 50.5,
+   "e": 50.62,
+   "trecho": "b"
+  },
+  {
+   "w": "negócio",
+   "s": 50.62,
+   "e": 50.94,
+   "trecho": "b"
+  },
+  {
+   "w": "e",
+   "s": 50.94,
+   "e": 51.08,
+   "trecho": "b"
+  },
+  {
+   "w": "precisa",
+   "s": 51.08,
+   "e": 51.32,
+   "trecho": "b"
+  },
+  {
+   "w": "aparecer.",
+   "s": 51.32,
+   "e": 51.68,
+   "trecho": "b"
+  },
+  {
+   "w": "E",
+   "s": 51.96,
+   "e": 52.26,
+   "trecho": "b"
+  },
+  {
+   "w": "segue",
+   "s": 52.26,
+   "e": 52.5,
+   "trecho": "b"
+  },
+  {
+   "w": "o",
+   "s": 52.5,
+   "e": 52.58,
+   "trecho": "b"
+  },
+  {
+   "w": "Digo",
+   "s": 52.58,
+   "e": 52.72,
+   "trecho": "b"
+  },
+  {
+   "w": "Social.",
+   "s": 52.72,
+   "e": 52.96,
+   "trecho": "b"
+  },
+  {
+   "w": "Toda",
+   "s": 53.32,
+   "e": 53.72,
+   "trecho": "b"
+  },
+  {
+   "w": "semana",
+   "s": 53.72,
+   "e": 54.0,
+   "trecho": "b"
+  },
+  {
+   "w": "tem",
+   "s": 54.0,
+   "e": 54.26,
+   "trecho": "b"
+  },
+  {
+   "w": "mais.",
+   "s": 54.26,
+   "e": 54.62,
+   "trecho": "b"
+  }
+ ]
+}
