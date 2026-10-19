@@ -99,3 +99,12 @@ O Diogo escolheu a voz 1, mas a boca não acompanhava. Causas:
 Duas tentativas grátis de reencaixar a voz na boca (mover as pausas; esticar cada frase) pioraram o resultado e foram descartadas.
 
 Com as duas correções: clipe novo `0030e4f3-17de-496a-b70f-47f9c3e8175e` (referência de 8,0 s para 8 s) com atraso mediano de 5 ms, 6% das janelas acima de 45 ms e velocidade de 0,28 a 1,57×; o clipe anterior `d691757e…` ressincronizado também chegou a 6%, mas com aceleração de até 2,5× no "Ó".
+
+## Teste com Wan 2.7 (19/10/2026)
+
+As tentativas de reencaixar a voz na boca do clipe do Seedance não passaram de 6% fora de sincronia; o ritmo interno do clipe não segue a voz. O Diogo aprovou testar o **Wan 2.7** (`wan2_7`, 720p, 9:16, 8 s, 12 créditos), em que a voz da `audio_references` guia a boca.
+
+- Clipe: job `8ed9fd85-22fe-46a2-960b-0ac9b24b1be9`, `start_image` = `4312127e…`, `audio_references` = referência de 8,0 s da voz 1 (`57673269…`).
+- O áudio do clipe é a própria voz 1 (mesmo F0 de 211 Hz), com todas as palavras, inclusive o "Ó".
+- Sincronia: diferença média de início das palavras de −5 ms (máx. 150 ms), **atraso mediano 0 ms, 0% das janelas acima de 45 ms, velocidade 0,97–1,01×**. Só os últimos 0,13 s (silêncio final) ficam parados.
+- Saída: `video/teste_wan.mp4`, 1080×1920, −14,8 LUFS, pico −1,6 dBTP.
