@@ -21,6 +21,7 @@ import {StoryDirectViraPost, STORY_DURACAO} from './videos/story-direct-vira-pos
 import {TaticasDaEleicao, TATICAS_DURACAO} from './videos/taticas-da-eleicao';
 import {StoriesVende, STORIES_VENDE_DURACAO} from './videos/stories-vende';
 import {ReelsDeTeste, TESTE_DURACAO} from './videos/reels-de-teste';
+import {ApresentacaoLuisa, LUISA_DURACAO} from './videos/apresentacao-luisa';
 
 const FPS = 30;
 const SEIS_SEGUNDOS = 6 * FPS;
@@ -80,6 +81,9 @@ export const RemotionRoot: React.FC = () => (
     </Folder>
     <Folder name="013-reels-de-teste">
       <Composition id="ReelsDeTeste" component={ReelsDeTeste} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(TESTE_DURACAO * FPS)} />
+    </Folder>
+    <Folder name="015-apresentacao-luisa">
+      <Composition id="ApresentacaoLuisa" component={ApresentacaoLuisa} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(LUISA_DURACAO * FPS)} />
     </Folder>
   </>
 );

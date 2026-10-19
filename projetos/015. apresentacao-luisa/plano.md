@@ -42,3 +42,12 @@ Ordem: voz → `cortar_pausas.py` (receita da Luísa, saída `_ritmo.wav`) → t
 1. Este plano e o custo (~21 créditos).
 2. A voz gerada, antes dos clipes (grafias "Luíza", "rílis", "marca dágua", "bórdas", "repósta", "Ádam Mossêri").
 3. Stills de revisão antes do render final.
+
+## Execução (19/10/2026)
+
+- **Voz:** a 1ª geração (Seed Audio com texto todo fonético: "u", "di", "cum") soou "como uma pessoa estrangeira tentando falar português" e foi descartada. A voz final é do **ElevenLabs v4** com o clone **Luísa v2** (`1813c766…`), texto em português normal, cortada a 1,2× (receita da Luísa) e limpa com `highpass=f=90` (2×) e `afftdn=nr=10:nf=-55:tn=1`. O clone v1 (`793ce27b…`) tinha ronco de sala; mesmo no v2, o Diogo ainda nota um pouco de ruído e aceitou seguir.
+- **Narração:** 63,8 s, em 4 trechos (`a` 0–8,55 com a Luísa; `meio` 8,55–13,41 pergunta; `corpo` 13,41–59,75; `b` 59,75–63,84 CTA).
+- **Clipes:** A = job `a664c1f0-76b8-44cd-9798-2cc6f121e95d` (9 s, referência de 9,0 s); B = job `73dbea26-5a52-4247-8c69-40e30fd4a444` (4 s, referência de 4,0 s).
+- **Sincronia:** A com atraso mediano de 5 ms e 3% > 45 ms; B com 5 ms e 13%. O congelamento em «Eu» (0,79–1,19 s) fica coberto pelo "OI! 👋"; os demais caem no card ou no motion. A imagem dos clipes adianta 3 quadros (`trimBefore`), o que equivale à voz +100 ms sem deixar a animação antes da palavra.
+- **Revisão:** prancha `hf/prancha_revisao.jpg`. Corrigidos: a pílula "POSTA NO INSTAGRAM" cortada na borda, o título que batia no celular e no diagrama, a tag ORIGINAL sob o selo de fonte e a legenda sobre o cartão Seguir.
+- **Custo real:** cerca de 103 créditos. Desse total, 80 foram dos dois clones de voz (40 cada), ~10 das vozes (ElevenLabs, Seed e Qwen, incluindo a geração descartada) e 13 dos clipes.
