@@ -24,6 +24,7 @@ O avatar de IA do Diogo foi **substituído** por uma personagem nova, criada no 
   2. a referência de áudio do clipe tem **exatamente a duração do clipe** (0,15 s de silêncio no início e a voz cortada logo depois da última palavra), e o prompt pede "exact lip-sync… same speed and timing, no extra pauses". Com folga, o Seedance fala mais devagar e pula palavras;
   3. depois do `sincronizar_avatar.py`, **atrase a voz em 100 ms** na montagem (`adelay=100`), porque a boca gerada vem ~0,1 s depois do som. O Diogo comparou +67, +100 e +133 ms e escolheu +100. O relatório do `sincronia.md` compara áudio com áudio e não enxerga esse atraso;
   4. modelo: **Seedance 2 Mini** continua o padrão. O **Wan 2.7** (`wan2_7`, 1,5 crédito/s) gera a boca a partir da própria voz e não precisa de distorção (0,97–1,01×), mas o Diogo não viu diferença grande. Use só com aprovação.
+- **Volume final dos vídeos da Luísa: −24 LUFS** (decisão do Diogo em 19/10/2026, projeto 015). Ele comparou −14, −16, −18, −21 e −24 e achou que −24 deixa o ruído leve da voz bem menos perceptível. Isso substitui o −14 LUFS da seção 9 nos vídeos com ela. Para chegar lá, aplique no áudio do render bruto `volume=<ganho>dB,alimiter=limit=0.8:attack=3:release=60:level=disabled,aresample=48000`, com o ganho medido (no 015, −8,1 dB deu −23,9 LUFS e pico −10 dBTP), e confira com `loudnorm=print_format=summary`.
 - **Variações da imagem:** gere a partir da imagem oficial (referência) com `gpt_image_2_5`, `quality: high`, `resolution: 2k`. A logo e o @ na camiseta são as únicas exceções à regra "sem texto em imagem gerada", e só porque o Diogo pediu. Confira sempre a grafia do @ com zoom.
 
 ---
@@ -184,7 +185,7 @@ Gerados por `tools/gerar_sfx.py` e disparados em `EfeitosSonoros.tsx`, sempre li
 - **Validar:**
   - 1080×1920, 30 fps, h264 com uma trilha AAC estéreo;
   - duração = fim da narração + 1,4 s;
-  - **−14 LUFS** e pico **≤ −1,5 dBTP** (`ffmpeg -af loudnorm=print_format=summary -f null -`);
+  - **−14 LUFS** e pico **≤ −1,5 dBTP** (vídeos da Luísa: **−24 LUFS**, ver seção 0) (`ffmpeg -af loudnorm=print_format=summary -f null -`);
   - se ficar abaixo de −14,5 LUFS (aconteceu no 005, com a voz de dica a 1,3×: −15,2), suba o ganho **antes** do limitador e meça de novo: `-af "volume=1.3dB,alimiter=limit=0.8:attack=3:release=60:level=disabled,aresample=48000"` deu −13,9 LUFS e −1,9 dBTP;
   - prancha de quadros do arquivo final.
 - **Legenda do post:** gancho em pergunta, o exemplo ❌/✅, o segredo em uma linha, um pedido para salvar ou compartilhar, o CTA "Segue o @digo.social" e as hashtags (`#marketingdigital #instagram #reels #criadordeconteudo #dicasdeinstagram #crescernoinstagram #socialmedia #digosocial`).
