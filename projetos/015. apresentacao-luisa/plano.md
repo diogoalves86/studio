@@ -66,3 +66,4 @@ O ruído do clone v2 incomodava, então o vídeo foi refeito com a voz pronta **
 - **Volume:** de volta a −14 LUFS a pedido do Diogo (voz limpa). Com `volume=1.5dB` antes do limitador, deu −14,0 LUFS e pico −1,9 dBTP.
 - **Final:** `edicoes/015. apresentacao-luisa/apresentacao-luisa_final.mp4`, 60,5 s. A versão anterior (clone v2) foi guardada em `versao_clone_v2/`.
 - **Custo desta refação:** ~17 créditos (~4,9 de voz e 12 de clipes), mais 3,5 do teste das vozes prontas.
+- **Aprovado pelo Diogo em 19/10/2026 (versão Onyx).** É o modelo dos próximos Reels com a Luísa.
