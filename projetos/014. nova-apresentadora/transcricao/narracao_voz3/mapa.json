@@ -1,0 +1,143 @@
+{
+ "trechos": [
+  {
+   "nome": "teste",
+   "inicio": 0.0,
+   "fim": 6.91
+  }
+ ],
+ "palavras": [
+  {
+   "w": "Oi",
+   "s": 0.0,
+   "e": 0.2,
+   "trecho": "teste"
+  },
+  {
+   "w": "gente,",
+   "s": 0.2,
+   "e": 0.5,
+   "trecho": "teste"
+  },
+  {
+   "w": "eu",
+   "s": 0.7,
+   "e": 0.98,
+   "trecho": "teste"
+  },
+  {
+   "w": "sou",
+   "s": 0.98,
+   "e": 1.08,
+   "trecho": "teste"
+  },
+  {
+   "w": "a",
+   "s": 1.08,
+   "e": 1.18,
+   "trecho": "teste"
+  },
+  {
+   "w": "nova",
+   "s": 1.18,
+   "e": 1.32,
+   "trecho": "teste"
+  },
+  {
+   "w": "cara",
+   "s": 1.32,
+   "e": 1.58,
+   "trecho": "teste"
+  },
+  {
+   "w": "do",
+   "s": 1.58,
+   "e": 1.72,
+   "trecho": "teste"
+  },
+  {
+   "w": "Digo",
+   "s": 1.72,
+   "e": 1.94,
+   "trecho": "teste"
+  },
+  {
+   "w": "Social,",
+   "s": 1.94,
+   "e": 2.32,
+   "trecho": "teste"
+  },
+  {
+   "w": "toda",
+   "s": 2.56,
+   "e": 3.28,
+   "trecho": "teste"
+  },
+  {
+   "w": "semana",
+   "s": 3.28,
+   "e": 3.62,
+   "trecho": "teste"
+  },
+  {
+   "w": "tem",
+   "s": 3.62,
+   "e": 3.82,
+   "trecho": "teste"
+  },
+  {
+   "w": "dica",
+   "s": 3.82,
+   "e": 4.02,
+   "trecho": "teste"
+  },
+  {
+   "w": "de",
+   "s": 4.02,
+   "e": 4.16,
+   "trecho": "teste"
+  },
+  {
+   "w": "Instagram",
+   "s": 4.16,
+   "e": 4.56,
+   "trecho": "teste"
+  },
+  {
+   "w": "aqui,",
+   "s": 4.56,
+   "e": 4.88,
+   "trecho": "teste"
+  },
+  {
+   "w": "então",
+   "s": 5.02,
+   "e": 5.72,
+   "trecho": "teste"
+  },
+  {
+   "w": "segue",
+   "s": 5.72,
+   "e": 6.14,
+   "trecho": "teste"
+  },
+  {
+   "w": "o",
+   "s": 6.14,
+   "e": 6.26,
+   "trecho": "teste"
+  },
+  {
+   "w": "Digo",
+   "s": 6.26,
+   "e": 6.42,
+   "trecho": "teste"
+  },
+  {
+   "w": "Social.",
+   "s": 6.42,
+   "e": 6.78,
+   "trecho": "teste"
+  }
+ ]
+}
