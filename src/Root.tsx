@@ -22,6 +22,7 @@ import {TaticasDaEleicao, TATICAS_DURACAO} from './videos/taticas-da-eleicao';
 import {StoriesVende, STORIES_VENDE_DURACAO} from './videos/stories-vende';
 import {ReelsDeTeste, TESTE_DURACAO} from './videos/reels-de-teste';
 import {ApresentacaoLuisa, LUISA_DURACAO} from './videos/apresentacao-luisa';
+import {FazConta, FAZ_CONTA_DURACAO} from './videos/faz-a-conta';
 
 const FPS = 30;
 const SEIS_SEGUNDOS = 6 * FPS;
@@ -84,6 +85,9 @@ export const RemotionRoot: React.FC = () => (
     </Folder>
     <Folder name="015-apresentacao-luisa">
       <Composition id="ApresentacaoLuisa" component={ApresentacaoLuisa} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(LUISA_DURACAO * FPS)} />
+    </Folder>
+    <Folder name="016-faz-a-conta">
+      <Composition id="FazConta" component={FazConta} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(FAZ_CONTA_DURACAO * FPS)} />
     </Folder>
   </>
 );

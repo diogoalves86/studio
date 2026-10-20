@@ -43,3 +43,12 @@ Depois: corte de pausas a 1,2× → `_ritmo.wav` (+ `highpass=f=70`) → narraç
 1. Este roteiro e o custo (~15 créditos).
 2. A voz gerada, antes dos clipes.
 3. Prancha de revisão antes do render final.
+
+## Execução (20/10/2026)
+
+- **Voz:** clone oficial "Luísa oficial (voz do 015)" (`1c0dd5f2…`, 40 créditos, criado de 70 s da Onyx aprovada no 015), aprovado pelo Diogo ("ficou bom"). Gancho e meio gerados com o clone (~4,8 créditos); o CTA é o áudio do 015. Duas gerações anteriores (sem e com `stability`) soaram diferentes e foram guardadas em `hf/v1_sem_estabilidade/` e `hf/v2_estabilidade/`.
+- **Clipes:** A = job `6a823013-7292-47c8-a6ce-f724b9a9b1bd` (7 s, 7 créditos); B = o clipe do 015 (mesmo áudio de CTA, custo zero).
+- **Sincronia:** A com 5 ms e 8% das janelas acima de 45 ms; o único momento artificial é «visualizações» (0,13 s a 1,6×). B igual ao 015.
+- **Revisão:** o selo "↗️ 40 · 4× MAIS" e o post-it cobriam as porcentagens dos cartões; os cartões ficaram mais baixos e as peças, logo abaixo.
+- **Final:** `edicoes/016. faz-a-conta/faz-a-conta_final.mp4`, 1080×1920, 30 fps, 64,7 s, −14,0 LUFS e pico −1,9 dBTP (`volume=1.6dB` antes do limitador).
+- **Custo do vídeo:** cerca de 18,8 créditos (vozes ~11,6 com as tentativas, clipe 7), mais 40 do clone oficial, que serve para os próximos vídeos.
