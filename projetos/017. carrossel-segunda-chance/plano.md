@@ -52,3 +52,4 @@ Cada geração só acontece com o "sim" do Diogo. A voz é gerada e aprovada ant
 - Gancho reforçado no visual (a voz sozinha não prendia): feed que rola rápido e freia no carrossel com flash vermelho e tremida, alerta vermelho pulsando, carimbos "2ª CHANCE" → "PERDIDA ✕" e contador "o erro aparece em Ns" até a revelação.
 - Prancha de revisão corrigida: fonte e slides do exemplo saíram de cima da legenda; legenda desligada onde o texto já está na tela.
 - Final: `edicoes/017. carrossel-segunda-chance/carrossel-segunda-chance_final.mp4`, 52,6 s, 1080×1920, −13,9 LUFS, pico −1,8 dBTP.
+- **Aprovado pelo Diogo em 20/10/2026**, pronto para postar.
