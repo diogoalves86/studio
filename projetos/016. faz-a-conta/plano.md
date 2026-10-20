@@ -52,3 +52,4 @@ Depois: corte de pausas a 1,2× → `_ritmo.wav` (+ `highpass=f=70`) → narraç
 - **Revisão:** o selo "↗️ 40 · 4× MAIS" e o post-it cobriam as porcentagens dos cartões; os cartões ficaram mais baixos e as peças, logo abaixo.
 - **Final:** `edicoes/016. faz-a-conta/faz-a-conta_final.mp4`, 1080×1920, 30 fps, 64,7 s, −14,0 LUFS e pico −1,9 dBTP (`volume=1.6dB` antes do limitador).
 - **Custo do vídeo:** cerca de 18,8 créditos (vozes ~11,6 com as tentativas, clipe 7), mais 40 do clone oficial, que serve para os próximos vídeos.
+- **Ajuste pedido pelo Diogo:** "no início o áudio ficou um pouco dessincronizado". O clipe A começa com a boca parada num sorriso e não articula "Olha isso!" (0–0,7 s). Esse trecho virou motion ("OLHA ISSO! 👀"), e a Luísa entra em tela cheia no «Um». Sem custo.

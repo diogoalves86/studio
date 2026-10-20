@@ -12,6 +12,7 @@ import {ARQ, caixa, clamp, COR, INTER, MONT, Pilula, prog, saida, useBloco, useM
 
 const T = TRECHOS;
 const M = {
+  um1: em('um'),
   quinhentos1: em('500'),
   melhor: em('melhor'),
   dois1: em('2'),
@@ -486,6 +487,7 @@ const Cena: React.FC = () => {
   return (
     <AbsoluteFill>
       <Grade t={t} />
+      <OlhaIsso t={t} />
       <Contadores t={t} />
       <Mentira t={t} />
       <Mosseri t={t} />
@@ -561,14 +563,28 @@ const EVENTOS: Evento[] = [
 // Legenda: "2" "mil." → "2 MIL."; "500" fica em número.
 const LEGENDA = PALAVRAS;
 
-// Alternância da Luísa na abertura (ajustada pelos momentos artificiais de sincronia.md).
+// Alternância da Luísa na abertura. O clipe A começa com a boca parada num sorriso (não articula "Olha isso!"):
+// os primeiros ~0,7 s ficam com o "OLHA ISSO! 👀" em motion, e ela entra em tela cheia no «Um».
+const A0 = M.um1 - 0.06;
 const A1 = M.parece1;
+
+const OlhaIsso: React.FC<{t: number}> = ({t}) => {
+  const bloco = useBloco();
+  const st = bloco(t, 0, A0 - 0.02, 0);
+  if (!st) return null;
+  return (
+    <AbsoluteFill style={{...st, justifyContent: 'center', alignItems: 'center'}}>
+      <Palavras t={t} tamanho={150} style={{textAlign: 'center', lineHeight: 1.05}} pecas={[{texto: 'OLHA', s: 0, cor: COR.ciano, brilho: true}, {texto: 'ISSO!', s: 0.15, cor: COR.ciano, brilho: true}, {texto: '👀', s: 0.3}]} />
+    </AbsoluteFill>
+  );
+};
 
 export const CONFIG: Config = {
   palavras: LEGENDA,
   trechos: T,
   estados: [
-    {de: T.a, modo: 'cheia', escala: [1, 1.05]},
+    {de: T.a, modo: 'fora'},
+    {de: A0, modo: 'cheia', escala: [1, 1.05]},
     {de: A1, modo: 'cheia', escala: [1.12, 1.16], punch: true},
     {de: T.meio, modo: 'fora'},
     {de: T.b, modo: 'fora'},
@@ -576,6 +592,7 @@ export const CONFIG: Config = {
     {de: B2, modo: 'fora'},
   ],
   semLegenda: [
+    [0, A0],
     [M.curtidas3, M.imagina],
     [T.b, B2],
     [B2, T.fim],
