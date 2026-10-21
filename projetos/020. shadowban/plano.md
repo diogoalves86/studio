@@ -38,3 +38,13 @@ Valores exatos pelo `get_cost`; cada geração só com o "sim" do Diogo. Corte d
 1. Este roteiro e o custo (~8,7 créditos).
 2. A voz gerada, antes do clipe.
 3. Prancha de revisão antes do render final.
+
+## Execução
+
+- Gancho trocado para a opção 4 a pedido do Diogo: "O shadowban existe, e o Instagram tem uma tela que mostra se você está nele."
+- Gasto real: 9,14 créditos (voz 0,46 + 3,68 com o clone oficial; clipe A Seedance 2 Mini **5 s** = 5, porque o gancho tem 4,5 s). CTA reaproveitado do 015.
+- Voz no ritmo cadenciado do 019. "Shadowban" escrito normal; o Diogo ouviu os dois trechos e aprovou a pronúncia.
+- Pedido do Diogo: "SHADOWBAN" escrito grande na tela quando ela fala (abertura e "todo mundo chama de shadowban"), com glitch vermelho/ciano.
+- Prints reais (Configurações e atividade; Status da conta) com zoom, marca-texto e círculo verde pulsando no ✓ de "Qualificação de recomendação"; o estado com ⚠️ é simulado e marcado "exemplo".
+- Sincronia: clipe A mediana 2 ms; a abertura cobre até "e o Instagram"; boca conferida quadro a quadro no resto do gancho.
+- Final: `edicoes/020. shadowban/shadowban_final.mp4`, 55,5 s, 1080×1920, −14,0 LUFS, pico −1,9 dBTP.
