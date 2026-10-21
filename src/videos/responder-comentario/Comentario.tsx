@@ -14,6 +14,7 @@ const T = TRECHOS;
 const M = {
   responder1: em('responder'),
   assim1: em('assim'),
+  voce: em('você'),
   perdendo: em('perdendo'),
   melhor: em('melhor'),
   quando: em('quando'),
@@ -195,20 +196,42 @@ const Alerta: React.FC<{t: number}> = ({t}) => {
 };
 
 // No "assim", a resposta em texto aparece no peito dela com um ✕; em "perdendo", o carimbo.
+// Entre "assim" e "você" o clipe abre a boca atrasado (130–330 ms): a resposta errada ocupa a tela cheia.
+const I0 = M.assim1 + 0.05;
+const I1 = M.voce - 0.03;
+
+const ErroCheio: React.FC<{t: number}> = ({t}) => {
+  const mola = useMola();
+  if (t < I0 - 0.02 || t >= I1) return null;
+  const e = mola(t, I0, 11, 240);
+  const x = mola(t, I0 + 0.08, 9, 270);
+  const tremor = Math.sin(t * 70) * 8 * prog(t, I0 + 0.08, 0.04) * (1 - prog(t, I0 + 0.12, 0.15));
+  return (
+    <AbsoluteFill style={{background: 'radial-gradient(circle at 50% 45%, #2A0A14, #05091A 70%)', justifyContent: 'center', alignItems: 'center', translate: `${tremor}px 0px`}}>
+      <div style={{position: 'relative', marginTop: -120, opacity: Math.min(1, e * 1.4), scale: String(interpolate(e, [0, 1], [0.7, 1]))}}>
+        <Comentario nome="mari.compras" avatar="🙋‍♀️" texto={PERGUNTA} w={900} />
+        <div style={{height: 20}} />
+        <Comentario nome="sua.lojinha" avatar="🏪" texto="Entregamos sim! 😊" w={830} resposta destaque={COR.vermelho} rodape={<span>só texto</span>} />
+        {x > 0.01 && <div style={{position: 'absolute', right: -50, bottom: -40, fontSize: 200, opacity: x, scale: String(interpolate(x, [0, 1], [2.4, 1]))}}>❌</div>}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 const RespostaErrada: React.FC<{t: number}> = ({t}) => {
   const mola = useMola();
-  if (t < M.assim1 - 0.2 || t >= T.meio + 0.1) return null;
-  const e = mola(t, M.assim1 - 0.15, 12, 210) * (1 - prog(t, T.meio - 0.15, 0.25));
-  const x = mola(t, M.assim1 + 0.1, 9, 260);
+  if (t < I1 || t >= T.meio + 0.1) return null;
+  const e = mola(t, I1, 12, 210) * (1 - prog(t, T.meio - 0.15, 0.25));
+  const x = mola(t, I1 + 0.05, 9, 260);
   return (
     <>
-      <div style={{position: 'absolute', left: 150, top: 1250, opacity: e, translate: `0px ${(1 - e) * 60}px`}}>
+      <div style={{position: 'absolute', left: 150, top: 1340, opacity: e, translate: `0px ${(1 - e) * 60}px`}}>
         <div style={{position: 'relative'}}>
           <Comentario nome="sua.lojinha" avatar="🏪" texto="Entregamos sim! 😊" w={640} destaque={COR.vermelho} rodape={<span>só texto</span>} />
           {x > 0.01 && <div style={{position: 'absolute', right: -40, top: -50, fontSize: 130, opacity: x, scale: String(interpolate(x, [0, 1], [2.2, 1]))}}>❌</div>}
         </div>
       </div>
-      <Carimbo t={t} de={M.perdendo} cor={COR.vermelho} tamanho={64} rot={-8} style={{left: 200, top: 1450}}>VÍDEO PERDIDO ✕</Carimbo>
+      <Carimbo t={t} de={M.perdendo} cor={COR.vermelho} tamanho={64} rot={-8} style={{left: 200, top: 1530}}>VÍDEO PERDIDO ✕</Carimbo>
     </>
   );
 };
@@ -480,6 +503,7 @@ const Cena: React.FC = () => {
     <AbsoluteFill>
       <Grade t={t} />
       <Freada t={t} />
+      <ErroCheio t={t} />
       <Alerta t={t} />
       <RespostaErrada t={t} />
       <Duvida t={t} />
@@ -503,8 +527,10 @@ const EVENTOS: Evento[] = [
   {som: 'swoosh', em: 0, volume: 0.6},
   {som: 'impacto', em: A0 - 0.1, volume: 0.65},
   {som: 'tique', em: 0.1, volume: 0.35},
-  {som: 'pop', em: M.assim1 - 0.15, volume: 0.45},
-  {som: 'risco', em: M.assim1 + 0.1, volume: 0.5},
+  {som: 'whoosh_in', em: I0 - 0.05, volume: 0.45},
+  {som: 'impacto', em: I0 + 0.08, volume: 0.55},
+  {som: 'risco', em: I0 + 0.1, volume: 0.5},
+  {som: 'pop', em: I1, volume: 0.4},
   {som: 'impacto', em: M.perdendo, volume: 0.6},
   // Contador
   ...passos(T.meio + 0.3, M.botao, Math.max(1, Math.round(M.botao - T.meio))).map((s): Evento => ({som: 'tique', em: s, volume: 0.18})),
@@ -553,6 +579,8 @@ export const CONFIG: Config = {
     // O clipe costuma congelar no começo: até "responder" os comentários freando cobrem a Luísa.
     {de: T.a, modo: 'fora'},
     {de: A0, modo: 'cheia', escala: [1.1, 1.14], punch: true},
+    {de: I0, modo: 'fora'},
+    {de: I1, modo: 'cheia', escala: [1.16, 1.2], punch: true},
     {de: M.perdendo, modo: 'cheia', escala: [1.2, 1.24], punch: true},
     // O fim do clipe A (depois de "vídeo") fica artificial: sai um pouco antes do meio.
     {de: T.meio - 0.2, modo: 'fora'},
