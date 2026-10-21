@@ -4,20 +4,20 @@ Reels de **dica que gera valor** (guia 6, seção 12) com a Luísa. O que todo m
 
 **Não repete nenhum anterior** (005 a 019). O 019 falou de repost; aqui o assunto é a tela de Status da conta.
 
-## O gancho (escolhido pelo Diogo: opção 5)
+## O gancho (escolhido pelo Diogo: opção 4)
 
 **Fala (Luísa, tela cheia):**
-> Tem uma tela escondida no Instagram que diz se você está sendo escondido.
+> O shadowban existe, e o Instagram tem uma tela que mostra se você está nele.
 
-Por que segura: **duplo mistério** ("tela escondida" + "você está sendo escondido") mexe com o medo de quem viu o alcance cair, e a pessoa precisa ficar até o fim para descobrir onde fica a tela.
+Por que segura: **quebra uma discussão** que todo criador conhece ("shadowban existe ou é mito?") com uma afirmação direta, e promete uma **prova concreta** ("uma tela que mostra"); a pessoa fica até o fim para descobrir onde fica a tela e se está nela.
 
-**Na tela, desde o primeiro quadro** (cobre o congelamento do começo do clipe): um perfil "sua.lojinha" cujos posts vão **ficando cinza e sumindo** do feed de quem não segue, com um olho riscado 👁️‍🗨️; em "escondido", carimbo **"ESCONDIDO?"**; alerta vermelho pulsando nas bordas como nos 017–019.
+**Na tela, desde o primeiro quadro** (cobre o congelamento do começo do clipe): um perfil "sua.lojinha" cujos posts vão **ficando cinza e sumindo** do feed de quem não segue, com um olho riscado 👁️‍🗨️; em "existe", carimbo **"SHADOWBAN EXISTE"**; em "você está nele", a pergunta **"VOCÊ ESTÁ NELE?"**; alerta vermelho pulsando nas bordas como nos 017–019.
 
 ## Fala completa (português correto: roteiro, legenda e telas)
 
 | Bloco | Fala |
 |---|---|
-| Gancho (Luísa) | Tem uma tela escondida no Instagram que diz se você está sendo escondido. |
+| Gancho (Luísa) | O shadowban existe, e o Instagram tem uma tela que mostra se você está nele. |
 | O porquê | Funciona assim: se um post seu vai contra as regras de recomendação do Instagram, ele continua aparecendo pra quem te segue, mas para de ser mostrado pra quem não te segue. E se isso se repetir, o seu perfil inteiro pode sair da recomendação por um tempo. É isso que todo mundo chama de shadowban. Os motivos mais comuns são conteúdo sugestivo, violência ou produto como cigarro eletrônico. |
 | Onde ver | Pra ver, vai no seu perfil, toca no menu, entra em Configurações e atividade e desce até Status da conta. Olha o item Qualificação de recomendação. Se estiver verde, está tudo certo. |
 | Dica 1 | Se não estiver verde, toca nele. O Instagram mostra qual post causou o problema, e aí você edita ou apaga esse post. |
@@ -48,7 +48,7 @@ Os prints são do perfil do Diogo (tudo verde). O estado com problema é uma sim
 | Exemplos de conteúdo não recomendado: violência, produtos regulados como cigarro eletrônico, conteúdo sexualmente sugestivo | [Central de Ajuda do Instagram](https://help.instagram.com/313829416281232) | 📰 Fonte: Central de Ajuda do Instagram · Diretrizes de recomendação |
 | Caminho no app em 2026: Perfil → ☰ → Configurações e atividade → Status da conta (seção "Mais informações e suporte") | prints do app do Diogo, 21/10/2026 | prints reais |
 
-- "Shadowban" não é termo oficial: a fala diz "é isso que todo mundo chama de shadowban".
+- "Shadowban" não é termo oficial: o gancho diz que ele "existe" no sentido prático (o Instagram deixa de recomendar), e o porquê explica "é isso que todo mundo chama de shadowban".
 - O nome exato do botão de revisão muda entre versões; a fala diz "pede uma nova análise ali mesmo".
 
 ## Texto da voz
@@ -57,7 +57,7 @@ Português normal (clone oficial da Luísa). "Instagram" normal; "shadowban" esc
 
 ## Legenda do post (rascunho)
 
-> Tem uma tela escondida no Instagram que diz se você está sendo escondido. 👀
+> O shadowban existe, e o Instagram tem uma tela que mostra se você está nele. 👀
 >
 > Se um post vai contra as regras de recomendação, ele continua aparecendo pra quem te segue, mas some pra quem não te segue. Se isso se repetir, o perfil inteiro pode sair da recomendação por um tempo.
 >

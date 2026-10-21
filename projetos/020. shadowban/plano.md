@@ -19,7 +19,7 @@ Valores exatos pelo `get_cost`; cada geração só com o "sim" do Diogo. Corte d
 | # | Fala | Luísa | Na tela |
 |---|---|---|---|
 | 0 | (primeiro quadro) | fora (motion) | perfil com posts ficando cinza e sumindo; olho riscado |
-| 1 | gancho | tela cheia, punch-in em "escondido" | carimbo "ESCONDIDO?"; alerta vermelho; contador "⏳ a tela aparece em Ns" até "Status da conta" |
+| 1 | gancho | tela cheia, punch-in em "existe" | carimbo "SHADOWBAN EXISTE" e "VOCÊ ESTÁ NELE?"; alerta vermelho; contador "⏳ a tela aparece em Ns" até "Status da conta" |
 | 2 | "Funciona assim… quem te segue / não te segue" | fora | celular SEGUIDOR ✓ × NÃO SEGUE ✕ |
 | 3 | "perfil inteiro… shadowban" | fora | perfil cinza nas sugestões; carimbo "SHADOWBAN" |
 | 4 | "motivos mais comuns" | fora | 🔞 · 🥊 · 🚬; selo Central de Ajuda |
