@@ -48,3 +48,4 @@ Os valores exatos saem do `get_cost` quando o conector da Higgsfield estiver aut
 - Prancha corrigida: resposta errada e carimbo abaixo da legenda; títulos longos em fonte menor; mão do toque fora do texto do botão.
 - Final: `edicoes/018. responder-comentario/responder-comentario_final.mp4`, 45,3 s, 1080×1920, −13,9 LUFS, pico −1,9 dBTP.
 - **Ajuste 1 (pedido do Diogo: "voz no início desincronizada"):** a medição quadro a quadro mostrou a boca do clipe 130–330 ms atrasada só entre "assim" e "você" (no resto do gancho, 0–30 ms). Sem gastar crédito: nesse trecho entra a resposta errada em tela cheia (comentário + "Entregamos sim! 😊" com ❌ e tremida), e a Luísa volta com punch-in no "você". Resposta pequena e carimbo desceram para baixo da legenda de duas linhas.
+- **Aprovado pelo Diogo em 21/10/2026**, pronto para postar.
