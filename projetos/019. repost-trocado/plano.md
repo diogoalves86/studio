@@ -48,3 +48,4 @@ Valores exatos pelo `get_cost` antes de cada geração; cada uma só com o "sim"
 - Sincronia: clipe A mediana 5 ms (0% > 45 ms). O trecho artificial do relatório ("trocar", 1,25–1,79 s) virou a troca do post em tela cheia (o post vira como carta e volta como o do dono); a Luísa volta com punch-in em "o seu". Boca conferida quadro a quadro no resto do gancho.
 - Prancha corrigida: contador abaixo da legenda de duas linhas (1580 px), anéis de alcance achatados para não cobrir o título, selo "desde abril" menor, camadas da dica 2 mais juntas.
 - Final: `edicoes/019. repost-trocado/repost-trocado_final.mp4`, 64,6 s, 1080×1920, −14,0 LUFS, pico −1,9 dBTP.
+- **Aprovado pelo Diogo em 21/10/2026**, pronto para postar.
