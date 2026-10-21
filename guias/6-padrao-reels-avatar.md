@@ -29,7 +29,8 @@ O avatar de IA do Diogo foi **substituído** por uma personagem nova, criada no 
   1. a voz já cortada **sempre** se chama `<nome>_ritmo.wav`; sem o sufixo, o `narracao.py` corta as pausas de novo e a narração fica mais curta que a boca;
   2. a referência de áudio do clipe tem **exatamente a duração do clipe** (0,15 s de silêncio no início e a voz cortada logo depois da última palavra), e o prompt pede "exact lip-sync… same speed and timing, no extra pauses". Com folga, o Seedance fala mais devagar e pula palavras;
   3. depois do `sincronizar_avatar.py`, **atrase a voz em 100 ms** na montagem (`adelay=100`), porque a boca gerada vem ~0,1 s depois do som. O Diogo comparou +67, +100 e +133 ms e escolheu +100. O relatório do `sincronia.md` compara áudio com áudio e não enxerga esse atraso;
-  4. modelo: **Seedance 2 Mini** continua o padrão. O **Wan 2.7** (`wan2_7`, 1,5 crédito/s) gera a boca a partir da própria voz e não precisa de distorção (0,97–1,01×), mas o Diogo não viu diferença grande. Use só com aprovação.
+  4. **confira a boca quadro a quadro no gancho** antes de entregar (mosaico da região da boca a 15 fps, comparado com o `palavras.ts`). O `sincronia.md` compara áudio com áudio e não vê quando o próprio clipe mexe a boca atrasado. No 018, a boca abria 130–330 ms atrasada só entre "assim" e "você", e o Diogo percebeu. A correção sem crédito: cobrir só esse trecho com motion em tela cheia (estado `fora`) e voltar com a Luísa em punch-in na palavra seguinte. Só regrave o clipe se o atraso tomar o gancho inteiro, e pergunte antes;
+  5. modelo: **Seedance 2 Mini** continua o padrão. O **Wan 2.7** (`wan2_7`, 1,5 crédito/s) gera a boca a partir da própria voz e não precisa de distorção (0,97–1,01×), mas o Diogo não viu diferença grande. Use só com aprovação.
 - **Volume final:** −14 LUFS, como o resto do canal. Com o clone de voz ruidoso, o Diogo chegou a preferir −24 LUFS para disfarçar o ruído. Com a Onyx, que é limpa, ele pediu para voltar ao padrão (19/10/2026).
 - **Variações da imagem:** gere a partir da imagem oficial (referência) com `gpt_image_2_5`, `quality: high`, `resolution: 2k`. A logo e o @ na camiseta são as únicas exceções à regra "sem texto em imagem gerada", e só porque o Diogo pediu. Confira sempre a grafia do @ com zoom.
 
@@ -210,11 +211,13 @@ Gerados por `tools/gerar_sfx.py` e disparados em `EfeitosSonoros.tsx`, sempre li
     `unzip -q node_modules/.remotion/chrome-headless-shell/chrome-headless-shell-mac-arm64.zip -d /tmp/chs`
   - renderize passando `--browser-executable=/tmp/chs/chrome-headless-shell-mac-arm64/chrome-headless-shell`.
 - **Conector da Higgsfield só de leitura:** veja a seção 2.
+- **Legenda de duas linhas no punch-in:** com zoom de 1,2× a legenda dinâmica quebra em duas linhas e desce até ~1280 px. Elementos no peito da apresentadora ficam a partir de ~1340 px, e o carimbo, a partir de ~1530 px. Confira na prancha antes do render.
 
 ## 12. Linha de conteúdo preferida: dica que gera valor
 
 O Diogo prefere **Reels de dica que ensinam algo útil de verdade**, sem vender o Digo Social. O modelo é o projeto `005. pare-de-sumir`, aprovado em 16/10/2026. Ao sugerir ideias, priorize esse formato. Reels de venda, como o 004, ficam para quando ele pedir.
 
+- **Gancho "erro fatal" (017 e 018, aprovados em 20–21/10/2026):** uma ordem ou um erro com perda ("Para de responder comentário assim. Você está perdendo o seu melhor vídeo."; "Esse erro faz o seu carrossel perder a segunda chance."). O Diogo escolhe entre 8–11 opções. A voz sozinha não prende, então o visual faz o trabalho desde o primeiro quadro: feed ou comentários rolando rápido e **freando** no erro (flash vermelho e tremida), **alerta vermelho** pulsando nas bordas com o gancho em texto no topo, **carimbo** de perda ("PERDIDA ✕", "VÍDEO PERDIDO ✕") e um **contador de retenção** ("⏳ a solução aparece em Ns") até a resposta. Código de referência: `src/videos/responder-comentario/`.
 - **Gancho em pergunta** que cutuca uma dor real ("Você posta e some, né?"), com a muleta "né?" para a voz subir o tom (seção 2).
 - **Fonte na tela (autoridade, pedido do Diogo em 17/10/2026):** toda afirmação factual ganha um selo animado "📰 Fonte: <veículo> · <título traduzido>", que entra junto com a fala, mais um cartão "FONTES" de ~1,5 s no fim do meio com todos os veículos (nome em texto, sem logo de marca). Pessoa citada aparece com foto de licença livre, nome, cargo e crédito da foto.
 - **O porquê antes da dica:** explique em uma ou duas frases como a coisa funciona (ex.: o Instagram mostra o post primeiro para pouca gente; quem conversa com você te vê mais). Use só o que o próprio Instagram ou o Adam Mosseri já disseram, e cite as fontes no `roteiro.md`. Nada de números de blog.
