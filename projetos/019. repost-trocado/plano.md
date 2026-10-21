@@ -40,3 +40,11 @@ Valores exatos pelo `get_cost` antes de cada geração; cada uma só com o "sim"
 1. Este roteiro e o custo (~8,8 créditos). v2: porquê ampliado a pedido do Diogo (como a recomendação funciona e o motivo do Instagram).
 2. A voz gerada, antes do clipe.
 3. Prancha de revisão antes do render final.
+
+## Execução
+
+- Gasto real: 8,83 créditos (voz gancho 0,46 + meio 4,37 com o clone oficial; clipe A Seedance 2 Mini 4 s = 4). CTA reaproveitado do 015.
+- Voz: pedido do Diogo "um pouquinho mais cadenciado": corte com `--pausa 0.28 --pausa-frase 0.5 --velocidade 1.12` (antes 0.25/0.45/1.2). F0 227–232 Hz. Com o porquê maior, o vídeo ficou com 64,6 s.
+- Sincronia: clipe A mediana 5 ms (0% > 45 ms). O trecho artificial do relatório ("trocar", 1,25–1,79 s) virou a troca do post em tela cheia (o post vira como carta e volta como o do dono); a Luísa volta com punch-in em "o seu". Boca conferida quadro a quadro no resto do gancho.
+- Prancha corrigida: contador abaixo da legenda de duas linhas (1580 px), anéis de alcance achatados para não cobrir o título, selo "desde abril" menor, camadas da dica 2 mais juntas.
+- Final: `edicoes/019. repost-trocado/repost-trocado_final.mp4`, 64,6 s, 1080×1920, −14,0 LUFS, pico −1,9 dBTP.

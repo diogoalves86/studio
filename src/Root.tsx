@@ -25,6 +25,7 @@ import {ApresentacaoLuisa, LUISA_DURACAO} from './videos/apresentacao-luisa';
 import {FazConta, FAZ_CONTA_DURACAO} from './videos/faz-a-conta';
 import {CarrosselSegundaChance, CARROSSEL_DURACAO} from './videos/carrossel-segunda-chance';
 import {ResponderComentario, RESPONDER_DURACAO} from './videos/responder-comentario';
+import {RepostTrocado, REPOST_DURACAO} from './videos/repost-trocado';
 
 const FPS = 30;
 const SEIS_SEGUNDOS = 6 * FPS;
@@ -96,6 +97,9 @@ export const RemotionRoot: React.FC = () => (
     </Folder>
     <Folder name="018-responder-comentario">
       <Composition id="ResponderComentario" component={ResponderComentario} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(RESPONDER_DURACAO * FPS)} />
+    </Folder>
+    <Folder name="019-repost-trocado">
+      <Composition id="RepostTrocado" component={RepostTrocado} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(REPOST_DURACAO * FPS)} />
     </Folder>
   </>
 );
