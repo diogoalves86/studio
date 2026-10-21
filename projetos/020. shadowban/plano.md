@@ -48,3 +48,4 @@ Valores exatos pelo `get_cost`; cada geração só com o "sim" do Diogo. Corte d
 - Prints reais (Configurações e atividade; Status da conta) com zoom, marca-texto e círculo verde pulsando no ✓ de "Qualificação de recomendação"; o estado com ⚠️ é simulado e marcado "exemplo".
 - Sincronia: clipe A mediana 2 ms; a abertura cobre até "e o Instagram"; boca conferida quadro a quadro no resto do gancho.
 - Final: `edicoes/020. shadowban/shadowban_final.mp4`, 55,5 s, 1080×1920, −14,0 LUFS, pico −1,9 dBTP.
+- **Aprovado pelo Diogo em 21/10/2026**, pronto para postar.
