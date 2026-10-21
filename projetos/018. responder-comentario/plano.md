@@ -39,3 +39,11 @@ Os valores exatos saem do `get_cost` quando o conector da Higgsfield estiver aut
 1. Este roteiro e o custo (~9 créditos, confirmado no `get_cost`).
 2. A voz gerada, antes do clipe (comparada com a do 017).
 3. Prancha de revisão antes do render final.
+
+## Execução
+
+- Gasto real: 7,68 créditos (voz gancho 0,46 + meio 3,22 com o clone oficial; clipe A Seedance 2 Mini 4 s = 4). CTA reaproveitado do 015.
+- Voz: F0 239 Hz (017: 229 Hz), aprovada pelo Diogo.
+- Sincronia: clipe A mediana 5 ms (0% das janelas > 45 ms); a Luísa faz o gesto de "pare" com a mão no gancho. O fim do clipe A (3,52–3,71 s) fica coberto: ela sai 0,2 s antes do meio.
+- Prancha corrigida: resposta errada e carimbo abaixo da legenda; títulos longos em fonte menor; mão do toque fora do texto do botão.
+- Final: `edicoes/018. responder-comentario/responder-comentario_final.mp4`, 45,3 s, 1080×1920, −13,9 LUFS, pico −1,9 dBTP.
