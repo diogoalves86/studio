@@ -14,3 +14,4 @@ Reels vertical 1080×1920 com a Luísa (guia 6, seção 0). Roteiro, gancho e fo
 - Sincronia: clipe A mediana 0 ms (6% > 45 ms). O clipe pulou o "te" de "te mandando", mas a abertura cobre até "agora". Boca conferida quadro a quadro no resto do gancho.
 - "SOLICITAÇÕES OCULTAS" escrito grande na tela quando ela fala o nome da pasta (mesma ideia do SHADOWBAN no 020).
 - Final: `edicoes/021. mensagem-escondida/mensagem-escondida_final.mp4`, 53,6 s, 1080×1920, −14,0 LUFS, pico −1,9 dBTP.
+- **Aprovado pelo Diogo em 22/10/2026**, pronto para postar.
