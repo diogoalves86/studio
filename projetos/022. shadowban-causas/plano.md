@@ -26,3 +26,4 @@ Cada geração só com o "sim" do Diogo.
 - Sincronia: clipe A mediana 2 ms (0% > 45 ms). O relatório marcou 2,32–2,46 s («e») como artificial: a abertura (4 cartas + "4" + SHADOWBAN) cobre até "você". Boca conferida quadro a quadro no resto do gancho.
 - Retenção: no lugar do contador, um marcador "1 2 3 4" acende a cada causa (rodapé). Cada causa é uma carta que vira com o nome em letras grandes.
 - Final: `edicoes/022. shadowban-causas/shadowban-causas_final.mp4`, 58,4 s, 1080×1920, −14,0 LUFS, pico −1,9 dBTP.
+- **Aprovado pelo Diogo em 23/10/2026**, pronto para postar.
