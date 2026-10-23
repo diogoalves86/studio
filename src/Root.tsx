@@ -29,6 +29,7 @@ import {RepostTrocado, REPOST_DURACAO} from './videos/repost-trocado';
 import {Shadowban, SHADOWBAN_DURACAO} from './videos/shadowban';
 import {MensagemEscondida, MENSAGEM_DURACAO} from './videos/mensagem-escondida';
 import {ShadowbanCausas, CAUSAS_DURACAO} from './videos/shadowban-causas';
+import {SeguidoresRemovidos, SEGUIDORES_DURACAO} from './videos/seguidores-removidos';
 
 const FPS = 30;
 const SEIS_SEGUNDOS = 6 * FPS;
@@ -112,6 +113,9 @@ export const RemotionRoot: React.FC = () => (
     </Folder>
     <Folder name="022-shadowban-causas">
       <Composition id="ShadowbanCausas" component={ShadowbanCausas} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(CAUSAS_DURACAO * FPS)} />
+    </Folder>
+    <Folder name="023-seguidores-removidos">
+      <Composition id="SeguidoresRemovidos" component={SeguidoresRemovidos} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(SEGUIDORES_DURACAO * FPS)} />
     </Folder>
   </>
 );
