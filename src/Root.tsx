@@ -31,6 +31,7 @@ import {MensagemEscondida, MENSAGEM_DURACAO} from './videos/mensagem-escondida';
 import {ShadowbanCausas, CAUSAS_DURACAO} from './videos/shadowban-causas';
 import {SeguidoresRemovidos, SEGUIDORES_DURACAO} from './videos/seguidores-removidos';
 import {ContaPessoal, CONTA_PESSOAL_DURACAO} from './videos/conta-pessoal';
+import {ShadowbanNegado, NEGADO_DURACAO} from './videos/shadowban-negado';
 
 const FPS = 30;
 const SEIS_SEGUNDOS = 6 * FPS;
@@ -120,6 +121,9 @@ export const RemotionRoot: React.FC = () => (
     </Folder>
     <Folder name="024-conta-pessoal-shadowban">
       <Composition id="ContaPessoal" component={ContaPessoal} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(CONTA_PESSOAL_DURACAO * FPS)} />
+    </Folder>
+    <Folder name="025-shadowban-negado">
+      <Composition id="ShadowbanNegado" component={ShadowbanNegado} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(NEGADO_DURACAO * FPS)} />
     </Folder>
   </>
 );
