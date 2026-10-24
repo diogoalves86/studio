@@ -18,3 +18,4 @@ Voz (clone oficial `1c0dd5f2…`) pelo `get_cost`; clipe A Seedance 2 Mini confo
 - Sincronia: clipe A mediana 10 ms (0% > 45 ms). Trecho artificial no fim do clipe (3,86–4,01 s, depois de "ver") coberto: ela sai 0,17 s antes do meio. Boca conferida quadro a quadro.
 - Telas animadas: Status pessoal × profissional, caminho Configurações e atividade → Tipo de conta e ferramentas → Mudar para conta profissional → Criador/Empresa.
 - Final: `edicoes/024. conta-pessoal-shadowban/conta-pessoal-shadowban_final.mp4`, 51,2 s, 1080×1920, −14,0 LUFS, pico −1,9 dBTP.
+- **Aprovado pelo Diogo em 24/10/2026**, pronto para postar.
