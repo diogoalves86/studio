@@ -21,3 +21,10 @@ Voz (clone oficial `1c0dd5f2…`) pelo `get_cost`; clipe A Seedance 2 Mini confo
   - **apoio:** celular tremendo na mão → em pé, apoiado num copo, imagem firme;
   - interface de gravação (botão vermelho REC, contador 00:03, grade de enquadramento) por cima.
 - Opção paga, só se o Diogo quiser: 3 imagens novas da Luísa gravando (GPT Image 2.5 high ≈ 2,75 cada ≈ 8,3 créditos).
+
+## Execução
+
+- Gasto real: 8,14 créditos (voz 0,46 + 3,68 com o clone oficial; clipe A Seedance 2 Mini 4 s = 4). O gancho tem 3,87 s, e a referência foi montada com 0,12 s de silêncio para caber em 4 s, economizando 1 crédito. CTA reaproveitado do 015. Sem imagens extras.
+- "Luísa gravando": componente `CameraLuisa` (foto oficial dela num celular com REC, cronômetro e grade) com os modos contraluz / luz / longe / perto e tremor; antes × depois animados em cada erro.
+- Sincronia: clipe A mediana 8 ms (0% > 45 ms). O fim do clipe (3,66–3,87 s) fica artificial: ela sai 0,22 s antes do meio. Boca conferida quadro a quadro.
+- Final: `edicoes/026. reels-amador/reels-amador_final.mp4`, 57,8 s, 1080×1920, −14,0 LUFS, pico −1,9 dBTP.
