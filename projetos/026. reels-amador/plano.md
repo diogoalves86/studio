@@ -28,3 +28,4 @@ Voz (clone oficial `1c0dd5f2…`) pelo `get_cost`; clipe A Seedance 2 Mini confo
 - "Luísa gravando": componente `CameraLuisa` (foto oficial dela num celular com REC, cronômetro e grade) com os modos contraluz / luz / longe / perto e tremor; antes × depois animados em cada erro.
 - Sincronia: clipe A mediana 8 ms (0% > 45 ms). O fim do clipe (3,66–3,87 s) fica artificial: ela sai 0,22 s antes do meio. Boca conferida quadro a quadro.
 - Final: `edicoes/026. reels-amador/reels-amador_final.mp4`, 57,8 s, 1080×1920, −14,0 LUFS, pico −1,9 dBTP.
+- **Aprovado pelo Diogo em 25/10/2026**, pronto para postar.
