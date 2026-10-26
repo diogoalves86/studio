@@ -19,3 +19,4 @@ Voz (clone oficial `1c0dd5f2…`) pelo `get_cost`; clipe A Seedance 2 Mini confo
 - Telas animadas: Stories da lojinha com a figurinha 😍, bandeja de figurinhas → "Personalize suas figurinhas de reação", tela "Atividade" com "Reações de figurinhas", mensagens no Direct; aviso com o "hack" escondido e "LISTA FALSA ✕". Marcador "1 POSTA · 2 ABRE A LISTA · 3 CHAMA NO DIRECT" no rodapé.
 - Sincronia: clipe A mediana 5 ms (0% > 45 ms), sem trecho artificial; boca conferida quadro a quadro.
 - Final: `edicoes/027. figurinha-de-reacao/figurinha-de-reacao_final.mp4`, 45,0 s, 1080×1920, −14,0 LUFS, pico −1,9 dBTP.
+- **Aprovado pelo Diogo em 26/10/2026**, pronto para postar.
