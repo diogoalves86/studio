@@ -34,6 +34,7 @@ import {ContaPessoal, CONTA_PESSOAL_DURACAO} from './videos/conta-pessoal';
 import {ShadowbanNegado, NEGADO_DURACAO} from './videos/shadowban-negado';
 import {ReelsAmador, AMADOR_DURACAO} from './videos/reels-amador';
 import {FigurinhaReacao, FIGURINHA_DURACAO} from './videos/figurinha-reacao';
+import {TextoEscondido, TEXTO_DURACAO} from './videos/texto-escondido';
 
 const FPS = 30;
 const SEIS_SEGUNDOS = 6 * FPS;
@@ -132,6 +133,9 @@ export const RemotionRoot: React.FC = () => (
     </Folder>
     <Folder name="027-figurinha-de-reacao">
       <Composition id="FigurinhaReacao" component={FigurinhaReacao} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(FIGURINHA_DURACAO * FPS)} />
+    </Folder>
+    <Folder name="028-texto-escondido">
+      <Composition id="TextoEscondido" component={TextoEscondido} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(TEXTO_DURACAO * FPS)} />
     </Folder>
   </>
 );
