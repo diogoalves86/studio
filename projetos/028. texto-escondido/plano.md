@@ -12,3 +12,4 @@ Voz (clone oficial `1c0dd5f2…`) pelo `get_cost`; clipe A Seedance 2 Mini confo
 - Componente `ReelsTela`: a foto oficial da Luísa numa tela de Reels com a interface por cima, peça por peça (nome, legenda, música, botões); "zona de perigo" em vermelho; área segura em verde; o "50% OFF" sobe da borda para o centro; o rosto sobe até a linha de cima; o produto vem do canto para perto da câmera, sem cobrir o rosto nem o texto.
 - Sincronia: clipe A mediana 5 ms (7% > 45 ms). Os trechos artificiais (0,00–0,14 s, coberto pela abertura; 3,98–4,13 s) ficam cobertos: ela sai 0,17 s antes do meio. Boca conferida.
 - Final: `edicoes/028. texto-escondido/texto-escondido_final.mp4`, 45,4 s, 1080×1920, −14,0 LUFS, pico −1,9 dBTP.
+- **Aprovado pelo Diogo em 26/10/2026**, pronto para postar.
