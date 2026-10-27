@@ -36,6 +36,7 @@ import {ReelsAmador, AMADOR_DURACAO} from './videos/reels-amador';
 import {FigurinhaReacao, FIGURINHA_DURACAO} from './videos/figurinha-reacao';
 import {TextoEscondido, TEXTO_DURACAO} from './videos/texto-escondido';
 import {OlhaPraLente, LENTE_DURACAO} from './videos/olha-pra-lente';
+import {TresPlanos, PLANOS_DURACAO} from './videos/tres-planos';
 
 const FPS = 30;
 const SEIS_SEGUNDOS = 6 * FPS;
@@ -140,6 +141,9 @@ export const RemotionRoot: React.FC = () => (
     </Folder>
     <Folder name="029-olha-pra-lente">
       <Composition id="OlhaPraLente" component={OlhaPraLente} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(LENTE_DURACAO * FPS)} />
+    </Folder>
+    <Folder name="030-tres-planos">
+      <Composition id="TresPlanos" component={TresPlanos} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(PLANOS_DURACAO * FPS)} />
     </Folder>
   </>
 );
