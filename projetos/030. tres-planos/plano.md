@@ -15,3 +15,5 @@ Roteiro aprovado em [roteiro.md](roteiro.md). Padrão Reels avatar (guia 6), Lu�
 
 - `edicoes/030. tres-planos/tres-planos_final.mp4`: 40,5 s, 1080×1920, −14,0 LUFS, −1,9 dBTP.
 - `edicoes/030. tres-planos/tres-planos_celular.mp4`: prévia.
+
+- **Aprovado pelo Diogo em 27/10/2026**, pronto para postar.
