@@ -88,6 +88,8 @@ A explicação pasta por pasta está nos [primeiros passos](guias/1-primeiros-pa
 3. [Manual do Remotion para leigos](guias/3-manual-remotion.md): o que é, como funciona e tudo o que dá para pedir.
 4. [Nível 2: Higgsfield](guias/4-nivel-2-higgsfield.md): como conectar (conta ou API key), processo, modelos, custos e prompts.
 5. [Direção editorial](guias/5-direcao-editorial.md): o repertório de cenas, transições e cuidados que guia toda edição.
+6. [Padrão Reels avatar (Digo Social)](guias/6-padrao-reels-avatar.md): o padrão dos Reels com a apresentadora de IA do @digo.social.
+7. [Padrão Galinha Programadora](guias/7-padrao-galinha-programadora.md): memes de TI com a Galinha (@galinhaprogramadora): personagem, voz, ritmo, linguagem de meme e ponte para o Digo.
 
 E a [galeria de estilos](estilos/README.md) para escolher o visual.
 

@@ -1,0 +1,131 @@
+{
+ "trechos": [
+  {
+   "nome": "teste",
+   "inicio": 0.0,
+   "fim": 6.37
+  }
+ ],
+ "palavras": [
+  {
+   "w": "Fala",
+   "s": 0.11,
+   "e": 0.67,
+   "trecho": "teste"
+  },
+  {
+   "w": "Dev,",
+   "s": 0.67,
+   "e": 0.95,
+   "trecho": "teste"
+  },
+  {
+   "w": "eu",
+   "s": 1.23,
+   "e": 1.35,
+   "trecho": "teste"
+  },
+  {
+   "w": "sou",
+   "s": 1.35,
+   "e": 1.49,
+   "trecho": "teste"
+  },
+  {
+   "w": "a",
+   "s": 1.49,
+   "e": 1.63,
+   "trecho": "teste"
+  },
+  {
+   "w": "Galinha",
+   "s": 1.63,
+   "e": 1.87,
+   "trecho": "teste"
+  },
+  {
+   "w": "Programadora.",
+   "s": 1.87,
+   "e": 2.55,
+   "trecho": "teste"
+  },
+  {
+   "w": "Hoje",
+   "s": 2.73,
+   "e": 3.03,
+   "trecho": "teste"
+  },
+  {
+   "w": "eu",
+   "s": 3.03,
+   "e": 3.13,
+   "trecho": "teste"
+  },
+  {
+   "w": "vou",
+   "s": 3.13,
+   "e": 3.21,
+   "trecho": "teste"
+  },
+  {
+   "w": "te",
+   "s": 3.21,
+   "e": 3.35,
+   "trecho": "teste"
+  },
+  {
+   "w": "mostrar",
+   "s": 3.35,
+   "e": 3.69,
+   "trecho": "teste"
+  },
+  {
+   "w": "um",
+   "s": 3.69,
+   "e": 3.85,
+   "trecho": "teste"
+  },
+  {
+   "w": "erro",
+   "s": 3.85,
+   "e": 4.11,
+   "trecho": "teste"
+  },
+  {
+   "w": "que",
+   "s": 4.11,
+   "e": 4.31,
+   "trecho": "teste"
+  },
+  {
+   "w": "todo",
+   "s": 4.31,
+   "e": 4.57,
+   "trecho": "teste"
+  },
+  {
+   "w": "iniciante",
+   "s": 4.57,
+   "e": 5.19,
+   "trecho": "teste"
+  },
+  {
+   "w": "comete",
+   "s": 5.19,
+   "e": 5.63,
+   "trecho": "teste"
+  },
+  {
+   "w": "no",
+   "s": 5.63,
+   "e": 5.77,
+   "trecho": "teste"
+  },
+  {
+   "w": "código.",
+   "s": 5.77,
+   "e": 6.09,
+   "trecho": "teste"
+  }
+ ]
+}

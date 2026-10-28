@@ -2,6 +2,8 @@
 
 Este é o **padrão obrigatório** para todo vídeo do canal **Digo Social (@digo.social)** feito com o avatar de IA do Diogo. Ele saiu do projeto `001. reels-avatar`, aprovado depois de cinco rodadas de ajuste. A implementação de referência está em [src/videos/reels-avatar/](../src/videos/reels-avatar/) e o plano completo em `projetos/001. reels-avatar/plano.md`.
 
+**Vídeos da Galinha Programadora (@galinhaprogramadora)** usam a técnica deste guia, mas a personagem, a voz, o ritmo, o tom de meme e o CTA estão no [guia 7](7-padrao-galinha-programadora.md), que tem prioridade nesses vídeos.
+
 Para um vídeo novo, **siga este guia do começo ao fim** e copie o código de referência. A direção editorial ([guia 5](5-direcao-editorial.md)) continua valendo: o roteiro de cada vídeo decide as cenas, e este guia decide **como** elas são feitas. Se o Diogo pedir algo diferente, siga o pedido e registre no `plano.md`.
 
 ## 0. Apresentadora oficial (desde 19/10/2026)

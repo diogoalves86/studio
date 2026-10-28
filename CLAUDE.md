@@ -17,6 +17,16 @@ Este fork é do **Diogo (Digo Social, @digo.social)**. Todo Reels com o avatar d
 - **texto da voz escrito como é falado:** o que vai para o gerador de voz e para a fala do avatar segue a pronúncia, não a ortografia (ex.: "Tem **lójinha** no Instagram?"); roteiro, legenda e telas ficam no português correto;
 - **nunca versionar vídeo, áudio ou imagem**; commits no `main` do fork (`origin`).
 
+## Padrão Galinha Programadora (obrigatório)
+
+O Diogo também tem a página **Galinha Programadora (@galinhaprogramadora)**: **memes de TI** e dicas rápidas de programação, com a galinha da logo como personagem. Todo vídeo dela segue [guias/7-padrao-galinha-programadora.md](guias/7-padrao-galinha-programadora.md) (**leia antes de planejar**; ele tem prioridade sobre o guia 6 nos vídeos da Galinha) e usa [src/videos/na-minha-maquina/](src/videos/na-minha-maquina/) como código de referência. O essencial:
+
+- **personagem:** a imagem B (busto de frente, job `24397dd7…`), traço de quadrinho, fone azul; paleta verde-água, rosa, amarelo e preto da logo; letreiro em Bungee. **Nunca** a Luísa nem a paleta azul do Digo;
+- **voz:** a do Diogo no Seed Audio (`audio_references` `58086f4c…`, `speech_rate` −10); recortar o chiado inicial; "te" escrito **"ti"** (nunca "tchi"), "segue" (nunca "ségui");
+- **ritmo:** a fala nunca é desacelerada; a cadência vem de **silêncio entre as frases** (regra do Diogo);
+- **linguagem de meme:** POV, exagero, silêncio com grilos, reviravolta, Galinha congelada com óculos pixelados, sons de meme de `tools/gerar_sfx_meme.py`; poucos créditos (Galinha falando só no gancho, na piada e no CTA);
+- **CTA:** "Marca aquele dev… E segue a Galinha Programadora."; **ponte para o Digo Social em 1 de cada 3 memes**, sempre como **site** ("acessa o Digo, tá no link da bio"), com selo de parceria.
+
 ## Início de toda sessão
 
 Na primeira resposta da sessão, antes de qualquer outra coisa (a menos que a pessoa já tenha dito o nível na primeira mensagem):
@@ -30,6 +40,7 @@ Na primeira resposta da sessão, antes de qualquer outra coisa (a menos que a pe
    - Nível 1 → [guias/2-nivel-1-remotion.md](guias/2-nivel-1-remotion.md) e [guias/5-direcao-editorial.md](guias/5-direcao-editorial.md).
    - Nível 2 → [guias/4-nivel-2-higgsfield.md](guias/4-nivel-2-higgsfield.md) e [guias/5-direcao-editorial.md](guias/5-direcao-editorial.md). No caminho B (API key), leia também o guia do Nível 1, porque a montagem é no Remotion.
    - Reels com o avatar do Digo Social (qualquer nível) → também [guias/6-padrao-reels-avatar.md](guias/6-padrao-reels-avatar.md), que tem prioridade sobre os outros guias.
+   - Vídeos da Galinha Programadora → também [guias/6-padrao-reels-avatar.md](guias/6-padrao-reels-avatar.md) (técnica) e [guias/7-padrao-galinha-programadora.md](guias/7-padrao-galinha-programadora.md) (identidade, voz e meme), que tem prioridade.
 
 3. **Confira os pré-requisitos em silêncio** e resolva o que faltar:
    - `node_modules/` existe, `python -c "import faster_whisper"` funciona e as skills `watch` e `remotion-best-practices` estão disponíveis. Se qualquer um faltar, **instale você mesmo** rodando `npm run instalar` (instala tudo isso de uma vez) e avise que as skills novas só aparecem numa **sessão nova**: peça para a pessoa reabrir o Claude nesta pasta;
@@ -80,12 +91,12 @@ Depois de assistir o vídeo, **proponha você mesmo** duas ou três direções (
 
 ```text
 CLAUDE.md                 este arquivo
-guias/                    1 primeiros passos · 2 nível 1 · 3 manual do Remotion · 4 nível 2 · 5 direção editorial · 6 padrão Reels avatar
+guias/                    1 primeiros passos · 2 nível 1 · 3 manual do Remotion · 4 nível 2 · 5 direção editorial · 6 padrão Reels avatar · 7 padrão Galinha Programadora
 estilos/                  galeria de estilos (README.md + imagens/)
 projetos/<NNN. slug>/     video/ · prints/ · frames/ · transcricao/ · hf/ · plano.md · edit.jsx
 edicoes/<NNN. slug>/      somente entregáveis finais
 src/Root.tsx              registro das composições do Remotion
-src/videos/<slug>/        código de cada vídeo (Nível 1 e Nível 2 caminho B); reels-avatar/ é a referência do padrão
+src/videos/<slug>/        código de cada vídeo (Nível 1 e Nível 2 caminho B); reels-avatar/ é a referência do padrão; na-minha-maquina/ é a referência da Galinha
 src/estilos/              exemplos da galeria, rodam sem vídeo
 src/_shared/              primitivas: synchronized-split.tsx (obrigatória em telas divididas), metadata.ts
 tools/transcrever.py      transcrição local com tempo por palavra (faster-whisper, gratuito)
@@ -93,6 +104,7 @@ tools/cortar_pausas.py    corta as pausas longas de cada voz baixada (sempre, an
 tools/narracao.py         narração de voz natural com pausas curtas + palavras.ts (padrão Reels avatar)
 tools/sincronizar_avatar.py  boca do avatar sincronizada quadro a quadro + relatório de momentos artificiais
 tools/gerar_sfx.py        efeitos sonoros padrão, sintetizados localmente
+tools/gerar_sfx_meme.py   sons de meme da Galinha (boom, disco, grilos, trombone, plim…), sintetizados localmente
 tools/hf_api.py           geração pela Higgsfield Cloud API (Nível 2, caminho B)
 ```
 

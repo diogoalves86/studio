@@ -1,0 +1,10 @@
+{
+ "saida": "video/narracao_teste.wav",
+ "mapa": "transcricao/narracao",
+ "trechos": [
+  {"nome": "teste", "audio": "hf/voz_diogo_3_ti_ritmo.wav", "transcricao": "transcricao/voz_diogo_3_ti_ritmo"}
+ ],
+ "clipes": {
+  "teste": {"video": "hf/avatar_teste.mp4", "transcricao": "transcricao/avatar_teste", "saida": "hf/sync_teste.mp4"}
+ }
+}
