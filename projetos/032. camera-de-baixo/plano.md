@@ -7,3 +7,4 @@
 - Cenas (Remotion, `src/videos/camera-de-baixo/`): rosto visto de baixo (teto, narinas, queixo) → pessoa de lado com o cone da lente subindo → QUEIXO/NARIZ/TETO + "PARECE ARROGÂNCIA" → dica 1: celular sobe até a linha dos olhos, pilha de livros → dica 2: um pouquinho acima, rosto leve → dois celulares olho no olho, "DE IGUAL PRA IGUAL" → ponte do 031 + "⬇️ BAIXA O DIGO" + "🔗 LINK NA BIO" → CTA de seguir.
 - Custo real: 7,68 créditos (voz 3,68 + clipe 4). Estimativa era ~8 a 9.
 - Final: `edicoes/032. camera-de-baixo/camera-de-baixo_final.mp4`, 51,0 s, −14,0 LUFS, pico −1,8 dB.
+- **Aprovado pelo Diogo em 28/10/2026.**
