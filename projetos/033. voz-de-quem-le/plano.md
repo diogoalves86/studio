@@ -7,3 +7,4 @@
 - Cenas (Remotion, `src/videos/voz-de-quem-le/`): rosto lendo o teleprompter → folha decorada marcada palavra por palavra + teleprompter → voz reta e olho correndo → recado lido, "PRÓXIMO" → dica 1: folha riscada, 3 tópicos → dica 2: "sua amiga", a onda sobe e desce → "CONVERSA, NÃO LEITURA" → ponte com "🌐 SITE", "👉 ACESSA O DIGO", "🔗 LINK NA BIO" → CTA de seguir.
 - Custo real: 7,68 créditos (voz 3,68 + clipe 4). Estimativa era ~8.
 - Final: `edicoes/033. voz-de-quem-le/voz-de-quem-le_final.mp4`, 49,7 s, −14,0 LUFS, pico −1,9 dB.
+- **Aprovado pelo Diogo em 28/10/2026.**
