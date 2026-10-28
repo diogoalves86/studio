@@ -20,7 +20,7 @@ Por que segura: **erro** + **perda antes de começar**; todo mundo já viu o pr�
 | Dica 1 | Primeira dica: começa já sorrindo. Sorri antes de apertar o botão e fala a primeira palavra no mesmo segundo. |
 | Dica 2 | Segunda: corta o comecinho. Antes de postar, tira tudo o que vem antes da sua primeira palavra. O vídeo começa com você falando. |
 | Fecho | Pronto: a pessoa para, porque você já chegou conversando. |
-| Ponte (motion) | E se gravar já dá trabalho, postar não precisa dar. O Digo Social sugere o post, escreve a legenda e agenda pra você. Você só aprova. |
+| Ponte (motion) | E se gravar já dá trabalho, postar não precisa dar. O Digo Social é um aplicativo que sugere o post, escreve a legenda e agenda pra você. Você só aprova. Tá no link da bio. *(ajuste do Diogo em 28/10: deixar claro que é aplicativo e onde encontrar)* |
 | CTA (Luísa) | Se essa dica te ajudou, segue o Digo Social. Toda semana tem mais. *(áudio e clipe reaproveitados do 015)* |
 
 A ponte vem **depois** que a dica está completa e fala do passo seguinte (postar), não da gravação: a dica não depende do app, e o app aparece como o próximo passo natural, sem "compre" nem "baixe agora".
@@ -57,7 +57,7 @@ Português normal (clone oficial da Luísa), ritmo cadenciado. "Pra" e "pro" com
 > ✅ Começa já sorrindo e fala no mesmo segundo do REC
 > ✅ Corta tudo o que vem antes da sua primeira palavra
 >
-> E pra postar sem dor de cabeça, o Digo Social sugere o post, escreve a legenda e agenda pra você. Você só aprova. 💙
+> E pra postar sem dor de cabeça: o Digo Social é um aplicativo que sugere o post, escreve a legenda e agenda pra você. Você só aprova. 📲 Link na bio.
 >
 > 💾 Salva pra lembrar antes de gravar e segue o @digo.social. Toda semana tem mais.
 >

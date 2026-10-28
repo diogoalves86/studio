@@ -49,7 +49,9 @@ const M = {
   escreve: em('escreve'),
   legenda: em('legenda'),
   agenda: em('agenda'),
+  aplicativo: em('aplicativo'),
   aprova: em('aprova', em('agenda')),
+  link: em('link'),
   segue: em('segue', T.b),
   digo: em('digo', T.b),
   toda: em('toda', T.b),
@@ -520,11 +522,14 @@ const Ponte2: React.FC<{t: number}> = ({t}) => {
   const pronto = mola(t, M.escreve - 0.1, 12, 200);
   const agenda = mola(t, M.agenda - 0.1, 10, 230);
   const aprovado = t >= M.aprova + 0.12;
+  const app = mola(t, M.aplicativo - 0.1, 10, 230);
+  const bio = mola(t, M.link - 0.15, 10, 230);
   return (
     <AbsoluteFill style={st}>
       <div style={{position: 'absolute', left: 0, right: 0, top: 440, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 18, opacity: logo, scale: String(0.6 + 0.4 * logo)}}>
         <Img src={ARQ.logo} style={{width: 90, height: 90, borderRadius: 22}} />
         <div style={{fontFamily: MONT, fontWeight: 900, fontSize: 60, color: COR.branco}}>Digo Social</div>
+        {app > 0.01 && <div style={{padding: '8px 18px', borderRadius: 16, background: 'rgba(62,198,255,.16)', border: `3px solid ${COR.ciano}`, fontFamily: MONT, fontWeight: 900, fontSize: 30, color: COR.ciano, opacity: app, scale: String(interpolate(app, [0, 1], [1.8, 1])), rotate: `${(1 - app) * 8}deg`}}>📲 APLICATIVO</div>}
       </div>
       <div style={{position: 'absolute', left: 90, right: 90, top: 570, padding: 30, ...caixa, opacity: sug * (1 - 0.4 * pronto), scale: String((0.9 + 0.1 * sug) * (1 - 0.06 * pronto))}}>
         <div style={{fontFamily: MONT, fontWeight: 900, fontSize: 30, color: COR.ciano, letterSpacing: 2}}>💡 O DIGO SUGERE</div>
@@ -557,6 +562,11 @@ const Ponte2: React.FC<{t: number}> = ({t}) => {
         </div>
       )}
       <Toque t={t} de={M.agenda + 0.1} toque={M.aprova} x={540} y={1125} />
+      {bio > 0.01 && (
+        <div style={{position: 'absolute', left: 0, right: 0, top: 1200, display: 'flex', justifyContent: 'center', opacity: bio, scale: String(interpolate(bio, [0, 1], [1.7, 1])), rotate: `${-3 + (1 - bio) * 8}deg`}}>
+          <Pilula cor={COR.ciano} tamanho={56} fundo="linear-gradient(135deg, #2F7BFF, #1FB5E8 60%, #2EE59D)">🔗 LINK NA BIO</Pilula>
+        </div>
+      )}
     </AbsoluteFill>
   );
 };
@@ -686,6 +696,8 @@ const EVENTOS: Evento[] = [
   {som: 'pop', em: M.agenda - 0.1, volume: 0.4},
   {som: 'toque', em: M.aprova, volume: 0.6},
   {som: 'ding', em: M.aprova + 0.12, volume: 0.55},
+  {som: 'pop', em: M.aplicativo - 0.1, volume: 0.45},
+  {som: 'impacto', em: M.link - 0.15, volume: 0.5},
   // CTA
   {som: 'pop', em: T.b + 0.1, volume: 0.4},
   {som: 'swoosh', em: B1, volume: 0.4},
@@ -709,10 +721,12 @@ export const CONFIG: Config = {
   ],
   semLegenda: [
     [0, A0],
+    // o selo "LINK NA BIO" já diz o que ela fala
+    [M.link - 0.15, T.b],
     [T.b, B2],
     [B2, T.fim],
   ],
-  corEspecial: {'parada,': COR.vermelho, 'passa.': COR.vermelho, 'sorrindo.': COR.verde, 'comecinho.': COR.amarelo, 'conversando.': COR.verde, 'aprova.': COR.verde},
+  corEspecial: {'parada,': COR.vermelho, 'passa.': COR.vermelho, 'sorrindo.': COR.verde, 'comecinho.': COR.amarelo, 'conversando.': COR.verde, 'aprova.': COR.verde, 'aplicativo': COR.ciano, 'link': COR.ciano, 'bio.': COR.ciano},
   eventos: EVENTOS,
   Cena,
 };

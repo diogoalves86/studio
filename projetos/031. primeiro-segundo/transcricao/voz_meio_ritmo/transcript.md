@@ -1,4 +1,4 @@
-<!-- large-v3-turbo | cpu | 38.810s -->
+<!-- large-v3-turbo | cpu | 40.919s -->
 [00:00.000] O erro é o primeiro segundo.
 [00:01.920] Você aperta o botão, olha para o celular, ajeita o cabelo e só depois sorri.
 [00:07.000] Só que é esse segundo, com a cara parada, que aparece primeiro no feed.
@@ -13,6 +13,7 @@
 [00:25.240] O vídeo começa com você falando.
 [00:27.000] Pronto.
 [00:27.380] A pessoa para porque você já chegou conversando.
-[00:30.260] E se gravar já dá trabalho, postar não precisa dar.
-[00:33.560] O Digo Social sugere o post, escreve a legenda e agenda para você.
-[00:37.580] Você só aprova.
+[00:30.200] E se gravar já dá trabalho, postar não precisa dar.
+[00:33.520] O Digo Social é um aplicativo que sugere o post, escreve a legenda e agenda para você.
+[00:38.480] Você só aprova.
+[00:39.860] Está no link da bio.
