@@ -39,6 +39,7 @@ import {OlhaPraLente, LENTE_DURACAO} from './videos/olha-pra-lente';
 import {TresPlanos, PLANOS_DURACAO} from './videos/tres-planos';
 import {PrimeiroSegundo, SEGUNDO_DURACAO} from './videos/primeiro-segundo';
 import {CameraDeBaixo, BAIXO_DURACAO} from './videos/camera-de-baixo';
+import {VozDeQuemLe, LENDO_DURACAO} from './videos/voz-de-quem-le';
 import {NaMinhaMaquina, MAQUINA_DURACAO} from './videos/na-minha-maquina';
 
 const FPS = 30;
@@ -153,6 +154,9 @@ export const RemotionRoot: React.FC = () => (
     </Folder>
     <Folder name="032-camera-de-baixo">
       <Composition id="CameraDeBaixo" component={CameraDeBaixo} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(BAIXO_DURACAO * FPS)} />
+    </Folder>
+    <Folder name="033-voz-de-quem-le">
+      <Composition id="VozDeQuemLe" component={VozDeQuemLe} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(LENDO_DURACAO * FPS)} />
     </Folder>
     <Folder name="034-na-minha-maquina">
       <Composition id="NaMinhaMaquina" component={NaMinhaMaquina} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(MAQUINA_DURACAO * FPS)} />
