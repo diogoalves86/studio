@@ -16,3 +16,5 @@ Roteiro aprovado em [roteiro.md](roteiro.md). Mesma linha do 029 (erro de presen
 
 - `edicoes/031. primeiro-segundo/primeiro-segundo_final.mp4`: 50,6 s, 1080×1920, −14,0 LUFS, −1,9 dBTP.
 - `edicoes/031. primeiro-segundo/primeiro-segundo_celular.mp4`: prévia.
+
+- **Aprovado pelo Diogo em 28/10/2026**, pronto para postar.
