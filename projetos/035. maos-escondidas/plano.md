@@ -7,3 +7,4 @@
 - Cenas (Remotion, `src/videos/maos-escondidas/`): boneco com as mãos no bolso → três poses (no bolso, fora do quadro, braço cruzado) → corpo duro e voz murcha → "QUER IR EMBORA", "PRÓXIMO" → dica 1: o celular se afasta um palmo e o quadro abre até as mãos → dica 2: a mão grande conta 1, 2, 3 e a voz acompanha → "A FALA SOLTA", "MÃO À VISTA" → ponte com "🌐 SITE", "👉 ACESSA O DIGO", "🔗 LINK NA BIO" → CTA de seguir.
 - Custo real: 7,22 créditos (voz 3,22 + clipe 4). Estimativa era ~8.
 - Final: `edicoes/035. maos-escondidas/maos-escondidas_final.mp4`, 46,0 s, −14,0 LUFS, pico −1,8 dB.
+- **Aprovado pelo Diogo em 29/10/2026.**
