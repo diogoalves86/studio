@@ -7,3 +7,4 @@
 - Cenas (Remotion, `src/videos/cara-fechada/`): rosto fechado com nuvem de chuva → "O ERRO: CARA PARADA" e a prensa "A TELA" que achata o rosto ("EXPRESSÃO −50%") → "NA SUA CABEÇA" × "NA TELA" (neutro × sério) → "QUEM ASSISTE VÊ", "CARA FECHADA", "PRÓXIMO" → dica 1: contagem 3, 2, 1 com o sorriso abrindo antes do REC, "JÁ ABRE LEVE" → dica 2: a sobrancelha sobe em "Isso MUDA o seu VÍDEO", "O ROSTO ACOMPANHA" → "A MESMA FALA, OUTRA CARA", "CARA DE CONVERSA" → ponte com "🌐 SITE", "👉 ACESSA O DIGO", "🔗 LINK NA BIO" → CTA de seguir.
 - Custo real: 7,22 créditos (voz 3,22 + clipe 4). Estimativa era ~8.
 - Final: `edicoes/036. cara-fechada/cara-fechada_final.mp4`, 43,4 s, −14,0 LUFS, pico −1,9 dB.
+- **Aprovado pelo Diogo em 29/10/2026.**
