@@ -43,6 +43,7 @@ import {VozDeQuemLe, LENDO_DURACAO} from './videos/voz-de-quem-le';
 import {NaMinhaMaquina, MAQUINA_DURACAO} from './videos/na-minha-maquina';
 import {MaosEscondidas, MAOS_DURACAO} from './videos/maos-escondidas';
 import {CaraFechada, CARA_DURACAO} from './videos/cara-fechada';
+import {Contraluz, CONTRALUZ_DURACAO} from './videos/contraluz';
 
 const FPS = 30;
 const SEIS_SEGUNDOS = 6 * FPS;
@@ -168,6 +169,9 @@ export const RemotionRoot: React.FC = () => (
     </Folder>
     <Folder name="036-cara-fechada">
       <Composition id="CaraFechada" component={CaraFechada} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(CARA_DURACAO * FPS)} />
+    </Folder>
+    <Folder name="038-contraluz">
+      <Composition id="Contraluz" component={Contraluz} width={1080} height={1920} fps={FPS} durationInFrames={Math.ceil(CONTRALUZ_DURACAO * FPS)} />
     </Folder>
   </>
 );
