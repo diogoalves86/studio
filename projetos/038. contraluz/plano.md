@@ -8,3 +8,4 @@
 - O emoji 🪟 não tem fonte no render; usei ☀️ e 🔆 no lugar.
 - Custo real: 7,45 créditos (voz 3,45 + clipe 4). Estimativa era ~7,5.
 - Final: `edicoes/038. contraluz/contraluz_final.mp4`, 46,6 s, −14,0 LUFS, pico −1,9 dB.
+- **Aprovado pelo Diogo em 30/10/2026.**
